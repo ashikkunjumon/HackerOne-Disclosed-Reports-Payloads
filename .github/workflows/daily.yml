@@ -1,0 +1,59 @@
+name: daily
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065  # v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -e ".[dev]"
+
+      - name: Run tests
+        run: pytest -q
+
+      - name: Build payload dataset
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+        run: python -m src.run --out .
+
+      - name: Commit if changed
+        run: |
+          git config user.name "Ashik Kunjumon"
+          git config user.email "45920006+ashikkunjumon@users.noreply.github.com"
+          git add payloads.json payloads.txt payloads/ wordlists/ by-program/ top-payloads/ README.md data/verdicts.jsonl
+          if git diff --cached --quiet; then
+            echo "no changes"
+            exit 0
+          fi
+          git commit -m "chore: daily payload refresh"
+
+      # Runs after the commit so it scans what is actually about to be
+      # pushed, and before the push so a finding blocks it: audit.sh scans
+      # committed history only, and the artifacts above are uncommitted
+      # working-tree files right up until the commit step above runs. A
+      # failure here fails the workflow with the commit left unpushed --
+      # it stays local to the runner and is discarded, which is correct.
+      - name: Pre-push audit
+        run: bash scripts/audit.sh
+
+      - name: Push
+        run: git push

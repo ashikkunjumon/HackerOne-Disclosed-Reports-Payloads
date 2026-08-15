@@ -1,0 +1,59 @@
+- slug: open-redirect
+  name: Open Redirect
+  cwe_aliases: ["Open Redirect", "URL Redirection"]
+  title_keywords: ["open redirect", "unvalidated redirect", "url redirection"]
+  body_keywords: ["open redirect"]
+
+- slug: xss
+  name: Cross-site Scripting
+  cwe_aliases: ["Cross-site Scripting"]
+  title_keywords: ["xss", "cross-site scripting", "cross site scripting"]
+  body_keywords: ["reflected xss", "stored xss", "dom xss"]
+
+- slug: ssrf
+  name: Server-Side Request Forgery
+  cwe_aliases: ["Server-Side Request Forgery", "Server Side Request Forgery"]
+  title_keywords: ["ssrf", "server-side request forgery", "server side request forgery"]
+  body_keywords: ["ssrf"]
+
+- slug: sqli
+  name: SQL Injection
+  cwe_aliases: ["SQL Injection"]
+  title_keywords: ["sql injection", "sqli", "blind sql"]
+  body_keywords: ["sql injection", "sqlmap"]
+
+- slug: ssti
+  name: Server-Side Template Injection
+  cwe_aliases: []
+  title_keywords: ["template injection", "ssti"]
+  body_keywords: ["template injection", "ssti", "jinja2", "freemarker", "velocity", "twig"]
+
+- slug: path-traversal
+  name: Path Traversal
+  cwe_aliases: ["Path Traversal", "File Inclusion", "Directory Traversal"]
+  title_keywords: ["path traversal", "directory traversal", "lfi", "local file inclusion", "arbitrary file read"]
+  body_keywords: ["path traversal", "directory traversal", "../../"]
+
+- slug: xxe
+  name: XML External Entities
+  cwe_aliases: ["XML External Entities", "XML Injection", "XML Entity Expansion"]
+  title_keywords: ["xxe", "xml external entit"]
+  body_keywords: ["<!entity", "xxe"]
+
+- slug: csrf
+  name: Cross-Site Request Forgery
+  cwe_aliases: ["Cross-Site Request Forgery"]
+  title_keywords: ["csrf", "cross-site request forgery", "cross site request forgery"]
+  body_keywords: ["csrf token", "cross-site request forgery"]
+
+- slug: idor
+  name: Insecure Direct Object Reference
+  cwe_aliases: ["Insecure Direct Object Reference"]
+  title_keywords: ["idor", "insecure direct object"]
+  body_keywords: ["idor", "insecure direct object reference"]
+
+- slug: rce
+  name: Remote Code Execution
+  cwe_aliases: ["Code Injection", "Command Injection", "OS Command Injection"]
+  title_keywords: ["rce", "remote code execution", "command injection", "code execution"]
+  body_keywords: ["remote code execution", "command injection"]

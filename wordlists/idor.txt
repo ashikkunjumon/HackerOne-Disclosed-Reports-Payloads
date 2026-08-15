@@ -1,0 +1,14 @@
+POST /████████/Status.aspx?ID=x
+https://target.com/1.1/direct_messages/show.json?id=578631102144741376
+https://target.com/1.1/direct_messages/show.json?id=[noted-dm-id
+https://target.com/1.1/direct_messages/show.json?id={DM-id}
+https://target.com/gold/payment-success?subscription_id=██████████&user_id=█████████
+https://target.com/people-rater/entry?id=eyJpZCI6Mn0=
+https://target.com/tools/widget/montage?widget=1&preview=1&user_id=36807051&badge_stream=channel&badge_channel=870575&badge_album=3231945&badge_layout=horizontal&badge_quantity=6&show_titles=no&badge_size=80
+https://target.com/users/invite-user.php?id=(userid)&popup=1
+https://target.com/users/invite-user.php?id=19920465&popup=1
+https://www.████████/Download.aspx?id=4675
+https://www.█████████/Download.aspx?id=4675
+{"id":1}
+{"payment":{"provider_method_account":"6xdxdd","parameters":{}},"action":"order","plan_id":653,"user_id":20027039,"tax_country_code":"TW","payment_retry":0,"is_installment":false}
+{"variables":{"platformUserId":"PLATFORM_USER_ID","offerId":"UUID_OFFER_ID"},"id":"475c91dd4480"}

