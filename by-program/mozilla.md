@@ -1,6 +1,30 @@
 # Mozilla
 
-7 payloads.
+10 payloads.
+
+### `f0bfcee6`
+
+```
+https://127.0.0.1:86
+```
+
+— [Internal Blind Server-Side Request Forgery (SSRF) allows scanning internal ports](https://hackerone.com/reports/2015554) · Mozilla · [harshdranjan](https://hackerone.com/harshdranjan)
+
+### `36f7937e`
+
+```
+https://127.0.0.1:88
+```
+
+— [Internal Blind Server-Side Request Forgery (SSRF) allows scanning internal ports](https://hackerone.com/reports/2015554) · Mozilla · [harshdranjan](https://hackerone.com/harshdranjan)
+
+### `80951689`
+
+```
+https://127.0.0.1:87
+```
+
+— [Internal Blind Server-Side Request Forgery (SSRF) allows scanning internal ports](https://hackerone.com/reports/2015554) · Mozilla · [harshdranjan](https://hackerone.com/harshdranjan)
 
 ### `4eae413b`
 

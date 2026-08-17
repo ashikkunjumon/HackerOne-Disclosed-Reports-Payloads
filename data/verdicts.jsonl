@@ -3121,3 +3121,9 @@
 {"key": "bbce99ad0dbe413c192b8471d2ad7c1755ca1117", "is_payload": true, "technique": "Stored XSS by uploading an SVG file with onload JavaScript (alert)", "param": "fileupload"}
 {"key": "24bf6059dc71f7d6299ca11965642c691512f1c0", "is_payload": true, "technique": "Stored XSS worm via SVG file with onload script that performs CSRF to modify user signature", "param": "fileupload"}
 {"key": "c6b39ba30c728f00a082b16f6ef00493db0e89d1", "is_payload": true, "technique": "Stored XSS using minimal SVG with onload attribute", "param": null}
+{"key": "28cd38c067d7f52a9d8c3f42f2f5b08ccac2d4d0", "is_payload": true, "technique": "SSRF port\u2011scanning via URL input", "param": null}
+{"key": "64f3a791eece05196c9d108a029327b89f989b05", "is_payload": true, "technique": "SSRF port\u2011scanning via URL input", "param": null}
+{"key": "c2ddc1b248f532f2e7dbc54e3b4a7377fd3182fa", "is_payload": true, "technique": "SSRF port\u2011scanning via URL input", "param": null}
+{"key": "ee02bdeb220eb2dd87c8d650a8e326e770b7cbb4", "is_payload": true, "technique": "SSRF port\u2011scanning via URL input", "param": null}
+{"key": "e228919b491503b82ab7c3ce36b0771ded9d8fb9", "is_payload": true, "technique": "SSRF port\u2011scanning via URL input", "param": null}
+{"key": "81105bdd72b67d363e6a0f2aafbb98d554a42713", "is_payload": true, "technique": "SSRF port\u2011scanning via URL input", "param": null}

@@ -6,12 +6,12 @@ Real payloads from disclosed HackerOne reports — every one of them worked.
 
 | Metric | Count |
 |---|---|
-| **Total Payloads** | 1,598 |
+| **Total Payloads** | 1,601 |
 | **Classes Covered** | 10 |
 | **Programs Represented** | 152 |
 | **Bounty Behind Them** | $440,965.0 |
 
-*Last Updated: August 15, 2026 at 19:40 UTC*
+*Last Updated: August 17, 2026 at 06:28 UTC*
 
 ## 📁 Browse
 
@@ -19,7 +19,7 @@ Real payloads from disclosed HackerOne reports — every one of them worked.
 |---|---|
 | [Open Redirect](payloads/open-redirect.md) | 139 |
 | [Cross-site Scripting](payloads/xss.md) | 803 |
-| [Server-Side Request Forgery](payloads/ssrf.md) | 147 |
+| [Server-Side Request Forgery](payloads/ssrf.md) | 150 |
 | [SQL Injection](payloads/sqli.md) | 134 |
 | [Server-Side Template Injection](payloads/ssti.md) | 30 |
 | [Path Traversal](payloads/path-traversal.md) | 184 |
