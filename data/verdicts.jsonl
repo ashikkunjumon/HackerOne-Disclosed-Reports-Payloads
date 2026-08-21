@@ -3127,3 +3127,9 @@
 {"key": "ee02bdeb220eb2dd87c8d650a8e326e770b7cbb4", "is_payload": true, "technique": "SSRF port\u2011scanning via URL input", "param": null}
 {"key": "e228919b491503b82ab7c3ce36b0771ded9d8fb9", "is_payload": true, "technique": "SSRF port\u2011scanning via URL input", "param": null}
 {"key": "81105bdd72b67d363e6a0f2aafbb98d554a42713", "is_payload": true, "technique": "SSRF port\u2011scanning via URL input", "param": null}
+{"key": "a9394ee281a9a7a9788ed8f889b6cb7e87edfe58", "is_payload": true, "technique": "Cross-Site Request Forgery using an auto\u2011submitting HTML form", "param": null}
+{"key": "e870661c2e3c52ed05c10adc1f89ecc014811caf", "is_payload": true, "technique": "Directory traversal via '../../..' in the JSON field \"trained_at\"", "param": "trained_at"}
+{"key": "deccedbfed3eb5dcc86773ab8e0f17aad67138a6", "is_payload": true, "technique": "Directory traversal via '../../..' in the JSON field \"version\"", "param": "version"}
+{"key": "ee54c7ddd78bcdaaa06c6052c312a82968ad656d", "is_payload": false, "technique": "", "param": null}
+{"key": "20aba3c5f83f043b7fbeb8a4c85f409d09e8d4c1", "is_payload": true, "technique": "Reflected XSS by injecting <script> into the \"nin\" query parameter", "param": "nin"}
+{"key": "480d39ba5efcaa351089f762d187d019967ee71a", "is_payload": false, "technique": "", "param": null}

