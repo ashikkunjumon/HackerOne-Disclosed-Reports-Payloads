@@ -3133,3 +3133,4 @@
 {"key": "ee54c7ddd78bcdaaa06c6052c312a82968ad656d", "is_payload": false, "technique": "", "param": null}
 {"key": "20aba3c5f83f043b7fbeb8a4c85f409d09e8d4c1", "is_payload": true, "technique": "Reflected XSS by injecting <script> into the \"nin\" query parameter", "param": "nin"}
 {"key": "480d39ba5efcaa351089f762d187d019967ee71a", "is_payload": false, "technique": "", "param": null}
+{"key": "7af57f8179b1523c13b63ee4846af8c0c6989e1f", "is_payload": true, "technique": "Reflected XSS via script injection in the post_logout_redirect_uri parameter", "param": "post_logout_redirect_uri"}
