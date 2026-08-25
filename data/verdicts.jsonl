@@ -3135,3 +3135,13 @@
 {"key": "480d39ba5efcaa351089f762d187d019967ee71a", "is_payload": false, "technique": "", "param": null}
 {"key": "7af57f8179b1523c13b63ee4846af8c0c6989e1f", "is_payload": true, "technique": "Reflected XSS via script injection in the post_logout_redirect_uri parameter", "param": "post_logout_redirect_uri"}
 {"key": "9c83075b3a045b83099db8818959db1b280a59fc", "is_payload": true, "technique": "Web shell upload via malicious ASP file (null byte bypass)", "param": "myfile"}
+{"key": "0a203dd2ff5ecb1ca1c4180e758b509259f8d6cd", "is_payload": false, "technique": "", "param": null}
+{"key": "650cdfcb48ba9eaf2fe193a517a77e6b4b326358", "is_payload": false, "technique": "", "param": null}
+{"key": "d1a2cd8749ddb9aa57540aa0a3e0c620c8da267c", "is_payload": true, "technique": "Reflected cross\u2011site scripting (XSS) by injecting a <script> tag that executes alert(document.domain)", "param": null}
+{"key": "d9d9cb32f3b3b514a383d5f516f0a6d732dfe720", "is_payload": false, "technique": "", "param": null}
+{"key": "c82db3ce09d419b85dff872d0fc8bbf6fc3bb9d2", "is_payload": false, "technique": "", "param": null}
+{"key": "ec1ab27040edb829c5e0c9a4141a60df36c31bce", "is_payload": true, "technique": "Time\u2011based blind SQL injection using the SLEEP function to cause a delay", "param": "author_exclude"}
+{"key": "e869f320a1cb2d986cdb994e2ca26d9742a2c4f3", "is_payload": true, "technique": "Time\u2011based blind SQL injection using SLEEP with zero delay as a proof of concept", "param": "author_exclude"}
+{"key": "22b32ff3fb1096120b01f208c9502309f84b42fe", "is_payload": true, "technique": "Time\u2011based blind SQL injection using SLEEP with zero delay as a proof of concept", "param": "author_exclude"}
+{"key": "aae4cc9710d6a78e3a361632ec686b17b30c8a77", "is_payload": true, "technique": "Time\u2011based blind SQL injection using SLEEP with a fractional delay (0.01\u202fs)", "param": "author_exclude"}
+{"key": "e5e9f990d2539afdfa3c3647edfcb2df76cbf939", "is_payload": true, "technique": "Time\u2011based blind SQL injection using SLEEP with a longer delay (0.3\u202fs)", "param": "author_exclude"}

