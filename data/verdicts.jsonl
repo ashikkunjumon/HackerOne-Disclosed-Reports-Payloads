@@ -3145,3 +3145,5 @@
 {"key": "22b32ff3fb1096120b01f208c9502309f84b42fe", "is_payload": true, "technique": "Time\u2011based blind SQL injection using SLEEP with zero delay as a proof of concept", "param": "author_exclude"}
 {"key": "aae4cc9710d6a78e3a361632ec686b17b30c8a77", "is_payload": true, "technique": "Time\u2011based blind SQL injection using SLEEP with a fractional delay (0.01\u202fs)", "param": "author_exclude"}
 {"key": "e5e9f990d2539afdfa3c3647edfcb2df76cbf939", "is_payload": true, "technique": "Time\u2011based blind SQL injection using SLEEP with a longer delay (0.3\u202fs)", "param": "author_exclude"}
+{"key": "1a014e8c82bab55dee3200f6060d2e9c9ec8f107", "is_payload": true, "technique": "time-based blind SQL injection using SLEEP()", "param": null}
+{"key": "1c963b05e0379d55ce403d63d704a64ea9c2a396", "is_payload": false, "technique": "", "param": null}

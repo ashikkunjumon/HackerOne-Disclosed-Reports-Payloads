@@ -12,12 +12,12 @@ researcher who found it.
 
 | Metric | Count |
 |---|---|
-| **Total Payloads** | 1,611 |
+| **Total Payloads** | 1,612 |
 | **Classes Covered** | 10 |
 | **Programs Represented** | 153 |
 | **Bounty Behind Them** | $440,965 |
 
-*Last Updated: August 25, 2026 at 06:36 UTC*
+*Last Updated: August 26, 2026 at 06:23 UTC*
 
 ## Payloads by vulnerability class
 
@@ -26,7 +26,7 @@ researcher who found it.
 | [Open Redirect](payloads/open-redirect.md) | 139 |
 | [Cross-site Scripting](payloads/xss.md) | 806 |
 | [Server-Side Request Forgery](payloads/ssrf.md) | 150 |
-| [SQL Injection](payloads/sqli.md) | 138 |
+| [SQL Injection](payloads/sqli.md) | 139 |
 | [Server-Side Template Injection](payloads/ssti.md) | 30 |
 | [Path Traversal](payloads/path-traversal.md) | 186 |
 | [XML External Entities](payloads/xxe.md) | 21 |

