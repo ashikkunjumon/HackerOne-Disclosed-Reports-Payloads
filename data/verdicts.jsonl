@@ -3147,3 +3147,23 @@
 {"key": "e5e9f990d2539afdfa3c3647edfcb2df76cbf939", "is_payload": true, "technique": "Time\u2011based blind SQL injection using SLEEP with a longer delay (0.3\u202fs)", "param": "author_exclude"}
 {"key": "1a014e8c82bab55dee3200f6060d2e9c9ec8f107", "is_payload": true, "technique": "time-based blind SQL injection using SLEEP()", "param": null}
 {"key": "1c963b05e0379d55ce403d63d704a64ea9c2a396", "is_payload": false, "technique": "", "param": null}
+{"key": "5d5555f9d4ccbc8839d95c163cdead0228c1756b", "is_payload": true, "technique": "Java reverse shell using ProcessBuilder to connect back to attacker", "param": null}
+{"key": "4465a4e855f765c5a097382124fb001d8b49c3a3", "is_payload": true, "technique": "PDF file containing embedded JavaScript (app.alert) uploaded via multipart 'file' parameter", "param": "file"}
+{"key": "1c88754ba5a35664fe6b864f6bf67d4e05abd393", "is_payload": true, "technique": "Form fields (e.g., FirstName) injected with HTML/JS tags for stored XSS", "param": "FirstName"}
+{"key": "9177c84e71bf3ddb1923e2fb9b2cf2dc603685f8", "is_payload": true, "technique": "Injection of a <script> tag as input to trigger XSS", "param": null}
+{"key": "6a74f501b660be8831776e2c080bff56de26cf4f", "is_payload": true, "technique": "Injection of an <img onerror> tag to trigger XSS", "param": null}
+{"key": "c2a74e23531aa883bf6f4af136fef69ff81c907b", "is_payload": true, "technique": "Injection of an <svg onload> tag to trigger XSS", "param": null}
+{"key": "f6ee0a1e720a696a8141b94085ac3275407c4687", "is_payload": true, "technique": "Use of a 'javascript:' URI to execute script in XSS context", "param": null}
+{"key": "79898749030a809788814ef871d770abbdc398db", "is_payload": true, "technique": "Email address containing a <script> tag to achieve XSS", "param": null}
+{"key": "c5e447af9c913fe716df631149c4ffb4e035be16", "is_payload": true, "technique": "JavaScript payload that exfiltrates cookies via fetch to attacker domain", "param": null}
+{"key": "aae553bbd9029517789347ff99043942c0677112", "is_payload": true, "technique": "PDF JavaScript payload 'app.alert(1)' used for XSS", "param": null}
+{"key": "1735533c6e81c3d6a9b7a77f14363cd9fe27b4bb", "is_payload": true, "technique": "Boolean-based SQL injection using a tautology (OR 1=1) to retrieve all rows", "param": "searchText"}
+{"key": "3f32a7acd379ef00ca086aa11a50634bebf34382", "is_payload": true, "technique": "Boolean-based SQL injection using a false condition (OR 1=2) to confirm the injection point", "param": "searchText"}
+{"key": "e2647ad5da805c220c24ceb8c6c21f743193414f", "is_payload": true, "technique": "Boolean-based SQL injection with a subquery (SELECT COUNT(*) FROM sys.tables) to fingerprint the database", "param": "searchText"}
+{"key": "dadeef4aa6a0c226aba57c0a184363d865d96d5c", "is_payload": true, "technique": "Time-based blind SQL injection using WAITFOR DELAY via a stacked query", "param": "searchText"}
+{"key": "d2abb455c0cbfda7aa3fc571e03b835b05466687", "is_payload": true, "technique": "Boolean-based SQL injection using a tautology (OR 1=1) to dump data", "param": "searchText"}
+{"key": "b0b73c36cb7b3fd1a02b084000058a7964aafffd", "is_payload": true, "technique": "Time-based blind SQL injection using WAITFOR DELAY to cause a delay", "param": "searchText"}
+{"key": "d0ffe009269e91beddc02ef7e850a0131cdb8688", "is_payload": true, "technique": "Boolean-based SQL injection fragment that appends OR 1=1 to bypass conditions", "param": null}
+{"key": "2633b4affae8c50b6616eee621876cdcb0ddd682", "is_payload": false, "technique": "", "param": null}
+{"key": "981b0d15b0d8b1b7ac4543fd009d4647b437b297", "is_payload": false, "technique": "", "param": null}
+{"key": "01f6cd161f9cd1f289e4a49b23b41207191c5a6f", "is_payload": false, "technique": "", "param": null}

