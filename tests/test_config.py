@@ -4,7 +4,7 @@ from src.config import VulnClass, load_classes
 
 SLUGS = {
     "open-redirect", "xss", "ssrf", "sqli", "ssti",
-    "path-traversal", "xxe", "csrf", "idor", "rce",
+    "path-traversal", "xxe", "idor", "rce",
 }
 
 

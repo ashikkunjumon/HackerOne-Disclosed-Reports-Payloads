@@ -3,7 +3,6 @@
 from collections.abc import Callable
 
 from src.extractors import (
-    csrf,
     idor,
     open_redirect,
     path_traversal,
@@ -26,7 +25,6 @@ EXTRACTORS: dict[str, Extractor] = {
     "ssti": ssti.extract,
     "path-traversal": path_traversal.extract,
     "xxe": xxe.extract,
-    "csrf": csrf.extract,
     "idor": idor.extract,
     "rce": rce.extract,
 }

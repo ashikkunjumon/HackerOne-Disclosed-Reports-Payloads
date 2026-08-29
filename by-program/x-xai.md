@@ -1,6 +1,6 @@
 # X / xAI
 
-36 payloads.
+34 payloads.
 
 ### `0b5e7c3a`
 
@@ -55,22 +55,6 @@ javascript:
 
 **Parameter:** `player_url`
 — [Multiple DOMXSS on Amplify Web Player](https://hackerone.com/reports/88719) · X / xAI · [filedescriptor](https://hackerone.com/filedescriptor)
-
-### `7728e469`
-
-```
-<form method="POST" action="                                         ">
-```
-
-— [URGENT : target.com Account Take Over Vulnerability](https://hackerone.com/reports/100849) · X / xAI · [hussein98d](https://hackerone.com/hussein98d) · $560.0
-
-### `c2b24082`
-
-```
-<input type="hidden" name="authenticity_token" value=""/>
-```
-
-— [URGENT : target.com Account Take Over Vulnerability](https://hackerone.com/reports/100849) · X / xAI · [hussein98d](https://hackerone.com/hussein98d) · $560.0
 
 ### `8bee0f7b`
 

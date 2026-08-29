@@ -4,7 +4,7 @@
 one of them worked on a live production target.**
 
 A searchable payload list for XSS, SQL injection, SSRF, path traversal, SSTI,
-XXE, open redirect, CSRF, IDOR and RCE, drawn from 1,025 disclosed
+XXE, open redirect, IDOR and RCE, drawn from 986 disclosed
 HackerOne reports. Every payload links back to the report it came from and the
 researcher who found it.
 
@@ -12,12 +12,12 @@ researcher who found it.
 
 | Metric | Count |
 |---|---|
-| **Total Payloads** | 1,625 |
-| **Classes Covered** | 10 |
-| **Programs Represented** | 153 |
-| **Bounty Behind Them** | $440,965 |
+| **Total Payloads** | 1,580 |
+| **Classes Covered** | 9 |
+| **Programs Represented** | 151 |
+| **Bounty Behind Them** | $433,175 |
 
-*Last Updated: August 29, 2026 at 11:49 UTC*
+*Last Updated: August 29, 2026 at 13:47 UTC*
 
 ## Payloads by vulnerability class
 
@@ -30,7 +30,6 @@ researcher who found it.
 | [Server-Side Template Injection](payloads/ssti.md) | 30 |
 | [Path Traversal](payloads/path-traversal.md) | 186 |
 | [XML External Entities](payloads/xxe.md) | 21 |
-| [Cross-Site Request Forgery](payloads/csrf.md) | 45 |
 | [Insecure Direct Object Reference](payloads/idor.md) | 24 |
 | [Remote Code Execution](payloads/rce.md) | 73 |
 
@@ -49,8 +48,8 @@ takes a wordlist.
 Collections like PayloadsAllTheThings are curated lists of payloads that
 *should* work. Every entry here is one that **did** — it appears in a public
 HackerOne report, used against a real production target and accepted as a valid
-finding. 277 of them also earned a bounty, totalling
-$440,965. The report link is on every entry, so you can read the
+finding. 270 of them also earned a bounty, totalling
+$433,175. The report link is on every entry, so you can read the
 context a payload was used in rather than guessing at it.
 
 ## Browse

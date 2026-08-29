@@ -267,7 +267,7 @@ def emit(records: list[dict], classes: dict[str, VulnClass], out_dir: Path) -> N
 one of them worked on a live production target.**
 
 A searchable payload list for XSS, SQL injection, SSRF, path traversal, SSTI,
-XXE, open redirect, CSRF, IDOR and RCE, drawn from {report_count:,} disclosed
+XXE, open redirect, IDOR and RCE, drawn from {report_count:,} disclosed
 HackerOne reports. Every payload links back to the report it came from and the
 researcher who found it.
 

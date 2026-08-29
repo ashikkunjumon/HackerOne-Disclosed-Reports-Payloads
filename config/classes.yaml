@@ -40,12 +40,6 @@
   title_keywords: ["xxe", "xml external entit"]
   body_keywords: ["<!entity", "xxe"]
 
-- slug: csrf
-  name: Cross-Site Request Forgery
-  cwe_aliases: ["Cross-Site Request Forgery"]
-  title_keywords: ["csrf", "cross-site request forgery", "cross site request forgery"]
-  body_keywords: ["csrf token", "cross-site request forgery"]
-
 - slug: idor
   name: Insecure Direct Object Reference
   cwe_aliases: ["Insecure Direct Object Reference"]

