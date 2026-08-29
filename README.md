@@ -4,7 +4,7 @@
 one of them worked on a live production target.**
 
 A searchable payload list for XSS, SQL injection, SSRF, path traversal, SSTI,
-XXE, open redirect, CSRF, IDOR and RCE, drawn from 1,024 disclosed
+XXE, open redirect, CSRF, IDOR and RCE, drawn from 1,025 disclosed
 HackerOne reports. Every payload links back to the report it came from and the
 researcher who found it.
 
@@ -12,19 +12,19 @@ researcher who found it.
 
 | Metric | Count |
 |---|---|
-| **Total Payloads** | 1,623 |
+| **Total Payloads** | 1,625 |
 | **Classes Covered** | 10 |
 | **Programs Represented** | 153 |
 | **Bounty Behind Them** | $440,965 |
 
-*Last Updated: August 27, 2026 at 17:02 UTC*
+*Last Updated: August 29, 2026 at 11:49 UTC*
 
 ## Payloads by vulnerability class
 
 | Class | Payloads |
 |---|---|
 | [Open Redirect](payloads/open-redirect.md) | 139 |
-| [Cross-site Scripting](payloads/xss.md) | 809 |
+| [Cross-site Scripting](payloads/xss.md) | 811 |
 | [Server-Side Request Forgery](payloads/ssrf.md) | 150 |
 | [SQL Injection](payloads/sqli.md) | 146 |
 | [Server-Side Template Injection](payloads/ssti.md) | 30 |

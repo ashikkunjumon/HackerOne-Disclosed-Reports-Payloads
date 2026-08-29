@@ -3167,3 +3167,14 @@
 {"key": "2633b4affae8c50b6616eee621876cdcb0ddd682", "is_payload": false, "technique": "", "param": null}
 {"key": "981b0d15b0d8b1b7ac4543fd009d4647b437b297", "is_payload": false, "technique": "", "param": null}
 {"key": "01f6cd161f9cd1f289e4a49b23b41207191c5a6f", "is_payload": false, "technique": "", "param": null}
+{"key": "823a673545f71023c5802364fbab715db9116534", "is_payload": true, "technique": "SVG onload attribute JavaScript execution (HTML injection XSS)", "param": null}
+{"key": "f2b159d3139afdd219ac0d28a352ab03e26f4db3", "is_payload": false, "technique": "", "param": null}
+{"key": "da0b701ccb2c4c0a228eb79da8db50c9969a8e7e", "is_payload": false, "technique": "", "param": null}
+{"key": "50a1fa9cf7274c38cc30630f73dc5ef8eefed4f9", "is_payload": true, "technique": "Stored XSS via attribute injection in the image filename (breaks out of the src attribute)", "param": "file"}
+{"key": "28cb66b25c990268094e5e462d1a6baec6dcf486", "is_payload": false, "technique": "", "param": null}
+{"key": "5c713614486a64f8493523dd88aceb6f9a6ce5cd", "is_payload": false, "technique": "", "param": null}
+{"key": "f09ccda7c77eeb445dc28f6e9a42736d21032895", "is_payload": false, "technique": "", "param": null}
+{"key": "1548e7c2970653254c39375d067f47405b411b53", "is_payload": false, "technique": "", "param": null}
+{"key": "0c35d3f2380c6c04b0f438df46fa02a98820cdc8", "is_payload": false, "technique": "", "param": null}
+{"key": "d0eaf46baa637135f176dd04502ab61555f003cf", "is_payload": false, "technique": "", "param": null}
+{"key": "cfa2fff7504a77bcb7bbd68dcb0059d3037777df", "is_payload": false, "technique": "", "param": null}

