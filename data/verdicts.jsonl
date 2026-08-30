@@ -3178,3 +3178,13 @@
 {"key": "0c35d3f2380c6c04b0f438df46fa02a98820cdc8", "is_payload": false, "technique": "", "param": null}
 {"key": "d0eaf46baa637135f176dd04502ab61555f003cf", "is_payload": false, "technique": "", "param": null}
 {"key": "cfa2fff7504a77bcb7bbd68dcb0059d3037777df", "is_payload": false, "technique": "", "param": null}
+{"key": "68eb14dfc5a0c230d1873527c2e2c0f0483fac03", "is_payload": true, "technique": "IDOR by modifying the ticket ID parameter to access another user's ticket.", "param": "number"}
+{"key": "0a74593b94cf13560ae4d1a657398b3492b521d1", "is_payload": false, "technique": "", "param": null}
+{"key": "3672b3ee11cdcac8eab529a0bfc3e1f3033cf24c", "is_payload": true, "technique": "Path traversal using '../../..' to escape directories via the report_id parameter.", "param": "report_id"}
+{"key": "57ce6e58804d021e32786dd0fbc3477462396136", "is_payload": true, "technique": "Path traversal using '../../..' in report_id to reach arbitrary internal endpoint.", "param": "report_id"}
+{"key": "37a4925d47be009bd520b3c3a25eb388c6ec9fb8", "is_payload": true, "technique": "Open redirect by supplying a double\u2011slash encoded URL in the path parameter.", "param": "path"}
+{"key": "8bb35e789097bb932c6b4002c98a352c4789301e", "is_payload": true, "technique": "SSRF via a malicious Location header redirecting the server to an internal IP address.", "param": null}
+{"key": "69c972fd456ee56d32583a787c0e0c9b04fd81a6", "is_payload": true, "technique": "SSRF via a Location header containing credentials (admin:admin) to force an authenticated request to an internal service.", "param": null}
+{"key": "8cfc629a13493dc7203295788441f766f3e90af3", "is_payload": true, "technique": "SSRF where the attacker-controlled URL causes the server to issue an HTTP request with a Basic\u2011Auth header to an internal host.", "param": null}
+{"key": "d749bfe68e428ebc2df85c654c4659730dd726a6", "is_payload": false, "technique": "", "param": null}
+{"key": "3471e256baf340d85ae3215bff88d41b4d307ceb", "is_payload": true, "technique": "Cross\u2011site scripting by injecting an <img src=x onerror=alert(document.domain)> payload into form fields.", "param": "building"}

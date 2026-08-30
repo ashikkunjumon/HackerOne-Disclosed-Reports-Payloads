@@ -4,7 +4,7 @@
 one of them worked on a live production target.**
 
 A searchable payload list for XSS, SQL injection, SSRF, path traversal, SSTI,
-XXE, open redirect, IDOR and RCE, drawn from 986 disclosed
+XXE, open redirect, IDOR and RCE, drawn from 990 disclosed
 HackerOne reports. Every payload links back to the report it came from and the
 researcher who found it.
 
@@ -12,25 +12,25 @@ researcher who found it.
 
 | Metric | Count |
 |---|---|
-| **Total Payloads** | 1,580 |
+| **Total Payloads** | 1,586 |
 | **Classes Covered** | 9 |
 | **Programs Represented** | 151 |
 | **Bounty Behind Them** | $433,175 |
 
-*Last Updated: August 29, 2026 at 13:47 UTC*
+*Last Updated: August 30, 2026 at 11:00 UTC*
 
 ## Payloads by vulnerability class
 
 | Class | Payloads |
 |---|---|
 | [Open Redirect](payloads/open-redirect.md) | 139 |
-| [Cross-site Scripting](payloads/xss.md) | 811 |
-| [Server-Side Request Forgery](payloads/ssrf.md) | 150 |
+| [Cross-site Scripting](payloads/xss.md) | 813 |
+| [Server-Side Request Forgery](payloads/ssrf.md) | 153 |
 | [SQL Injection](payloads/sqli.md) | 146 |
 | [Server-Side Template Injection](payloads/ssti.md) | 30 |
 | [Path Traversal](payloads/path-traversal.md) | 186 |
 | [XML External Entities](payloads/xxe.md) | 21 |
-| [Insecure Direct Object Reference](payloads/idor.md) | 24 |
+| [Insecure Direct Object Reference](payloads/idor.md) | 25 |
 | [Remote Code Execution](payloads/rce.md) | 73 |
 
 Each page groups payloads by technique variant, so the `svg onload` cases sit

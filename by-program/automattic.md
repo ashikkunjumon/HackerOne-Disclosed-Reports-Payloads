@@ -1,6 +1,6 @@
 # Automattic
 
-54 payloads.
+55 payloads.
 
 ### `74791695`
 
@@ -18,6 +18,15 @@ https://target.com/swf/storage.swf?onload=alert(1)
 ```
 
 — [http://target.com/ Self XSS](https://hackerone.com/reports/14303) · Automattic · [smiegles](https://hackerone.com/smiegles)
+
+### `2ded062c`
+
+```
+https://target.com/my-account/tickets/?id=340529
+```
+
+**Parameter:** `number`
+— [WooCommerce: Support Ticket indirect object reference](https://hackerone.com/reports/91599) · Automattic · [paresh_parmar](https://hackerone.com/paresh_parmar)
 
 ### `493e1fc3`
 

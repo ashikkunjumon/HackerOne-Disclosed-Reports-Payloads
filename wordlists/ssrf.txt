@@ -10,6 +10,8 @@
 <iframe src='http://localhost:9222 width=900 height=900></iframe>
 <iframe src='http://localhost:9222/json width=900 height=900></iframe>
 A.1.1.1.1.1time.127.0.0.1.forever.rebind.network
+Location: http://192.168.0.1:12345
+Location: http://admin:admin@192.168.0.1:12345
 Referer: http://localhost:3000/
 [::1]
 curl "gopher://localhost:7070/1/legitimate%0d%0ainjected%0d%0amalicious"

