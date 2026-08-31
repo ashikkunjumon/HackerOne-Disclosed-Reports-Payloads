@@ -3188,3 +3188,13 @@
 {"key": "8cfc629a13493dc7203295788441f766f3e90af3", "is_payload": true, "technique": "SSRF where the attacker-controlled URL causes the server to issue an HTTP request with a Basic\u2011Auth header to an internal host.", "param": null}
 {"key": "d749bfe68e428ebc2df85c654c4659730dd726a6", "is_payload": false, "technique": "", "param": null}
 {"key": "3471e256baf340d85ae3215bff88d41b4d307ceb", "is_payload": true, "technique": "Cross\u2011site scripting by injecting an <img src=x onerror=alert(document.domain)> payload into form fields.", "param": "building"}
+{"key": "d7801c7aeda963e80cae02d72e65fc1b70d6a7b1", "is_payload": false, "technique": "", "param": null}
+{"key": "97d232ce4a919e6af9792d9b64d4cbb0072b0560", "is_payload": true, "technique": "Directory traversal using backslashes and '..' in the 'path' parameter", "param": "path"}
+{"key": "99d4949725b8b1af91ed22b1dc537e1b3fb8b62b", "is_payload": true, "technique": "Path traversal via the 'token' parameter to reach ocs/v1.php/cloud/users", "param": "token"}
+{"key": "b6d23b5d7ed2b42be72733b7e9cc31e0c86fa422", "is_payload": true, "technique": "Path traversal using '../../..' in the 'token' query parameter", "param": "token"}
+{"key": "a214c0f2ba4c29f38e7132c73e4a2843bce4e571", "is_payload": true, "technique": "Directory traversal by embedding '../../..' in the request URL path", "param": null}
+{"key": "d24e6e9b47214e35b2a6d9549efc766ee9aa3ebd", "is_payload": true, "technique": "Path traversal via the 'relPath' POST body parameter using backslashes and '..'", "param": "relPath"}
+{"key": "c70f898726304ccc2e8b34045c37fb6f06b896b0", "is_payload": true, "technique": "Open redirect by supplying an unvalidated 'redirect_uri' parameter", "param": "redirect_uri"}
+{"key": "ce70aa6aa4ca2eee2d5bcb4a6457841b54fdd7e8", "is_payload": true, "technique": "Reflected XSS payload breaking out of a JavaScript context via the 'video' parameter", "param": "video"}
+{"key": "b45483a9858c0b006b5f246827a49eab3fbb02b0", "is_payload": true, "technique": "IDOR exploitation using a predictable UUID in the resource path", "param": null}
+{"key": "3dfa74a8af237ebb10dd254645fcfcaa57c6f6c0", "is_payload": true, "technique": "Arbitrary file write via WordPress media sub_sizes JSON 'file' field injection", "param": "file"}

