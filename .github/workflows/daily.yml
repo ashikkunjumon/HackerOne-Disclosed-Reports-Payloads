@@ -2,7 +2,14 @@ name: daily
 
 on:
   schedule:
-    - cron: "0 6 * * *"
+    # Mondays and Thursdays, not daily. The upstream corpus is *disclosed*
+    # HackerOne reports — a report is disclosed once and never changes, and the
+    # feed adds a handful a day. Seven runs a week to pick those up cost ~1,050
+    # of the 2,000 Actions minutes this account gets a month, and that allowance
+    # is shared with Public-Programs, which it starved twice.
+    #
+    # Cron can say "twice weekly" directly, so no skip-tick guard is needed here.
+    - cron: "0 6 * * 1,4"
   workflow_dispatch:
 
 permissions:
