@@ -15,6 +15,12 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Healthy runs were 17 to 36 minutes. Without this the job inherits the
+    # 360-minute default, and from 27 August it used all of it: about six hours
+    # a day, every day, on an account whose whole Actions allowance is 2,000
+    # minutes a month. It took that allowance down twice and stopped the
+    # unrelated Public-Programs pipeline both times.
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
         with:
@@ -33,7 +39,7 @@ jobs:
       - name: Build payload dataset
         env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
-        run: python -m src.run --out .
+        run: python -m src.run --out . --confirm-minutes 25
 
       - name: Commit if changed
         run: |

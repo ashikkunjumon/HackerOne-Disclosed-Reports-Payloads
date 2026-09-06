@@ -3,6 +3,7 @@
 import argparse
 import json
 import sys
+import time
 from pathlib import Path
 
 from src.classify import classify_report
@@ -98,6 +99,10 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--max-candidates", type=int, default=None,
                         help="cap how many candidates reach the LLM — use this to smoke-test "
                              "the live API without paying for the whole backfill")
+    parser.add_argument("--confirm-minutes", type=float, default=None,
+                        help="stop sending new batches to the LLM after this many "
+                             "minutes; whatever was judged is kept and the rest is "
+                             "retried next run")
     parser.add_argument("--allow-shrink", action="store_true",
                         help="publish even if the new record count collapses relative to "
                              "the already-published payloads.json")
@@ -126,7 +131,14 @@ def main(argv: list[str] | None = None) -> int:
         candidates = candidates[:args.max_candidates]
         print(f"capped to {len(candidates)} candidates")
 
-    verdicts = confirm(candidates, NvidiaProvider(), VERDICTS)
+    # A bounded run always reaches the commit step, and the commit is the only
+    # thing that gets data/verdicts.jsonl off the runner. An unbounded one that
+    # overruns the job ceiling is killed with every verdict it paid for still
+    # inside it, so the next run starts from the same place and does the same
+    # thing again.
+    deadline = (time.monotonic() + args.confirm_minutes * 60
+                if args.confirm_minutes else None)
+    verdicts = confirm(candidates, NvidiaProvider(), VERDICTS, deadline=deadline)
     records = build_records(candidates, verdicts, index, classes)
     print(f"payloads: {len(records)}")
 

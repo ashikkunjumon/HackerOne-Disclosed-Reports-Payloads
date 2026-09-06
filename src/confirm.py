@@ -28,7 +28,15 @@ BATCH_SIZE = 10
 # all succeed (37, 46, 79 verdicts/min), while 6 timed out 84% of batches and
 # tripped the failure-rate guard below. The endpoint degrades rather than
 # returning 429, so the ceiling has to be found by measurement.
-CONCURRENCY = 6
+#
+# It read 6 — one past the last value that worked, with the paragraph saying so
+# directly above it. That only bites on a large pending set: while the backlog
+# was a handful of new reports a day the runs took 20 to 35 minutes; when the
+# corpus grew on 27 August the pending set got big enough for the timeouts to
+# dominate, and every run since has spent about six hours failing batches,
+# aborted on the failure-rate guard and committed nothing, so the next run
+# retried exactly the same candidates.
+CONCURRENCY = 3
 
 # Under concurrency "consecutive failures" is meaningless -- batches finish out
 # of order -- so the guard is a failure RATE instead. A handful of transient
@@ -37,10 +45,6 @@ MAX_BATCH_FAILURE_RATE = 0.5
 MIN_BATCHES_FOR_RATE = 4
 # Free tier is 40 RPM; one batch per 1.6s stays comfortably under it.
 SECONDS_BETWEEN_BATCHES = 1.6
-# A run that fails this many batches in a row is not hitting transient
-# blips -- it is a broken provider, and must not be reported as a clean
-# run that simply had nothing new to judge.
-MAX_CONSECUTIVE_FAILURES = 5
 
 
 def load_cache(path: Path) -> dict[str, Verdict]:
@@ -91,7 +95,20 @@ def confirm(
     batch_size: int = BATCH_SIZE,
     sleep: Callable[[float], None] = time.sleep,
     concurrency: int = CONCURRENCY,
+    deadline: float | None = None,
 ) -> list[Verdict]:
+    """Judge what is not already cached, optionally stopping at a deadline.
+
+    `deadline` is a time.monotonic() value past which no further batch is sent.
+    The batches it skips are not failures and must not count toward the failure
+    rate — they were never attempted. Their candidates stay uncached and are
+    retried next run, which the caller already reports.
+
+    Without it a run either finishes or is killed, and a killed run loses every
+    verdict it paid for: append_cache writes each batch to disk immediately, but
+    the file only leaves the runner if the job reaches its commit step. Six
+    hours of judging went in the bin daily for that reason.
+    """
     cache = load_cache(cache_path)
     seen: set[str] = set()
     pending: list[Candidate] = []
@@ -104,9 +121,13 @@ def confirm(
 
     batches = [pending[i:i + batch_size] for i in range(0, len(pending), batch_size)]
     lock = threading.Lock()
-    state = {"attempted": 0, "failed": 0}
+    state = {"attempted": 0, "failed": 0, "skipped": 0}
 
     def run(index: int, batch: list[Candidate]) -> None:
+        if deadline is not None and time.monotonic() > deadline:
+            with lock:
+                state["skipped"] += 1
+            return
         # Stagger starts so a burst of threads does not arrive as one spike.
         if index and concurrency > 1:
             sleep(SECONDS_BETWEEN_BATCHES * (index % concurrency) / concurrency)
@@ -137,8 +158,12 @@ def confirm(
     with ThreadPoolExecutor(max_workers=max(1, concurrency)) as pool:
         list(pool.map(lambda pair: run(*pair), enumerate(batches)))
 
-    attempted, failed = state["attempted"], state["failed"]
-    if attempted and failed == attempted:
+    attempted, failed, skipped = (
+        state["attempted"], state["failed"], state["skipped"])
+    if skipped:
+        print(f"confirm: {skipped} batch(es) left for the next run (deadline)",
+              file=sys.stderr, flush=True)
+    if attempted and failed == attempted and not skipped:
         raise RuntimeError(
             f"every one of {attempted} batches failed or returned nothing; "
             f"aborting rather than reporting a silent no-op run"
